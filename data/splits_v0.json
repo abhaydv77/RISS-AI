@@ -1,0 +1,12 @@
+{
+  "split_version": "v0",
+  "purpose": "Estimate generalization to a new brand while ranking existing creators.",
+  "train_brand_ids": ["b02", "b03", "b04", "b05", "b06", "b07", "b08", "b09"],
+  "validation_brand_ids": ["b10"],
+  "test_brand_ids": ["b01"],
+  "notes": [
+    "Brand IDs are used only for partitioning and grouped evaluation, never as model features.",
+    "Keep the test brand untouched until the final evaluation.",
+    "This split is provisional because the dataset contains only 10 independent brand groups."
+  ]
+}
