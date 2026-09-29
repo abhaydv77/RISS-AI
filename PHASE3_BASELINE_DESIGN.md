@@ -114,3 +114,23 @@ For reproducibility, save:
 - **Baseline:** Frozen rule score built from fit dimensions and a fixed excluded-trait penalty.
 - **Main risks:** Only 10 independent brand groups; severe class imbalance; incomplete mandatory-requirement parsing; possible annotation inconsistency; correlated features; and the follower-percentile boundary behavior.
 - **What we should implement next:** After design review, implement the split manifest, rule baseline, logistic pipeline, grouped metric calculations, and reproducible experiment report. Add no model or training code before that review.
+
+## Implementation entry point
+
+The first implementation is in `ranking_experiment.py`, with the provisional
+brand partition recorded in `data/splits_v0.json`. It compares the fixed rule
+score with unweighted and balanced logistic-regression variants and reports
+leave-one-training-brand-out estimates for both logistic variants.
+
+```bash
+# Fit on the training brands and compare on validation; does not score test.
+python ranking_experiment.py --stage validation
+
+# After selecting the approach using validation, refit on train + validation
+# and evaluate the held-out test brand.
+python ranking_experiment.py --stage final
+```
+
+Reports are written to `reports/phase3_baseline_v0.json` by default. The
+implementation is not considered evaluated until these commands are run and
+the saved per-brand metrics and predictions are reviewed.

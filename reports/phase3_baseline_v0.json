@@ -1,0 +1,1854 @@
+{
+  "experiment": "riss-ai-phase3-ranking-v0",
+  "stage": "validation",
+  "created_at_utc": "2026-09-29T20:57:29.636017+00:00",
+  "data_summary": {
+    "brands": 10,
+    "creators": 40,
+    "labeled_pairs": 400,
+    "label_counts": {
+      "poor": 331,
+      "maybe": 35,
+      "good": 34
+    },
+    "feature_count": 20,
+    "feature_names": [
+      "niche_primary_match",
+      "niche_secondary_overlap",
+      "niche_preferred_match",
+      "audience_age_overlap",
+      "audience_gender_match",
+      "audience_location_overlap",
+      "creator_in_target_country",
+      "creator_in_mandatory_region",
+      "platform_coverage",
+      "platform_all_covered",
+      "budget_to_min_rate_ratio",
+      "budget_fits_min",
+      "followers_percentile_in_range",
+      "followers_log",
+      "creator_size_tier",
+      "content_type_jaccard",
+      "has_excluded_trait",
+      "mandatory_requirements_met",
+      "engagement_rate",
+      "avg_views_per_follower"
+    ]
+  },
+  "split_manifest": {
+    "split_version": "v0",
+    "purpose": "Estimate generalization to a new brand while ranking existing creators.",
+    "train_brand_ids": [
+      "b02",
+      "b03",
+      "b04",
+      "b05",
+      "b06",
+      "b07",
+      "b08",
+      "b09"
+    ],
+    "validation_brand_ids": [
+      "b10"
+    ],
+    "test_brand_ids": [
+      "b01"
+    ],
+    "notes": [
+      "Brand IDs are used only for partitioning and grouped evaluation, never as model features.",
+      "Keep the test brand untouched until the final evaluation.",
+      "This split is provisional because the dataset contains only 10 independent brand groups."
+    ]
+  },
+  "partition_label_counts": {
+    "train": {
+      "poor": 279,
+      "maybe": 16,
+      "good": 25
+    },
+    "validation": {
+      "poor": 24,
+      "maybe": 12,
+      "good": 4
+    },
+    "test": {
+      "poor": 28,
+      "maybe": 7,
+      "good": 5
+    }
+  },
+  "evaluation_contract": {
+    "good_relevance_for_precision_recall_mrr": true,
+    "graded_relevance": {
+      "poor": 0,
+      "maybe": 1,
+      "good": 2
+    },
+    "ndcg_gain": "2^relevance - 1",
+    "metrics": [
+      "precision@3_good",
+      "precision@5_good",
+      "recall@3_good",
+      "recall@5_good",
+      "mrr_good",
+      "ndcg@5"
+    ],
+    "averaging": "macro average over brand groups"
+  },
+  "rule_baseline": {
+    "validation": {
+      "ranking_metrics": {
+        "macro_brand_average": {
+          "precision@3_good": 0.3333333333333333,
+          "recall@3_good": 0.25,
+          "precision@5_good": 0.4,
+          "recall@5_good": 0.5,
+          "mrr_good": 0.3333333333333333,
+          "ndcg@5": 0.5958879880976975
+        },
+        "per_brand": {
+          "b10": {
+            "precision@3_good": 0.3333333333333333,
+            "recall@3_good": 0.25,
+            "precision@5_good": 0.4,
+            "recall@5_good": 0.5,
+            "mrr_good": 0.3333333333333333,
+            "ndcg@5": 0.5958879880976975
+          }
+        }
+      }
+    }
+  },
+  "logistic_models": {
+    "leave_one_train_brand_out": {
+      "unweighted": {
+        "held_out_brands": [
+          "b02",
+          "b03",
+          "b04",
+          "b05",
+          "b06",
+          "b07",
+          "b08",
+          "b09"
+        ],
+        "ranking_metrics": {
+          "macro_brand_average": {
+            "precision@3_good": 0.5416666666666666,
+            "recall@3_good": 0.6527777777777778,
+            "precision@5_good": 0.45,
+            "recall@5_good": 0.8541666666666666,
+            "mrr_good": 0.75,
+            "ndcg@5": 0.9002392205217307
+          },
+          "per_brand": {
+            "b02": {
+              "precision@3_good": 0.3333333333333333,
+              "recall@3_good": 1.0,
+              "precision@5_good": 0.2,
+              "recall@5_good": 1.0,
+              "mrr_good": 1.0,
+              "ndcg@5": 1.0
+            },
+            "b03": {
+              "precision@3_good": 1.0,
+              "recall@3_good": 1.0,
+              "precision@5_good": 0.6,
+              "recall@5_good": 1.0,
+              "mrr_good": 1.0,
+              "ndcg@5": 0.9368830196397312
+            },
+            "b04": {
+              "precision@3_good": 1.0,
+              "recall@3_good": 0.375,
+              "precision@5_good": 0.8,
+              "recall@5_good": 0.5,
+              "mrr_good": 1.0,
+              "ndcg@5": 0.9026211001048622
+            },
+            "b05": {
+              "precision@3_good": 0.0,
+              "recall@3_good": null,
+              "precision@5_good": 0.0,
+              "recall@5_good": null,
+              "mrr_good": 0.0,
+              "ndcg@5": 1.0
+            },
+            "b06": {
+              "precision@3_good": 1.0,
+              "recall@3_good": 0.375,
+              "precision@5_good": 1.0,
+              "recall@5_good": 0.625,
+              "mrr_good": 1.0,
+              "ndcg@5": 1.0
+            },
+            "b07": {
+              "precision@3_good": 0.3333333333333333,
+              "recall@3_good": 0.5,
+              "precision@5_good": 0.4,
+              "recall@5_good": 1.0,
+              "mrr_good": 1.0,
+              "ndcg@5": 0.8642203869628404
+            },
+            "b08": {
+              "precision@3_good": 0.6666666666666666,
+              "recall@3_good": 0.6666666666666666,
+              "precision@5_good": 0.6,
+              "recall@5_good": 1.0,
+              "mrr_good": 1.0,
+              "ndcg@5": 0.9674679834891694
+            },
+            "b09": {
+              "precision@3_good": 0.0,
+              "recall@3_good": null,
+              "precision@5_good": 0.0,
+              "recall@5_good": null,
+              "mrr_good": 0.0,
+              "ndcg@5": 0.5307212739772434
+            }
+          }
+        },
+        "classification_metrics": {
+          "accuracy": 0.93125,
+          "macro_f1": 0.7431813065118714,
+          "per_class_f1": {
+            "poor": 0.9731663685152058,
+            "maybe": 0.5625,
+            "good": 0.6938775510204083
+          },
+          "confusion_matrix_true_rows_predicted_columns": {
+            "poor": {
+              "poor": 272,
+              "maybe": 2,
+              "good": 5
+            },
+            "maybe": {
+              "poor": 5,
+              "maybe": 9,
+              "good": 2
+            },
+            "good": {
+              "poor": 3,
+              "maybe": 5,
+              "good": 17
+            }
+          }
+        }
+      },
+      "balanced": {
+        "held_out_brands": [
+          "b02",
+          "b03",
+          "b04",
+          "b05",
+          "b06",
+          "b07",
+          "b08",
+          "b09"
+        ],
+        "ranking_metrics": {
+          "macro_brand_average": {
+            "precision@3_good": 0.5416666666666666,
+            "recall@3_good": 0.6527777777777778,
+            "precision@5_good": 0.45,
+            "recall@5_good": 0.8541666666666666,
+            "mrr_good": 0.75,
+            "ndcg@5": 0.8889690909895118
+          },
+          "per_brand": {
+            "b02": {
+              "precision@3_good": 0.3333333333333333,
+              "recall@3_good": 1.0,
+              "precision@5_good": 0.2,
+              "recall@5_good": 1.0,
+              "mrr_good": 1.0,
+              "ndcg@5": 1.0
+            },
+            "b03": {
+              "precision@3_good": 1.0,
+              "recall@3_good": 1.0,
+              "precision@5_good": 0.6,
+              "recall@5_good": 1.0,
+              "mrr_good": 1.0,
+              "ndcg@5": 0.9368830196397312
+            },
+            "b04": {
+              "precision@3_good": 1.0,
+              "recall@3_good": 0.375,
+              "precision@5_good": 0.8,
+              "recall@5_good": 0.5,
+              "mrr_good": 1.0,
+              "ndcg@5": 0.9026211001048622
+            },
+            "b05": {
+              "precision@3_good": 0.0,
+              "recall@3_good": null,
+              "precision@5_good": 0.0,
+              "recall@5_good": null,
+              "mrr_good": 0.0,
+              "ndcg@5": 1.0
+            },
+            "b06": {
+              "precision@3_good": 1.0,
+              "recall@3_good": 0.375,
+              "precision@5_good": 1.0,
+              "recall@5_good": 0.625,
+              "mrr_good": 1.0,
+              "ndcg@5": 1.0
+            },
+            "b07": {
+              "precision@3_good": 0.3333333333333333,
+              "recall@3_good": 0.5,
+              "precision@5_good": 0.4,
+              "recall@5_good": 1.0,
+              "mrr_good": 1.0,
+              "ndcg@5": 0.8885994691336017
+            },
+            "b08": {
+              "precision@3_good": 0.6666666666666666,
+              "recall@3_good": 0.6666666666666666,
+              "precision@5_good": 0.6,
+              "recall@5_good": 1.0,
+              "mrr_good": 1.0,
+              "ndcg@5": 0.9674679834891694
+            },
+            "b09": {
+              "precision@3_good": 0.0,
+              "recall@3_good": null,
+              "precision@5_good": 0.0,
+              "recall@5_good": null,
+              "mrr_good": 0.0,
+              "ndcg@5": 0.41618115554873086
+            }
+          }
+        },
+        "classification_metrics": {
+          "accuracy": 0.925,
+          "macro_f1": 0.7551442727038374,
+          "per_class_f1": {
+            "poor": 0.9708029197080291,
+            "maybe": 0.6153846153846153,
+            "good": 0.6792452830188679
+          },
+          "confusion_matrix_true_rows_predicted_columns": {
+            "poor": {
+              "poor": 266,
+              "maybe": 6,
+              "good": 7
+            },
+            "maybe": {
+              "poor": 1,
+              "maybe": 12,
+              "good": 3
+            },
+            "good": {
+              "poor": 2,
+              "maybe": 5,
+              "good": 18
+            }
+          }
+        }
+      }
+    },
+    "validation": {
+      "unweighted": {
+        "model": "L2 multinomial logistic regression",
+        "class_weight": null,
+        "C": 1.0,
+        "random_state": 42,
+        "ranking_metrics": {
+          "macro_brand_average": {
+            "precision@3_good": 0.6666666666666666,
+            "recall@3_good": 0.5,
+            "precision@5_good": 0.4,
+            "recall@5_good": 0.5,
+            "mrr_good": 1.0,
+            "ndcg@5": 0.7369550334663222
+          },
+          "per_brand": {
+            "b10": {
+              "precision@3_good": 0.6666666666666666,
+              "recall@3_good": 0.5,
+              "precision@5_good": 0.4,
+              "recall@5_good": 0.5,
+              "mrr_good": 1.0,
+              "ndcg@5": 0.7369550334663222
+            }
+          }
+        },
+        "classification_metrics": {
+          "accuracy": 0.8,
+          "macro_f1": 0.6972988025619605,
+          "per_class_f1": {
+            "poor": 0.888888888888889,
+            "maybe": 0.631578947368421,
+            "good": 0.5714285714285715
+          },
+          "confusion_matrix_true_rows_predicted_columns": {
+            "poor": {
+              "poor": 24,
+              "maybe": 0,
+              "good": 0
+            },
+            "maybe": {
+              "poor": 5,
+              "maybe": 6,
+              "good": 1
+            },
+            "good": {
+              "poor": 1,
+              "maybe": 1,
+              "good": 2
+            }
+          }
+        }
+      },
+      "balanced": {
+        "model": "L2 multinomial logistic regression",
+        "class_weight": "balanced",
+        "C": 1.0,
+        "random_state": 42,
+        "ranking_metrics": {
+          "macro_brand_average": {
+            "precision@3_good": 0.6666666666666666,
+            "recall@3_good": 0.5,
+            "precision@5_good": 0.4,
+            "recall@5_good": 0.5,
+            "mrr_good": 1.0,
+            "ndcg@5": 0.7369550334663222
+          },
+          "per_brand": {
+            "b10": {
+              "precision@3_good": 0.6666666666666666,
+              "recall@3_good": 0.5,
+              "precision@5_good": 0.4,
+              "recall@5_good": 0.5,
+              "mrr_good": 1.0,
+              "ndcg@5": 0.7369550334663222
+            }
+          }
+        },
+        "classification_metrics": {
+          "accuracy": 0.9,
+          "macro_f1": 0.8003312629399586,
+          "per_class_f1": {
+            "poor": 0.9600000000000001,
+            "maybe": 0.8695652173913043,
+            "good": 0.5714285714285715
+          },
+          "confusion_matrix_true_rows_predicted_columns": {
+            "poor": {
+              "poor": 24,
+              "maybe": 0,
+              "good": 0
+            },
+            "maybe": {
+              "poor": 1,
+              "maybe": 10,
+              "good": 1
+            },
+            "good": {
+              "poor": 1,
+              "maybe": 1,
+              "good": 2
+            }
+          }
+        }
+      }
+    }
+  },
+  "validation_predictions": {
+    "rule_baseline": [
+      {
+        "brand_id": "b10",
+        "creator_id": "c26",
+        "rank": 1,
+        "true_label": "maybe",
+        "predicted_label": null,
+        "ranking_score": 0.7534722222222222
+      },
+      {
+        "brand_id": "b10",
+        "creator_id": "c37",
+        "rank": 2,
+        "true_label": "maybe",
+        "predicted_label": null,
+        "ranking_score": 0.7166666666666667
+      },
+      {
+        "brand_id": "b10",
+        "creator_id": "c15",
+        "rank": 3,
+        "true_label": "good",
+        "predicted_label": null,
+        "ranking_score": 0.710763888888889
+      },
+      {
+        "brand_id": "b10",
+        "creator_id": "c24",
+        "rank": 4,
+        "true_label": "good",
+        "predicted_label": null,
+        "ranking_score": 0.6965277777777777
+      },
+      {
+        "brand_id": "b10",
+        "creator_id": "c35",
+        "rank": 5,
+        "true_label": "maybe",
+        "predicted_label": null,
+        "ranking_score": 0.6840277777777778
+      },
+      {
+        "brand_id": "b10",
+        "creator_id": "c01",
+        "rank": 6,
+        "true_label": "maybe",
+        "predicted_label": null,
+        "ranking_score": 0.6781250000000001
+      },
+      {
+        "brand_id": "b10",
+        "creator_id": "c06",
+        "rank": 7,
+        "true_label": "maybe",
+        "predicted_label": null,
+        "ranking_score": 0.6781250000000001
+      },
+      {
+        "brand_id": "b10",
+        "creator_id": "c32",
+        "rank": 8,
+        "true_label": "maybe",
+        "predicted_label": null,
+        "ranking_score": 0.6781250000000001
+      },
+      {
+        "brand_id": "b10",
+        "creator_id": "c21",
+        "rank": 9,
+        "true_label": "maybe",
+        "predicted_label": null,
+        "ranking_score": 0.6774305555555556
+      },
+      {
+        "brand_id": "b10",
+        "creator_id": "c39",
+        "rank": 10,
+        "true_label": "maybe",
+        "predicted_label": null,
+        "ranking_score": 0.6711805555555557
+      },
+      {
+        "brand_id": "b10",
+        "creator_id": "c02",
+        "rank": 11,
+        "true_label": "poor",
+        "predicted_label": null,
+        "ranking_score": 0.6642361111111111
+      },
+      {
+        "brand_id": "b10",
+        "creator_id": "c05",
+        "rank": 12,
+        "true_label": "maybe",
+        "predicted_label": null,
+        "ranking_score": 0.6572916666666667
+      },
+      {
+        "brand_id": "b10",
+        "creator_id": "c03",
+        "rank": 13,
+        "true_label": "maybe",
+        "predicted_label": null,
+        "ranking_score": 0.6538194444444445
+      },
+      {
+        "brand_id": "b10",
+        "creator_id": "c34",
+        "rank": 14,
+        "true_label": "maybe",
+        "predicted_label": null,
+        "ranking_score": 0.6538194444444445
+      },
+      {
+        "brand_id": "b10",
+        "creator_id": "c12",
+        "rank": 15,
+        "true_label": "poor",
+        "predicted_label": null,
+        "ranking_score": 0.5767361111111111
+      },
+      {
+        "brand_id": "b10",
+        "creator_id": "c07",
+        "rank": 16,
+        "true_label": "poor",
+        "predicted_label": null,
+        "ranking_score": 0.5680555555555555
+      },
+      {
+        "brand_id": "b10",
+        "creator_id": "c25",
+        "rank": 17,
+        "true_label": "good",
+        "predicted_label": null,
+        "ranking_score": 0.5677083333333333
+      },
+      {
+        "brand_id": "b10",
+        "creator_id": "c18",
+        "rank": 18,
+        "true_label": "maybe",
+        "predicted_label": null,
+        "ranking_score": 0.5649305555555555
+      },
+      {
+        "brand_id": "b10",
+        "creator_id": "c22",
+        "rank": 19,
+        "true_label": "good",
+        "predicted_label": null,
+        "ranking_score": 0.564236111111111
+      },
+      {
+        "brand_id": "b10",
+        "creator_id": "c30",
+        "rank": 20,
+        "true_label": "poor",
+        "predicted_label": null,
+        "ranking_score": 0.5569444444444445
+      },
+      {
+        "brand_id": "b10",
+        "creator_id": "c28",
+        "rank": 21,
+        "true_label": "poor",
+        "predicted_label": null,
+        "ranking_score": 0.5371527777777778
+      },
+      {
+        "brand_id": "b10",
+        "creator_id": "c17",
+        "rank": 22,
+        "true_label": "poor",
+        "predicted_label": null,
+        "ranking_score": 0.5118055555555555
+      },
+      {
+        "brand_id": "b10",
+        "creator_id": "c40",
+        "rank": 23,
+        "true_label": "poor",
+        "predicted_label": null,
+        "ranking_score": 0.5038194444444445
+      },
+      {
+        "brand_id": "b10",
+        "creator_id": "c10",
+        "rank": 24,
+        "true_label": "poor",
+        "predicted_label": null,
+        "ranking_score": 0.49999999999999994
+      },
+      {
+        "brand_id": "b10",
+        "creator_id": "c16",
+        "rank": 25,
+        "true_label": "poor",
+        "predicted_label": null,
+        "ranking_score": 0.4895833333333333
+      },
+      {
+        "brand_id": "b10",
+        "creator_id": "c11",
+        "rank": 26,
+        "true_label": "poor",
+        "predicted_label": null,
+        "ranking_score": 0.45069444444444445
+      },
+      {
+        "brand_id": "b10",
+        "creator_id": "c36",
+        "rank": 27,
+        "true_label": "poor",
+        "predicted_label": null,
+        "ranking_score": 0.44097222222222227
+      },
+      {
+        "brand_id": "b10",
+        "creator_id": "c19",
+        "rank": 28,
+        "true_label": "poor",
+        "predicted_label": null,
+        "ranking_score": 0.43645833333333334
+      },
+      {
+        "brand_id": "b10",
+        "creator_id": "c13",
+        "rank": 29,
+        "true_label": "poor",
+        "predicted_label": null,
+        "ranking_score": 0.4166666666666667
+      },
+      {
+        "brand_id": "b10",
+        "creator_id": "c20",
+        "rank": 30,
+        "true_label": "poor",
+        "predicted_label": null,
+        "ranking_score": 0.3770833333333333
+      },
+      {
+        "brand_id": "b10",
+        "creator_id": "c27",
+        "rank": 31,
+        "true_label": "poor",
+        "predicted_label": null,
+        "ranking_score": 0.35069444444444453
+      },
+      {
+        "brand_id": "b10",
+        "creator_id": "c14",
+        "rank": 32,
+        "true_label": "poor",
+        "predicted_label": null,
+        "ranking_score": 0.3402777777777778
+      },
+      {
+        "brand_id": "b10",
+        "creator_id": "c23",
+        "rank": 33,
+        "true_label": "poor",
+        "predicted_label": null,
+        "ranking_score": 0.3354166666666667
+      },
+      {
+        "brand_id": "b10",
+        "creator_id": "c09",
+        "rank": 34,
+        "true_label": "poor",
+        "predicted_label": null,
+        "ranking_score": 0.30104166666666665
+      },
+      {
+        "brand_id": "b10",
+        "creator_id": "c38",
+        "rank": 35,
+        "true_label": "poor",
+        "predicted_label": null,
+        "ranking_score": 0.29409722222222223
+      },
+      {
+        "brand_id": "b10",
+        "creator_id": "c04",
+        "rank": 36,
+        "true_label": "poor",
+        "predicted_label": null,
+        "ranking_score": 0.2729166666666667
+      },
+      {
+        "brand_id": "b10",
+        "creator_id": "c31",
+        "rank": 37,
+        "true_label": "poor",
+        "predicted_label": null,
+        "ranking_score": 0.25902777777777775
+      },
+      {
+        "brand_id": "b10",
+        "creator_id": "c29",
+        "rank": 38,
+        "true_label": "poor",
+        "predicted_label": null,
+        "ranking_score": 0.13194444444444448
+      },
+      {
+        "brand_id": "b10",
+        "creator_id": "c33",
+        "rank": 39,
+        "true_label": "poor",
+        "predicted_label": null,
+        "ranking_score": 0.0625
+      },
+      {
+        "brand_id": "b10",
+        "creator_id": "c08",
+        "rank": 40,
+        "true_label": "poor",
+        "predicted_label": null,
+        "ranking_score": 0.016666666666666663
+      }
+    ],
+    "unweighted": [
+      {
+        "brand_id": "b10",
+        "creator_id": "c24",
+        "rank": 1,
+        "true_label": "good",
+        "predicted_label": "good",
+        "ranking_score": 1.9757138663925415,
+        "probabilities": {
+          "poor": 0.01191634708124668,
+          "maybe": 0.00045343944496499885,
+          "good": 0.9876302134737883
+        }
+      },
+      {
+        "brand_id": "b10",
+        "creator_id": "c26",
+        "rank": 2,
+        "true_label": "maybe",
+        "predicted_label": "good",
+        "ranking_score": 1.93116508682021,
+        "probabilities": {
+          "poor": 0.022789253871332217,
+          "maybe": 0.02325640543712564,
+          "good": 0.9539543406915422
+        }
+      },
+      {
+        "brand_id": "b10",
+        "creator_id": "c22",
+        "rank": 3,
+        "true_label": "good",
+        "predicted_label": "good",
+        "ranking_score": 1.129230699202145,
+        "probabilities": {
+          "poor": 0.4015068015754658,
+          "maybe": 0.06775569764692353,
+          "good": 0.5307375007776107
+        }
+      },
+      {
+        "brand_id": "b10",
+        "creator_id": "c01",
+        "rank": 4,
+        "true_label": "maybe",
+        "predicted_label": "maybe",
+        "ranking_score": 0.8715009371580794,
+        "probabilities": {
+          "poor": 0.14084942170264192,
+          "maybe": 0.8468002194366369,
+          "good": 0.012350358860721266
+        }
+      },
+      {
+        "brand_id": "b10",
+        "creator_id": "c37",
+        "rank": 5,
+        "true_label": "maybe",
+        "predicted_label": "maybe",
+        "ranking_score": 0.7955511335630866,
+        "probabilities": {
+          "poor": 0.3086338022119086,
+          "maybe": 0.5871812620130964,
+          "good": 0.10418493577499512
+        }
+      },
+      {
+        "brand_id": "b10",
+        "creator_id": "c21",
+        "rank": 6,
+        "true_label": "maybe",
+        "predicted_label": "maybe",
+        "ranking_score": 0.791142223998558,
+        "probabilities": {
+          "poor": 0.22068936532479252,
+          "maybe": 0.7674790453518568,
+          "good": 0.011831589323350626
+        }
+      },
+      {
+        "brand_id": "b10",
+        "creator_id": "c32",
+        "rank": 7,
+        "true_label": "maybe",
+        "predicted_label": "maybe",
+        "ranking_score": 0.7669001824349214,
+        "probabilities": {
+          "poor": 0.23888170130673908,
+          "maybe": 0.7553364149516004,
+          "good": 0.005781883741660503
+        }
+      },
+      {
+        "brand_id": "b10",
+        "creator_id": "c06",
+        "rank": 8,
+        "true_label": "maybe",
+        "predicted_label": "maybe",
+        "ranking_score": 0.7436006389011391,
+        "probabilities": {
+          "poor": 0.26660856506919944,
+          "maybe": 0.723182230960462,
+          "good": 0.010209203970338592
+        }
+      },
+      {
+        "brand_id": "b10",
+        "creator_id": "c15",
+        "rank": 9,
+        "true_label": "good",
+        "predicted_label": "maybe",
+        "ranking_score": 0.7182394846521989,
+        "probabilities": {
+          "poor": 0.39857072166898166,
+          "maybe": 0.48461907200983784,
+          "good": 0.11681020632118054
+        }
+      },
+      {
+        "brand_id": "b10",
+        "creator_id": "c39",
+        "rank": 10,
+        "true_label": "maybe",
+        "predicted_label": "maybe",
+        "ranking_score": 0.6365572016889234,
+        "probabilities": {
+          "poor": 0.3697408202713482,
+          "maybe": 0.6239611577683801,
+          "good": 0.006298021960271651
+        }
+      },
+      {
+        "brand_id": "b10",
+        "creator_id": "c35",
+        "rank": 11,
+        "true_label": "maybe",
+        "predicted_label": "poor",
+        "ranking_score": 0.555638455040991,
+        "probabilities": {
+          "poor": 0.5268321233236076,
+          "maybe": 0.3906972983117938,
+          "good": 0.08247057836459856
+        }
+      },
+      {
+        "brand_id": "b10",
+        "creator_id": "c03",
+        "rank": 12,
+        "true_label": "maybe",
+        "predicted_label": "poor",
+        "ranking_score": 0.36599063910626833,
+        "probabilities": {
+          "poor": 0.6431051023285632,
+          "maybe": 0.34779915623660546,
+          "good": 0.009095741434831444
+        }
+      },
+      {
+        "brand_id": "b10",
+        "creator_id": "c23",
+        "rank": 13,
+        "true_label": "poor",
+        "predicted_label": "poor",
+        "ranking_score": 0.18705820478546928,
+        "probabilities": {
+          "poor": 0.8301732046783216,
+          "maybe": 0.15259538585788746,
+          "good": 0.017231409463790915
+        }
+      },
+      {
+        "brand_id": "b10",
+        "creator_id": "c34",
+        "rank": 14,
+        "true_label": "maybe",
+        "predicted_label": "poor",
+        "ranking_score": 0.17453998029244042,
+        "probabilities": {
+          "poor": 0.830525501198648,
+          "maybe": 0.16440901731026347,
+          "good": 0.005065481491088473
+        }
+      },
+      {
+        "brand_id": "b10",
+        "creator_id": "c02",
+        "rank": 15,
+        "true_label": "poor",
+        "predicted_label": "poor",
+        "ranking_score": 0.13905554611996937,
+        "probabilities": {
+          "poor": 0.9302920642712555,
+          "maybe": 0.00036032533751942397,
+          "good": 0.06934761039122497
+        }
+      },
+      {
+        "brand_id": "b10",
+        "creator_id": "c05",
+        "rank": 16,
+        "true_label": "maybe",
+        "predicted_label": "poor",
+        "ranking_score": 0.12565275639605922,
+        "probabilities": {
+          "poor": 0.8760917152340126,
+          "maybe": 0.1221638131359155,
+          "good": 0.0017444716300718532
+        }
+      },
+      {
+        "brand_id": "b10",
+        "creator_id": "c27",
+        "rank": 17,
+        "true_label": "poor",
+        "predicted_label": "poor",
+        "ranking_score": 0.08898157690971747,
+        "probabilities": {
+          "poor": 0.9471099147250648,
+          "maybe": 0.016798593640152945,
+          "good": 0.036091491634782265
+        }
+      },
+      {
+        "brand_id": "b10",
+        "creator_id": "c18",
+        "rank": 18,
+        "true_label": "maybe",
+        "predicted_label": "poor",
+        "ranking_score": 0.06922597873381027,
+        "probabilities": {
+          "poor": 0.9317130527770304,
+          "maybe": 0.06734791571212875,
+          "good": 0.0009390315108407585
+        }
+      },
+      {
+        "brand_id": "b10",
+        "creator_id": "c07",
+        "rank": 19,
+        "true_label": "poor",
+        "predicted_label": "poor",
+        "ranking_score": 0.05476670365463011,
+        "probabilities": {
+          "poor": 0.9497417205635134,
+          "maybe": 0.04574985521834309,
+          "good": 0.004508424218143507
+        }
+      },
+      {
+        "brand_id": "b10",
+        "creator_id": "c20",
+        "rank": 20,
+        "true_label": "poor",
+        "predicted_label": "poor",
+        "ranking_score": 0.04913994195606856,
+        "probabilities": {
+          "poor": 0.9753235272233729,
+          "maybe": 0.00021300359718570079,
+          "good": 0.02446346917944143
+        }
+      },
+      {
+        "brand_id": "b10",
+        "creator_id": "c14",
+        "rank": 21,
+        "true_label": "poor",
+        "predicted_label": "poor",
+        "ranking_score": 0.04197068519614664,
+        "probabilities": {
+          "poor": 0.9715337159879482,
+          "maybe": 0.014961882827956751,
+          "good": 0.013504401184094945
+        }
+      },
+      {
+        "brand_id": "b10",
+        "creator_id": "c28",
+        "rank": 22,
+        "true_label": "poor",
+        "predicted_label": "poor",
+        "ranking_score": 0.0202375514588155,
+        "probabilities": {
+          "poor": 0.9798761284807951,
+          "maybe": 0.020010191579594366,
+          "good": 0.00011367993961056705
+        }
+      },
+      {
+        "brand_id": "b10",
+        "creator_id": "c40",
+        "rank": 23,
+        "true_label": "poor",
+        "predicted_label": "poor",
+        "ranking_score": 0.01874370887871613,
+        "probabilities": {
+          "poor": 0.9903053175324481,
+          "maybe": 0.0006456560563876243,
+          "good": 0.009049026411164252
+        }
+      },
+      {
+        "brand_id": "b10",
+        "creator_id": "c12",
+        "rank": 24,
+        "true_label": "poor",
+        "predicted_label": "poor",
+        "ranking_score": 0.012286701112718783,
+        "probabilities": {
+          "poor": 0.9920498181983614,
+          "maybe": 0.0036136624905583345,
+          "good": 0.004336519311080224
+        }
+      },
+      {
+        "brand_id": "b10",
+        "creator_id": "c09",
+        "rank": 25,
+        "true_label": "poor",
+        "predicted_label": "poor",
+        "ranking_score": 0.009231002825317884,
+        "probabilities": {
+          "poor": 0.9953609479456013,
+          "maybe": 4.710128347941438e-05,
+          "good": 0.004591950770919235
+        }
+      },
+      {
+        "brand_id": "b10",
+        "creator_id": "c30",
+        "rank": 26,
+        "true_label": "poor",
+        "predicted_label": "poor",
+        "ranking_score": 0.007316701974096116,
+        "probabilities": {
+          "poor": 0.9933025361558536,
+          "maybe": 0.006078225714196475,
+          "good": 0.0006192381299498206
+        }
+      },
+      {
+        "brand_id": "b10",
+        "creator_id": "c38",
+        "rank": 27,
+        "true_label": "poor",
+        "predicted_label": "poor",
+        "ranking_score": 0.006791553448335239,
+        "probabilities": {
+          "poor": 0.996526983823605,
+          "maybe": 0.00015447890445482155,
+          "good": 0.003318537271940209
+        }
+      },
+      {
+        "brand_id": "b10",
+        "creator_id": "c04",
+        "rank": 28,
+        "true_label": "poor",
+        "predicted_label": "poor",
+        "ranking_score": 0.004304299978587103,
+        "probabilities": {
+          "poor": 0.9962593911354676,
+          "maybe": 0.0031769177504778192,
+          "good": 0.0005636911140546417
+        }
+      },
+      {
+        "brand_id": "b10",
+        "creator_id": "c25",
+        "rank": 29,
+        "true_label": "good",
+        "predicted_label": "poor",
+        "ranking_score": 0.003514308977293395,
+        "probabilities": {
+          "poor": 0.9975735101535183,
+          "maybe": 0.0013386707156702008,
+          "good": 0.001087819130811597
+        }
+      },
+      {
+        "brand_id": "b10",
+        "creator_id": "c10",
+        "rank": 30,
+        "true_label": "poor",
+        "predicted_label": "poor",
+        "ranking_score": 0.0026249947160091698,
+        "probabilities": {
+          "poor": 0.9974705912383086,
+          "maybe": 0.002433822807373552,
+          "good": 9.558595431780872e-05
+        }
+      },
+      {
+        "brand_id": "b10",
+        "creator_id": "c16",
+        "rank": 31,
+        "true_label": "poor",
+        "predicted_label": "poor",
+        "ranking_score": 0.0008097558162545441,
+        "probabilities": {
+          "poor": 0.9995890388985526,
+          "maybe": 1.2166386640349543e-05,
+          "good": 0.0003987947148070973
+        }
+      },
+      {
+        "brand_id": "b10",
+        "creator_id": "c36",
+        "rank": 32,
+        "true_label": "poor",
+        "predicted_label": "poor",
+        "ranking_score": 0.0006679315392111318,
+        "probabilities": {
+          "poor": 0.9994145853872056,
+          "maybe": 0.0005028976863777699,
+          "good": 8.25169264166809e-05
+        }
+      },
+      {
+        "brand_id": "b10",
+        "creator_id": "c11",
+        "rank": 33,
+        "true_label": "poor",
+        "predicted_label": "poor",
+        "ranking_score": 0.0006189736218285745,
+        "probabilities": {
+          "poor": 0.9994815019036865,
+          "maybe": 0.0004180225707985732,
+          "good": 0.00010047552551500066
+        }
+      },
+      {
+        "brand_id": "b10",
+        "creator_id": "c31",
+        "rank": 34,
+        "true_label": "poor",
+        "predicted_label": "poor",
+        "ranking_score": 0.0004684552224489206,
+        "probabilities": {
+          "poor": 0.9997044556349266,
+          "maybe": 0.0001226335076977177,
+          "good": 0.00017291085737560145
+        }
+      },
+      {
+        "brand_id": "b10",
+        "creator_id": "c17",
+        "rank": 35,
+        "true_label": "poor",
+        "predicted_label": "poor",
+        "ranking_score": 0.0004506305377935056,
+        "probabilities": {
+          "poor": 0.9996251626060293,
+          "maybe": 0.0002990442501479784,
+          "good": 7.579314382276362e-05
+        }
+      },
+      {
+        "brand_id": "b10",
+        "creator_id": "c13",
+        "rank": 36,
+        "true_label": "poor",
+        "predicted_label": "poor",
+        "ranking_score": 0.00013707824622822689,
+        "probabilities": {
+          "poor": 0.9998937476301389,
+          "maybe": 7.542649349409159e-05,
+          "good": 3.082587636706765e-05
+        }
+      },
+      {
+        "brand_id": "b10",
+        "creator_id": "c29",
+        "rank": 37,
+        "true_label": "poor",
+        "predicted_label": "poor",
+        "ranking_score": 8.626578133592244e-06,
+        "probabilities": {
+          "poor": 0.9999924868593217,
+          "maybe": 6.399703223074193e-06,
+          "good": 1.113437455259025e-06
+        }
+      },
+      {
+        "brand_id": "b10",
+        "creator_id": "c19",
+        "rank": 38,
+        "true_label": "poor",
+        "predicted_label": "poor",
+        "ranking_score": 8.473363363257943e-06,
+        "probabilities": {
+          "poor": 0.9999924007033812,
+          "maybe": 6.725229873988515e-06,
+          "good": 8.740667446347136e-07
+        }
+      },
+      {
+        "brand_id": "b10",
+        "creator_id": "c08",
+        "rank": 39,
+        "true_label": "poor",
+        "predicted_label": "poor",
+        "ranking_score": 6.503251778643541e-07,
+        "probabilities": {
+          "poor": 0.9999995750702251,
+          "maybe": 1.9953437209183327e-07,
+          "good": 2.2539540288626044e-07
+        }
+      },
+      {
+        "brand_id": "b10",
+        "creator_id": "c33",
+        "rank": 40,
+        "true_label": "poor",
+        "predicted_label": "poor",
+        "ranking_score": 3.1300910307833387e-07,
+        "probabilities": {
+          "poor": 0.9999997824310287,
+          "maybe": 1.2212883918870983e-07,
+          "good": 9.544013194481202e-08
+        }
+      }
+    ],
+    "balanced": [
+      {
+        "brand_id": "b10",
+        "creator_id": "c24",
+        "rank": 1,
+        "true_label": "good",
+        "predicted_label": "good",
+        "ranking_score": 1.9988342336360252,
+        "probabilities": {
+          "poor": 0.0005796658809246164,
+          "maybe": 6.434602125500255e-06,
+          "good": 0.9994138995169498
+        }
+      },
+      {
+        "brand_id": "b10",
+        "creator_id": "c26",
+        "rank": 2,
+        "true_label": "maybe",
+        "predicted_label": "good",
+        "ranking_score": 1.99252883716747,
+        "probabilities": {
+          "poor": 0.0020627630850377737,
+          "maybe": 0.003345636662454427,
+          "good": 0.9945916002525078
+        }
+      },
+      {
+        "brand_id": "b10",
+        "creator_id": "c22",
+        "rank": 3,
+        "true_label": "good",
+        "predicted_label": "good",
+        "ranking_score": 1.9385034417455789,
+        "probabilities": {
+          "poor": 0.0241342010206782,
+          "maybe": 0.013228156213064616,
+          "good": 0.9626376427662571
+        }
+      },
+      {
+        "brand_id": "b10",
+        "creator_id": "c01",
+        "rank": 4,
+        "true_label": "maybe",
+        "predicted_label": "maybe",
+        "ranking_score": 0.9908748501653122,
+        "probabilities": {
+          "poor": 0.01076148300441832,
+          "maybe": 0.9876021838258515,
+          "good": 0.0016363331697303075
+        }
+      },
+      {
+        "brand_id": "b10",
+        "creator_id": "c21",
+        "rank": 5,
+        "true_label": "maybe",
+        "predicted_label": "maybe",
+        "ranking_score": 0.9889919194446058,
+        "probabilities": {
+          "poor": 0.011769092561735417,
+          "maybe": 0.9874698954319235,
+          "good": 0.0007610120063411513
+        }
+      },
+      {
+        "brand_id": "b10",
+        "creator_id": "c32",
+        "rank": 6,
+        "true_label": "maybe",
+        "predicted_label": "maybe",
+        "ranking_score": 0.9868573763182059,
+        "probabilities": {
+          "poor": 0.013439767630320629,
+          "maybe": 0.9862630884211527,
+          "good": 0.00029714394852656695
+        }
+      },
+      {
+        "brand_id": "b10",
+        "creator_id": "c37",
+        "rank": 7,
+        "true_label": "maybe",
+        "predicted_label": "maybe",
+        "ranking_score": 0.9831648036578274,
+        "probabilities": {
+          "poor": 0.030565020937908683,
+          "maybe": 0.9557051544663553,
+          "good": 0.013729824595736071
+        }
+      },
+      {
+        "brand_id": "b10",
+        "creator_id": "c15",
+        "rank": 8,
+        "true_label": "good",
+        "predicted_label": "maybe",
+        "ranking_score": 0.9781910668069448,
+        "probabilities": {
+          "poor": 0.05235388088488495,
+          "maybe": 0.9171011714232854,
+          "good": 0.030544947691829707
+        }
+      },
+      {
+        "brand_id": "b10",
+        "creator_id": "c06",
+        "rank": 9,
+        "true_label": "maybe",
+        "predicted_label": "maybe",
+        "ranking_score": 0.9780947974820915,
+        "probabilities": {
+          "poor": 0.022866886298778817,
+          "maybe": 0.9761714299203509,
+          "good": 0.000961683780870309
+        }
+      },
+      {
+        "brand_id": "b10",
+        "creator_id": "c39",
+        "rank": 10,
+        "true_label": "maybe",
+        "predicted_label": "maybe",
+        "ranking_score": 0.9653918638382685,
+        "probabilities": {
+          "poor": 0.03526574265501326,
+          "maybe": 0.9640766508517052,
+          "good": 0.0006576064932815942
+        }
+      },
+      {
+        "brand_id": "b10",
+        "creator_id": "c03",
+        "rank": 11,
+        "true_label": "maybe",
+        "predicted_label": "maybe",
+        "ranking_score": 0.854194489538171,
+        "probabilities": {
+          "poor": 0.14697952815546397,
+          "maybe": 0.851846454150901,
+          "good": 0.0011740176936350247
+        }
+      },
+      {
+        "brand_id": "b10",
+        "creator_id": "c35",
+        "rank": 12,
+        "true_label": "maybe",
+        "predicted_label": "maybe",
+        "ranking_score": 0.8281062137444724,
+        "probabilities": {
+          "poor": 0.260008036015484,
+          "maybe": 0.6518777142245596,
+          "good": 0.08811424975995637
+        }
+      },
+      {
+        "brand_id": "b10",
+        "creator_id": "c02",
+        "rank": 13,
+        "true_label": "poor",
+        "predicted_label": "poor",
+        "ranking_score": 0.7963197530703233,
+        "probabilities": {
+          "poor": 0.6017808646160637,
+          "maybe": 0.00011851769754939337,
+          "good": 0.39810061768638694
+        }
+      },
+      {
+        "brand_id": "b10",
+        "creator_id": "c34",
+        "rank": 14,
+        "true_label": "maybe",
+        "predicted_label": "maybe",
+        "ranking_score": 0.6328345690366722,
+        "probabilities": {
+          "poor": 0.3686306128437129,
+          "maybe": 0.629904205275902,
+          "good": 0.0014651818803851314
+        }
+      },
+      {
+        "brand_id": "b10",
+        "creator_id": "c05",
+        "rank": 15,
+        "true_label": "maybe",
+        "predicted_label": "maybe",
+        "ranking_score": 0.6106241287709837,
+        "probabilities": {
+          "poor": 0.38984634541985996,
+          "maybe": 0.6096831803892963,
+          "good": 0.00047047419084373846
+        }
+      },
+      {
+        "brand_id": "b10",
+        "creator_id": "c23",
+        "rank": 16,
+        "true_label": "poor",
+        "predicted_label": "poor",
+        "ranking_score": 0.4616772967268966,
+        "probabilities": {
+          "poor": 0.5451366860020217,
+          "maybe": 0.4480493312690601,
+          "good": 0.0068139827289182536
+        }
+      },
+      {
+        "brand_id": "b10",
+        "creator_id": "c18",
+        "rank": 17,
+        "true_label": "maybe",
+        "predicted_label": "poor",
+        "ranking_score": 0.40329633469872334,
+        "probabilities": {
+          "poor": 0.596872084213654,
+          "maybe": 0.40295949687396865,
+          "good": 0.00016841891237734304
+        }
+      },
+      {
+        "brand_id": "b10",
+        "creator_id": "c20",
+        "rank": 18,
+        "true_label": "poor",
+        "predicted_label": "poor",
+        "ranking_score": 0.23732487744567282,
+        "probabilities": {
+          "poor": 0.8813153813742629,
+          "maybe": 4.435980580117245e-05,
+          "good": 0.11864025881993583
+        }
+      },
+      {
+        "brand_id": "b10",
+        "creator_id": "c07",
+        "rank": 19,
+        "true_label": "poor",
+        "predicted_label": "poor",
+        "ranking_score": 0.1659832452118266,
+        "probabilities": {
+          "poor": 0.8538793997377951,
+          "maybe": 0.12625795531258296,
+          "good": 0.01986264494962183
+        }
+      },
+      {
+        "brand_id": "b10",
+        "creator_id": "c28",
+        "rank": 20,
+        "true_label": "poor",
+        "predicted_label": "poor",
+        "ranking_score": 0.1588559923186269,
+        "probabilities": {
+          "poor": 0.8411570590331455,
+          "maybe": 0.15882988961508218,
+          "good": 1.305135177236784e-05
+        }
+      },
+      {
+        "brand_id": "b10",
+        "creator_id": "c27",
+        "rank": 21,
+        "true_label": "poor",
+        "predicted_label": "poor",
+        "ranking_score": 0.08598029855642647,
+        "probabilities": {
+          "poor": 0.9429848338379555,
+          "maybe": 0.028050033767662477,
+          "good": 0.028965132394381993
+        }
+      },
+      {
+        "brand_id": "b10",
+        "creator_id": "c14",
+        "rank": 22,
+        "true_label": "poor",
+        "predicted_label": "poor",
+        "ranking_score": 0.07489538834028411,
+        "probabilities": {
+          "poor": 0.9384978994547097,
+          "maybe": 0.048108812750296465,
+          "good": 0.013393287794993826
+        }
+      },
+      {
+        "brand_id": "b10",
+        "creator_id": "c30",
+        "rank": 23,
+        "true_label": "poor",
+        "predicted_label": "poor",
+        "ranking_score": 0.03563144527338895,
+        "probabilities": {
+          "poor": 0.9644611654848343,
+          "maybe": 0.03544622375694263,
+          "good": 9.261075822315772e-05
+        }
+      },
+      {
+        "brand_id": "b10",
+        "creator_id": "c12",
+        "rank": 24,
+        "true_label": "poor",
+        "predicted_label": "poor",
+        "ranking_score": 0.0090513630447685,
+        "probabilities": {
+          "poor": 0.9931956916005662,
+          "maybe": 0.004557253754099004,
+          "good": 0.0022470546453347475
+        }
+      },
+      {
+        "brand_id": "b10",
+        "creator_id": "c09",
+        "rank": 25,
+        "true_label": "poor",
+        "predicted_label": "poor",
+        "ranking_score": 0.004414294512187901,
+        "probabilities": {
+          "poor": 0.9977784039275533,
+          "maybe": 2.889763270522596e-05,
+          "good": 0.0021926984397413374
+        }
+      },
+      {
+        "brand_id": "b10",
+        "creator_id": "c38",
+        "rank": 26,
+        "true_label": "poor",
+        "predicted_label": "poor",
+        "ranking_score": 0.0041727750371241025,
+        "probabilities": {
+          "poor": 0.9978456488887997,
+          "maybe": 0.0001359271852767643,
+          "good": 0.002018423925923669
+        }
+      },
+      {
+        "brand_id": "b10",
+        "creator_id": "c40",
+        "rank": 27,
+        "true_label": "poor",
+        "predicted_label": "poor",
+        "ranking_score": 0.0036078980935951577,
+        "probabilities": {
+          "poor": 0.997877662302509,
+          "maybe": 0.0006367773013867659,
+          "good": 0.001485560396104196
+        }
+      },
+      {
+        "brand_id": "b10",
+        "creator_id": "c04",
+        "rank": 28,
+        "true_label": "poor",
+        "predicted_label": "poor",
+        "ranking_score": 0.003340289538186769,
+        "probabilities": {
+          "poor": 0.9969810607177604,
+          "maybe": 0.0026975890262922893,
+          "good": 0.00032135025594723983
+        }
+      },
+      {
+        "brand_id": "b10",
+        "creator_id": "c10",
+        "rank": 29,
+        "true_label": "poor",
+        "predicted_label": "poor",
+        "ranking_score": 0.0024172408309054215,
+        "probabilities": {
+          "poor": 0.9976034781016637,
+          "maybe": 0.002375802965767314,
+          "good": 2.0718932569053844e-05
+        }
+      },
+      {
+        "brand_id": "b10",
+        "creator_id": "c25",
+        "rank": 30,
+        "true_label": "good",
+        "predicted_label": "poor",
+        "ranking_score": 0.0021828451430867192,
+        "probabilities": {
+          "poor": 0.9986890686631811,
+          "maybe": 0.0004390175305511276,
+          "good": 0.0008719138062677958
+        }
+      },
+      {
+        "brand_id": "b10",
+        "creator_id": "c11",
+        "rank": 31,
+        "true_label": "poor",
+        "predicted_label": "poor",
+        "ranking_score": 0.0010088229299024685,
+        "probabilities": {
+          "poor": 0.998999178983029,
+          "maybe": 0.0009928191040395396,
+          "good": 8.00191293146449e-06
+        }
+      },
+      {
+        "brand_id": "b10",
+        "creator_id": "c17",
+        "rank": 32,
+        "true_label": "poor",
+        "predicted_label": "poor",
+        "ranking_score": 0.0008871984050404223,
+        "probabilities": {
+          "poor": 0.9991271873986838,
+          "maybe": 0.0008584267975922946,
+          "good": 1.438580372406379e-05
+        }
+      },
+      {
+        "brand_id": "b10",
+        "creator_id": "c36",
+        "rank": 33,
+        "true_label": "poor",
+        "predicted_label": "poor",
+        "ranking_score": 0.0007611498709835932,
+        "probabilities": {
+          "poor": 0.9992479510840653,
+          "maybe": 0.0007429479608858133,
+          "good": 9.100955048889954e-06
+        }
+      },
+      {
+        "brand_id": "b10",
+        "creator_id": "c16",
+        "rank": 34,
+        "true_label": "poor",
+        "predicted_label": "poor",
+        "ranking_score": 0.00039583138670802663,
+        "probabilities": {
+          "poor": 0.9998010997543684,
+          "maybe": 1.9691045554715395e-06,
+          "good": 0.00019693114107627755
+        }
+      },
+      {
+        "brand_id": "b10",
+        "creator_id": "c31",
+        "rank": 35,
+        "true_label": "poor",
+        "predicted_label": "poor",
+        "ranking_score": 0.00018888595652385862,
+        "probabilities": {
+          "poor": 0.9998479816488023,
+          "maybe": 0.00011515074587140502,
+          "good": 3.6867605326226804e-05
+        }
+      },
+      {
+        "brand_id": "b10",
+        "creator_id": "c13",
+        "rank": 36,
+        "true_label": "poor",
+        "predicted_label": "poor",
+        "ranking_score": 3.989621960305784e-05,
+        "probabilities": {
+          "poor": 0.999965232905877,
+          "maybe": 2.963796864296533e-05,
+          "good": 5.129125480046251e-06
+        }
+      },
+      {
+        "brand_id": "b10",
+        "creator_id": "c29",
+        "rank": 37,
+        "true_label": "poor",
+        "predicted_label": "poor",
+        "ranking_score": 5.793643093320616e-06,
+        "probabilities": {
+          "poor": 0.999994255004119,
+          "maybe": 5.696348668525952e-06,
+          "good": 4.8647212397331615e-08
+        }
+      },
+      {
+        "brand_id": "b10",
+        "creator_id": "c19",
+        "rank": 38,
+        "true_label": "poor",
+        "predicted_label": "poor",
+        "ranking_score": 2.105039170274946e-06,
+        "probabilities": {
+          "poor": 0.9999979319835705,
+          "maybe": 2.030993688892749e-06,
+          "good": 3.702274069109833e-08
+        }
+      },
+      {
+        "brand_id": "b10",
+        "creator_id": "c08",
+        "rank": 39,
+        "true_label": "poor",
+        "predicted_label": "poor",
+        "ranking_score": 7.173224744511073e-07,
+        "probabilities": {
+          "poor": 0.9999992866142455,
+          "maybe": 7.094490346852293e-07,
+          "good": 3.936719882939044e-09
+        }
+      },
+      {
+        "brand_id": "b10",
+        "creator_id": "c33",
+        "rank": 40,
+        "true_label": "poor",
+        "predicted_label": "poor",
+        "ranking_score": 2.1023238437354327e-07,
+        "probabilities": {
+          "poor": 0.9999997916010112,
+          "maybe": 2.0656559329388253e-07,
+          "good": 1.833395539830371e-09
+        }
+      }
+    ]
+  },
+  "configuration": {
+    "random_state": 42,
+    "logistic_c": 1.0,
+    "scaling": "StandardScaler fitted on training data only",
+    "feature_ids_used": false,
+    "labels_or_reasoning_used_as_features": false,
+    "training_pairs": 320,
+    "validation_pairs": 40,
+    "test_pairs": 40
+  },
+  "environment": {
+    "python": "3.11.9 (v3.11.9:de54cf5be3, Apr  2 2024, 07:12:50) [Clang 13.0.0 (clang-1300.0.29.30)]",
+    "platform": "macOS-12.7.6-x86_64-i386-64bit",
+    "scikit_learn": "1.9.1",
+    "git_revision": "dcb56ab227af12ddeb7fee5be967fb9a587221ea",
+    "input_sha256": {
+      "brands": "a2fb8a439dc4c133f29ad794ccfc95944c6c4100175abb31186fa58286762c23",
+      "creators": "644f22bf6c9998a8ec668a8c2d8fd16083206a672248c7d06b85bc69e91b60ad",
+      "labels": "3e440890d61876364ae4ed14ca885aec48c8f69f2cf03361321b72edbf718017",
+      "split_manifest": "1cb68f95facf493792971be30da947b828b6283d87abc78ff4840a334cdf80aa"
+    },
+    "code_sha256": {
+      "feature_engineering.py": "f5d0104e00768bfdc81e9b063e9fcb6eb53330ae17495ee97eb70d700fa4df86",
+      "ranking_experiment.py": "5520d44ae327f33d7fc0af1144caeb5a9bdb10087e286bcad9ccc55de18c42ce"
+    }
+  }
+}
