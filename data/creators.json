@@ -1,0 +1,1911 @@
+[
+  {
+    "creator_id": "c01",
+    "name": "Priya Sharma",
+    "primary_niche": "fitness",
+    "secondary_niches": [
+      "sports",
+      "wellness"
+    ],
+    "bio": "Certified CrossFit athlete and nutrition coach based in Mumbai. I create workout routines, meal plans, and transformation stories for people who want to build real strength and healthy habits.",
+    "location": "Mumbai, India",
+    "languages": [
+      "Hindi",
+      "English"
+    ],
+    "platforms": [
+      "instagram",
+      "youtube"
+    ],
+    "followers": 185000,
+    "engagement_rate": 0.042,
+    "average_views": 320000,
+    "audience_age_range": "18-30",
+    "audience_gender_distribution": {
+      "female": 0.72,
+      "male": 0.28
+    },
+    "audience_locations": [
+      "India",
+      "UAE",
+      "Singapore"
+    ],
+    "content_types": [
+      "workout",
+      "nutrition",
+      "healthy lifestyle"
+    ],
+    "content_style": "energetic and motivational",
+    "rate_card": "₹15,000–₹50,000",
+    "past_brand_categories": [
+      "fitness",
+      "sports",
+      "health apps"
+    ],
+    "interests": [
+      "gym",
+      "running",
+      "yoga"
+    ],
+    "posting_frequency": "4-5 posts/week"
+  },
+  {
+    "creator_id": "c02",
+    "name": "Alex Rivera",
+    "primary_niche": "fitness",
+    "secondary_niches": [
+      "lifestyle",
+      "travel"
+    ],
+    "bio": "Los Angeles based fitness model sharing gym tips, supplement reviews, and behind-the-scenes gym life. Focused on making fitness accessible for busy professionals who want to stay in shape.",
+    "location": "Los Angeles, USA",
+    "languages": [
+      "English"
+    ],
+    "platforms": [
+      "instagram",
+      "tiktok"
+    ],
+    "followers": 420000,
+    "engagement_rate": 0.038,
+    "average_views": 890000,
+    "audience_age_range": "25-34",
+    "audience_gender_distribution": {
+      "female": 0.55,
+      "male": 0.45
+    },
+    "audience_locations": [
+      "US",
+      "Canada",
+      "UK"
+    ],
+    "content_types": [
+      "workout",
+      "gym",
+      "fitness"
+    ],
+    "content_style": "confident and aspirational",
+    "rate_card": "₹50,000–₹150,000",
+    "past_brand_categories": [
+      "sportswear",
+      "supplements",
+      "fitness apps"
+    ],
+    "interests": [
+      "gym",
+      "running"
+    ],
+    "posting_frequency": "6 posts/week"
+  },
+  {
+    "creator_id": "c03",
+    "name": "Deepika Joshi",
+    "primary_niche": "fitness",
+    "secondary_niches": [
+      "beauty",
+      "skincare"
+    ],
+    "bio": "Yoga instructor and wellness advocate from Bangalore. I blend mindfulness with physical fitness. My content covers yoga flows, skincare routines, and holistic living for mindful millennials.",
+    "location": "Bangalore, India",
+    "languages": [
+      "English",
+      "Kannada"
+    ],
+    "platforms": [
+      "instagram",
+      "youtube"
+    ],
+    "followers": 95000,
+    "engagement_rate": 0.051,
+    "average_views": 145000,
+    "audience_age_range": "25-34",
+    "audience_gender_distribution": {
+      "female": 0.85,
+      "male": 0.15
+    },
+    "audience_locations": [
+      "India",
+      "Singapore"
+    ],
+    "content_types": [
+      "yoga",
+      "skincare",
+      "wellness"
+    ],
+    "content_style": "calm and authentic",
+    "rate_card": "₹5,000–₹15,000",
+    "past_brand_categories": [
+      "wellness",
+      "skincare",
+      "fitness"
+    ],
+    "interests": [
+      "yoga",
+      "pilates"
+    ],
+    "posting_frequency": "5 posts/week"
+  },
+  {
+    "creator_id": "c04",
+    "name": "Robert Müller",
+    "primary_niche": "fitness",
+    "secondary_niches": [
+      "bodybuilding"
+    ],
+    "bio": "German bodybuilder and powerlifting coach with 15 years of experience. I help 40-plus men build muscle and maintain strength. Content focuses on heavy lifting, joint health, and progressive overload.",
+    "location": "Berlin, Germany",
+    "languages": [
+      "German",
+      "English"
+    ],
+    "platforms": [
+      "youtube",
+      "instagram"
+    ],
+    "followers": 310000,
+    "engagement_rate": 0.029,
+    "average_views": 480000,
+    "audience_age_range": "35-44",
+    "audience_gender_distribution": {
+      "male": 0.88,
+      "female": 0.12
+    },
+    "audience_locations": [
+      "Germany",
+      "Austria",
+      "Switzerland"
+    ],
+    "content_types": [
+      "bodybuilding",
+      "strength training"
+    ],
+    "content_style": "serious and educational",
+    "rate_card": "₹15,000–₹50,000",
+    "past_brand_categories": [
+      "sports nutrition",
+      "gym equipment"
+    ],
+    "interests": [
+      "bodybuilding",
+      "powerlifting"
+    ],
+    "posting_frequency": "4 posts/week"
+  },
+  {
+    "creator_id": "c05",
+    "name": "Sofia Chen",
+    "primary_niche": "beauty",
+    "secondary_niches": [
+      "skincare",
+      "lifestyle"
+    ],
+    "bio": "Skincare enthusiast and licensed esthetician from Seoul. I review K-beauty products, share dermatologist-approved routines, and create glass-skin content for women aged 18-30 who love skincare culture.",
+    "location": "Seoul, South Korea",
+    "languages": [
+      "Korean",
+      "English"
+    ],
+    "platforms": [
+      "instagram",
+      "youtube",
+      "tiktok"
+    ],
+    "followers": 280000,
+    "engagement_rate": 0.055,
+    "average_views": 520000,
+    "audience_age_range": "18-24",
+    "audience_gender_distribution": {
+      "female": 0.92,
+      "male": 0.08
+    },
+    "audience_locations": [
+      "South Korea",
+      "Japan",
+      "Singapore"
+    ],
+    "content_types": [
+      "skincare",
+      "beauty",
+      "k-beauty"
+    ],
+    "content_style": "gorgeous and detail-oriented",
+    "rate_card": "₹15,000–₹50,000",
+    "past_brand_categories": [
+      "beauty brands",
+      "skincare",
+      "cosmetics"
+    ],
+    "interests": [
+      "skincare",
+      "makeup"
+    ],
+    "posting_frequency": "daily posts"
+  },
+  {
+    "creator_id": "c06",
+    "name": "Meera Patel",
+    "primary_niche": "beauty",
+    "secondary_niches": [
+      "fashion",
+      "lifestyle"
+    ],
+    "bio": "Mumbai-based beauty and fashion creator. I create makeup tutorials, outfit planning content, and brand partnerships that feel genuine. My audience trusts my honest reviews and everyday style tips.",
+    "location": "Mumbai, India",
+    "languages": [
+      "Hindi",
+      "English"
+    ],
+    "platforms": [
+      "instagram",
+      "youtube"
+    ],
+    "followers": 150000,
+    "engagement_rate": 0.048,
+    "average_views": 275000,
+    "audience_age_range": "18-30",
+    "audience_gender_distribution": {
+      "female": 0.78,
+      "male": 0.22
+    },
+    "audience_locations": [
+      "India",
+      "UAE"
+    ],
+    "content_types": [
+      "beauty",
+      "fashion",
+      "lifestyle"
+    ],
+    "content_style": "vibrant and relatable",
+    "rate_card": "₹10,000–₹30,000",
+    "past_brand_categories": [
+      "beauty",
+      "fashion",
+      "jewelry"
+    ],
+    "interests": [
+      "makeup",
+      "fashion"
+    ],
+    "posting_frequency": "5-6 posts/week"
+  },
+  {
+    "creator_id": "c07",
+    "name": "Chloe Dubois",
+    "primary_niche": "beauty",
+    "secondary_niches": [
+      "luxury",
+      "fashion"
+    ],
+    "bio": "Paris-based luxury beauty and fashion influencer. I partner with haute couture and high-end skincare brands. My content features exclusive launches, spa retreats, and European beauty standards.",
+    "location": "Paris, France",
+    "languages": [
+      "French",
+      "English"
+    ],
+    "platforms": [
+      "instagram",
+      "youtube"
+    ],
+    "followers": 520000,
+    "engagement_rate": 0.031,
+    "average_views": 950000,
+    "audience_age_range": "25-34",
+    "audience_gender_distribution": {
+      "female": 0.82,
+      "male": 0.18
+    },
+    "audience_locations": [
+      "France",
+      "UK",
+      "Italy"
+    ],
+    "content_types": [
+      "luxury beauty",
+      "fashion",
+      "travel"
+    ],
+    "content_style": "luxe and aspirational",
+    "rate_card": "₹50,000–₹150,000",
+    "past_brand_categories": [
+      "luxury cosmetics",
+      "high-end skincare"
+    ],
+    "interests": [
+      "luxury",
+      "beauty"
+    ],
+    "posting_frequency": "3 posts/week"
+  },
+  {
+    "creator_id": "c08",
+    "name": "Kai Tanaka",
+    "primary_niche": "gaming",
+    "secondary_niches": [
+      "tech",
+      "entertainment"
+    ],
+    "bio": "Tokyo-based gaming streamer and tech reviewer. I cover AAA game releases, esports tournaments, and hardware reviews. My content is energetic and gen-z friendly with strong community engagement.",
+    "location": "Tokyo, Japan",
+    "languages": [
+      "Japanese",
+      "English"
+    ],
+    "platforms": [
+      "youtube",
+      "tiktok"
+    ],
+    "followers": 680000,
+    "engagement_rate": 0.062,
+    "average_views": 1200000,
+    "audience_age_range": "18-24",
+    "audience_gender_distribution": {
+      "male": 0.75,
+      "female": 0.25
+    },
+    "audience_locations": [
+      "Japan",
+      "US",
+      "UK"
+    ],
+    "content_types": [
+      "gaming",
+      "tech",
+      "esports"
+    ],
+    "content_style": "high-energy and funny",
+    "rate_card": "₹20,000–₹50,000",
+    "past_brand_categories": [
+      "gaming brands",
+      "tech gadgets",
+      "energy drinks"
+    ],
+    "interests": [
+      "gaming",
+      "tech reviews"
+    ],
+    "posting_frequency": "daily streams"
+  },
+  {
+    "creator_id": "c09",
+    "name": "Noah Smith",
+    "primary_niche": "gaming",
+    "secondary_niches": [
+      "fitness"
+    ],
+    "bio": "Vancouver-based creator who bridges gaming and fitness. I create content about gaming setups, posture health for gamers, and esports fitness routines. Perfect for brands targeting the gaming lifestyle market.",
+    "location": "Vancouver, Canada",
+    "languages": [
+      "English"
+    ],
+    "platforms": [
+      "youtube",
+      "tiktok"
+    ],
+    "followers": 120000,
+    "engagement_rate": 0.045,
+    "average_views": 210000,
+    "audience_age_range": "18-24",
+    "audience_gender_distribution": {
+      "male": 0.7,
+      "female": 0.3
+    },
+    "audience_locations": [
+      "Canada",
+      "US"
+    ],
+    "content_types": [
+      "gaming",
+      "fitness",
+      "tech"
+    ],
+    "content_style": "quirky and authentic",
+    "rate_card": "₹5,000–₹15,000",
+    "past_brand_categories": [
+      "gaming peripherals",
+      "ergonomic furniture"
+    ],
+    "interests": [
+      "gaming",
+      "fitness"
+    ],
+    "posting_frequency": "4 posts/week"
+  },
+  {
+    "creator_id": "c10",
+    "name": "Linda Johansson",
+    "primary_niche": "gaming",
+    "secondary_niches": [
+      "parenting",
+      "family"
+    ],
+    "bio": "Stockholm-based mom blogger who covers family-friendly gaming. I review age-appropriate games and share parenting tips around screen time. My audience is parents looking for safe gaming options.",
+    "location": "Stockholm, Sweden",
+    "languages": [
+      "Swedish",
+      "English"
+    ],
+    "platforms": [
+      "youtube",
+      "instagram"
+    ],
+    "followers": 85000,
+    "engagement_rate": 0.035,
+    "average_views": 130000,
+    "audience_age_range": "30-44",
+    "audience_gender_distribution": {
+      "female": 0.88,
+      "male": 0.12
+    },
+    "audience_locations": [
+      "Sweden",
+      "Norway",
+      "Denmark"
+    ],
+    "content_types": [
+      "family gaming",
+      "parenting",
+      "education"
+    ],
+    "content_style": "warm and trustworthy",
+    "rate_card": "₹5,000–₹15,000",
+    "past_brand_categories": [
+      "family brands",
+      "educational games"
+    ],
+    "interests": [
+      "family",
+      "parenting"
+    ],
+    "posting_frequency": "3 posts/week"
+  },
+  {
+    "creator_id": "c11",
+    "name": "Liam O'Brien",
+    "primary_niche": "food",
+    "secondary_niches": [
+      "travel",
+      "photography"
+    ],
+    "bio": "Dublin-based food photographer and travel creator. I create visually stunning content featuring street food, restaurant reviews, and culinary adventures. My reels and stories showcase food culture from around the world.",
+    "location": "Dublin, Ireland",
+    "languages": [
+      "English"
+    ],
+    "platforms": [
+      "instagram",
+      "youtube",
+      "tiktok"
+    ],
+    "followers": 230000,
+    "engagement_rate": 0.044,
+    "average_views": 410000,
+    "audience_age_range": "25-34",
+    "audience_gender_distribution": {
+      "male": 0.55,
+      "female": 0.45
+    },
+    "audience_locations": [
+      "Ireland",
+      "UK",
+      "US"
+    ],
+    "content_types": [
+      "food",
+      "travel",
+      "photography"
+    ],
+    "content_style": "adventurous and cinematic",
+    "rate_card": "₹15,000–₹40,000",
+    "past_brand_categories": [
+      "food brands",
+      "travel companies",
+      "camera gear"
+    ],
+    "interests": [
+      "food",
+      "travel"
+    ],
+    "posting_frequency": "5 posts/week"
+  },
+  {
+    "creator_id": "c12",
+    "name": "Ananya Rao",
+    "primary_niche": "food",
+    "secondary_niches": [
+      "fitness",
+      "nutrition"
+    ],
+    "bio": "Delhi-based nutritionist and recipe creator. I create healthy Indian recipes, meal prep guides, and nutrition education content. My audience loves practical, easy-to-follow wellness recipes.I partner with health food brands and supplement companies.",
+    "location": "Delhi, India",
+    "languages": [
+      "Hindi",
+      "English"
+    ],
+    "platforms": [
+      "instagram",
+      "youtube"
+    ],
+    "followers": 175000,
+    "engagement_rate": 0.047,
+    "average_views": 310000,
+    "audience_age_range": "25-34",
+    "audience_gender_distribution": {
+      "female": 0.75,
+      "male": 0.25
+    },
+    "audience_locations": [
+      "India",
+      "Singapore",
+      "UAE"
+    ],
+    "content_types": [
+      "healthy food",
+      "nutrition",
+      "fitness"
+    ],
+    "content_style": "educational and warm",
+    "rate_card": "₹10,000–₹30,000",
+    "past_brand_categories": [
+      "health food",
+      "nutrition supplements",
+      "cooking appliances"
+    ],
+    "interests": [
+      "cooking",
+      "nutrition",
+      "recipes"
+    ],
+    "posting_frequency": "5 posts/week"
+  },
+  {
+    "creator_id": "c13",
+    "name": "Henrik Larsen",
+    "primary_niche": "food",
+    "secondary_niches": [
+      "luxury",
+      "travel"
+    ],
+    "bio": "Copenhagen-based luxury travel creator. I feature five-star hotels, private yacht experiences, and premium dining at Michelin-starred restaurants. My content is aspirational and targets high-income travelers aged 30-50.",
+    "location": "Copenhagen, Denmark",
+    "languages": [
+      "Danish",
+      "English"
+    ],
+    "platforms": [
+      "youtube",
+      "instagram"
+    ],
+    "followers": 340000,
+    "engagement_rate": 0.028,
+    "average_views": 580000,
+    "audience_age_range": "30-44",
+    "audience_gender_distribution": {
+      "male": 0.5,
+      "female": 0.5
+    },
+    "audience_locations": [
+      "Denmark",
+      "Norway",
+      "Switzerland"
+    ],
+    "content_types": [
+      "luxury travel",
+      "fine dining",
+      "hotels"
+    ],
+    "content_style": "premium and sophisticated",
+    "rate_card": "₹20,000–₹50,000",
+    "past_brand_categories": [
+      "luxury travel brands",
+      "hotel chains"
+    ],
+    "interests": [
+      "travel",
+      "luxury"
+    ],
+    "posting_frequency": "2 posts/week"
+  },
+  {
+    "creator_id": "c14",
+    "name": "Ethan Park",
+    "primary_niche": "tech",
+    "secondary_niches": [
+      "gaming",
+      "finance"
+    ],
+    "bio": "San Francisco-based tech reviewer and gadget unboxer. I cover consumer electronics, fintech apps, and productivity tools. My audience is tech-savvy professionals aged 22-35 who want honest, in-depth product reviews.",
+    "location": "San Francisco, USA",
+    "languages": [
+      "English"
+    ],
+    "platforms": [
+      "youtube",
+      "instagram"
+    ],
+    "followers": 450000,
+    "engagement_rate": 0.039,
+    "average_views": 780000,
+    "audience_age_range": "25-34",
+    "audience_gender_distribution": {
+      "male": 0.68,
+      "female": 0.32
+    },
+    "audience_locations": [
+      "US",
+      "Canada",
+      "Australia"
+    ],
+    "content_types": [
+      "tech",
+      "consumer electronics",
+      "fintech"
+    ],
+    "content_style": "analytical and clear",
+    "rate_card": "₹20,000–₹60,000",
+    "past_brand_categories": [
+      "tech brands",
+      "consumer electronics",
+      "fintech"
+    ],
+    "interests": [
+      "tech reviews",
+      "unboxing"
+    ],
+    "posting_frequency": "4 posts/week"
+  },
+  {
+    "creator_id": "c15",
+    "name": "Zoe Kim",
+    "primary_niche": "tech",
+    "secondary_niches": [
+      "fashion",
+      "beauty"
+    ],
+    "bio": "NYC-based creator blending tech and beauty. I review smart mirrors, AI skincare devices, and wearable tech for fashion-conscious women. My content is aesthetic and informative, appealing to women who love both technology and beauty.",
+    "location": "New York, USA",
+    "languages": [
+      "English"
+    ],
+    "platforms": [
+      "instagram",
+      "youtube",
+      "tiktok"
+    ],
+    "followers": 190000,
+    "engagement_rate": 0.052,
+    "average_views": 360000,
+    "audience_age_range": "20-30",
+    "audience_gender_distribution": {
+      "female": 0.85,
+      "male": 0.15
+    },
+    "audience_locations": [
+      "US",
+      "Canada"
+    ],
+    "content_types": [
+      "tech",
+      "beauty",
+      "fashion"
+    ],
+    "content_style": "trendy and innovative",
+    "rate_card": "₹10,000–₹30,000",
+    "past_brand_categories": [
+      "beauty tech",
+      "wearables",
+      "consumer electronics"
+    ],
+    "interests": [
+      "tech",
+      "beauty"
+    ],
+    "posting_frequency": "5 posts/week"
+  },
+  {
+    "creator_id": "c16",
+    "name": "Walter Chen",
+    "primary_niche": "tech",
+    "secondary_niches": [
+      "finance"
+    ],
+    "bio": "Austin-based fintech consultant and tech educator for seniors. I create content about digital banking, online security, and technology for older adults. My mission is to make tech accessible for everyone regardless of age.",
+    "location": "Austin, USA",
+    "languages": [
+      "English"
+    ],
+    "platforms": [
+      "youtube",
+      "blog"
+    ],
+    "followers": 95000,
+    "engagement_rate": 0.033,
+    "average_views": 160000,
+    "audience_age_range": "55-65",
+    "audience_gender_distribution": {
+      "male": 0.45,
+      "female": 0.55
+    },
+    "audience_locations": [
+      "US"
+    ],
+    "content_types": [
+      "fintech",
+      "digital literacy",
+      "senior tech"
+    ],
+    "content_style": "patient and educational",
+    "rate_card": "₹5,000–₹15,000",
+    "past_brand_categories": [
+      "fintech",
+      "insurance",
+      "healthtech"
+    ],
+    "interests": [
+      "fintech",
+      "education"
+    ],
+    "posting_frequency": "3 posts/week"
+  },
+  {
+    "creator_id": "c17",
+    "name": "Ivy Lopez",
+    "primary_niche": "fashion",
+    "secondary_niches": [
+      "lifestyle",
+      "beauty"
+    ],
+    "bio": "Barcelona-based fashion influencer and personal style consultant. I create outfit inspiration, wardrobe guides, and sustainable fashion content. My audience is style-conscious women aged 20-35 who want practical fashion advice.",
+    "location": "Barcelona, Spain",
+    "languages": [
+      "Spanish",
+      "English"
+    ],
+    "platforms": [
+      "instagram",
+      "tiktok"
+    ],
+    "followers": 260000,
+    "engagement_rate": 0.041,
+    "average_views": 440000,
+    "audience_age_range": "20-30",
+    "audience_gender_distribution": {
+      "female": 0.82,
+      "male": 0.18
+    },
+    "audience_locations": [
+      "Spain",
+      "France",
+      "Italy"
+    ],
+    "content_types": [
+      "fashion",
+      "sustainability",
+      "beauty"
+    ],
+    "content_style": "minimal and elegant",
+    "rate_card": "₹15,000–₹40,000",
+    "past_brand_categories": [
+      "fashion brands",
+      "sustainable fashion",
+      "accessories"
+    ],
+    "interests": [
+      "fashion",
+      "lifestyle"
+    ],
+    "posting_frequency": "5 posts/week"
+  },
+  {
+    "creator_id": "c18",
+    "name": "Maya Singh",
+    "primary_niche": "fashion",
+    "secondary_niches": [
+      "fitness",
+      "sports"
+    ],
+    "bio": "Mumbai-based athleisure and streetwear creator. I blend athletic wear with everyday style. Perfect for sportswear brands looking to reach active, fashion-forward young women.",
+    "location": "Mumbai, India",
+    "languages": [
+      "Hindi",
+      "English"
+    ],
+    "platforms": [
+      "instagram",
+      "youtube"
+    ],
+    "followers": 310000,
+    "engagement_rate": 0.044,
+    "average_views": 530000,
+    "audience_age_range": "18-28",
+    "audience_gender_distribution": {
+      "female": 0.78,
+      "male": 0.22
+    },
+    "audience_locations": [
+      "India",
+      "UAE",
+      "Singapore"
+    ],
+    "content_types": [
+      "fashion",
+      "fitness",
+      "athleisure"
+    ],
+    "content_style": "bold and street-style",
+    "rate_card": "₹15,000–₹40,000",
+    "past_brand_categories": [
+      "sportswear",
+      "athleisure brands",
+      "footwear"
+    ],
+    "interests": [
+      "fashion",
+      "fitness"
+    ],
+    "posting_frequency": "6 posts/week"
+  },
+  {
+    "creator_id": "c19",
+    "name": "Finn O'Connor",
+    "primary_niche": "fashion",
+    "secondary_niches": [
+      "lifestyle"
+    ],
+    "bio": "Melbourne-based lifestyle creator just starting out. I have a small but growing audience interested in sustainable fashion and conscious consumerism. Great for micro-influencer campaigns and authentic content.",
+    "location": "Melbourne, Australia",
+    "languages": [
+      "English"
+    ],
+    "platforms": [
+      "instagram"
+    ],
+    "followers": 8500,
+    "engagement_rate": 0.068,
+    "average_views": 22000,
+    "audience_age_range": "18-24",
+    "audience_gender_distribution": {
+      "female": 0.7,
+      "male": 0.3
+    },
+    "audience_locations": [
+      "Australia"
+    ],
+    "content_types": [
+      "sustainable fashion",
+      "lifestyle",
+      "thrifting"
+    ],
+    "content_style": "authentic and grassroots",
+    "rate_card": "₹1,000–₹5,000",
+    "past_brand_categories": [
+      "eco brands",
+      "sustainable products"
+    ],
+    "interests": [
+      "fashion",
+      "sustainability"
+    ],
+    "posting_frequency": "daily posts"
+  },
+  {
+    "creator_id": "c20",
+    "name": "David Kim",
+    "primary_niche": "fitness",
+    "secondary_niches": [
+      "tech"
+    ],
+    "bio": "Seattle-based tech fitness creator making AI-powered workout apps. My primary audience is tech professionals aged 40-55 who want to optimize their fitness routines with data and wearables.",
+    "location": "Seattle, USA",
+    "languages": [
+      "English"
+    ],
+    "platforms": [
+      "youtube",
+      "tiktok"
+    ],
+    "followers": 270000,
+    "engagement_rate": 0.035,
+    "average_views": 460000,
+    "audience_age_range": "40-54",
+    "audience_gender_distribution": {
+      "male": 0.6,
+      "female": 0.4
+    },
+    "audience_locations": [
+      "US",
+      "Canada"
+    ],
+    "content_types": [
+      "fitness",
+      "tech",
+      "wearables"
+    ],
+    "content_style": "data-driven and precise",
+    "rate_card": "₹20,000–₹60,000",
+    "past_brand_categories": [
+      "fitness apps",
+      "wearables",
+      "tech gadgets"
+    ],
+    "interests": [
+      "fitness",
+      "tech"
+    ],
+    "posting_frequency": "4 posts/week"
+  },
+  {
+    "creator_id": "c21",
+    "name": "Hana Ali",
+    "primary_niche": "parenting",
+    "secondary_niches": [
+      "lifestyle"
+    ],
+    "bio": "London-based parenting creator with a primarily young adult audience. I cover pregnancy, toddler care, and work-life balance. My audience is primarily women aged 18-30, making them a great match for lifestyle brands targeting young women.",
+    "location": "London, UK",
+    "languages": [
+      "English"
+    ],
+    "platforms": [
+      "instagram",
+      "youtube"
+    ],
+    "followers": 195000,
+    "engagement_rate": 0.046,
+    "average_views": 340000,
+    "audience_age_range": "18-28",
+    "audience_gender_distribution": {
+      "female": 0.9,
+      "male": 0.1
+    },
+    "audience_locations": [
+      "UK",
+      "Ireland"
+    ],
+    "content_types": [
+      "parenting",
+      "lifestyle",
+      "family"
+    ],
+    "content_style": "warm and nurturing",
+    "rate_card": "₹10,000–₹30,000",
+    "past_brand_categories": [
+      "baby products",
+      "maternity brands"
+    ],
+    "interests": [
+      "parenting",
+      "family"
+    ],
+    "posting_frequency": "5 posts/week"
+  },
+  {
+    "creator_id": "c22",
+    "name": "Victoria Stone",
+    "primary_niche": "luxury",
+    "secondary_niches": [
+      "beauty",
+      "fashion"
+    ],
+    "bio": "London-based luxury lifestyle influencer with millions of followers. I partner exclusively with premium and luxury brands. My rate reflects my elite audience and premium positioning.",
+    "location": "London, UK",
+    "languages": [
+      "English"
+    ],
+    "platforms": [
+      "instagram",
+      "youtube"
+    ],
+    "followers": 1800000,
+    "engagement_rate": 0.025,
+    "average_views": 3200000,
+    "audience_age_range": "25-34",
+    "audience_gender_distribution": {
+      "female": 0.8,
+      "male": 0.2
+    },
+    "audience_locations": [
+      "UK",
+      "US",
+      "France"
+    ],
+    "content_types": [
+      "luxury",
+      "beauty",
+      "fashion"
+    ],
+    "content_style": "glamorous and high-end",
+    "rate_card": "₹150,000–₹500,000",
+    "past_brand_categories": [
+      "luxury brands",
+      "premium cosmetics",
+      "high fashion"
+    ],
+    "interests": [
+      "luxury",
+      "beauty"
+    ],
+    "posting_frequency": "3 posts/week"
+  },
+  {
+    "creator_id": "c23",
+    "name": "Raj Kapoor",
+    "primary_niche": "fitness",
+    "secondary_niches": [
+      "sports"
+    ],
+    "bio": "Mumbai-based sports fitness creator covering cricket, badminton, and local sports events. My audience is almost entirely India-based and I create content in Hindi for the domestic market.",
+    "location": "Mumbai, India",
+    "languages": [
+      "Hindi"
+    ],
+    "platforms": [
+      "youtube",
+      "instagram"
+    ],
+    "followers": 220000,
+    "engagement_rate": 0.04,
+    "average_views": 380000,
+    "audience_age_range": "18-30",
+    "audience_gender_distribution": {
+      "male": 0.65,
+      "female": 0.35
+    },
+    "audience_locations": [
+      "India"
+    ],
+    "content_types": [
+      "sports",
+      "fitness",
+      "cricket"
+    ],
+    "content_style": "passionate and energetic",
+    "rate_card": "₹10,000–₹30,000",
+    "past_brand_categories": [
+      "sports brands",
+      "fitness equipment"
+    ],
+    "interests": [
+      "sports",
+      "fitness"
+    ],
+    "posting_frequency": "5 posts/week"
+  },
+  {
+    "creator_id": "c24",
+    "name": "Grace Murray",
+    "primary_niche": "fitness",
+    "secondary_niches": [
+      "nutrition"
+    ],
+    "bio": "Chicago-based nutrition and wellness writer. I create long-form blog articles and email newsletters about fitness nutrition, meal planning, and healthy eating habits. I do not create short-form video content.",
+    "location": "Chicago, USA",
+    "languages": [
+      "English"
+    ],
+    "platforms": [
+      "blog"
+    ],
+    "followers": 75000,
+    "engagement_rate": 0.038,
+    "average_views": 95000,
+    "audience_age_range": "25-34",
+    "audience_gender_distribution": {
+      "female": 0.7,
+      "male": 0.3
+    },
+    "audience_locations": [
+      "US",
+      "Canada"
+    ],
+    "content_types": [
+      "nutrition",
+      "fitness",
+      "wellness"
+    ],
+    "content_style": "informative and evidence-based",
+    "rate_card": "₹5,000–₹15,000",
+    "past_brand_categories": [
+      "health food",
+      "nutrition supplements"
+    ],
+    "interests": [
+      "nutrition",
+      "fitness"
+    ],
+    "posting_frequency": "3 blog posts/week"
+  },
+  {
+    "creator_id": "c25",
+    "name": "Sam Torres",
+    "primary_niche": "fitness",
+    "secondary_niches": [
+      "lifestyle"
+    ],
+    "bio": "Miami-based fitness creator with a modest following. I create home workout content and fitness tips for beginners. Growing organically with a loyal community.",
+    "location": "Miami, USA",
+    "languages": [
+      "English",
+      "Spanish"
+    ],
+    "platforms": [
+      "instagram"
+    ],
+    "followers": 12000,
+    "engagement_rate": 0.058,
+    "average_views": 28000,
+    "audience_age_range": "18-24",
+    "audience_gender_distribution": {
+      "female": 0.65,
+      "male": 0.35
+    },
+    "audience_locations": [
+      "US"
+    ],
+    "content_types": [
+      "fitness",
+      "lifestyle"
+    ],
+    "content_style": "friendly and encouraging",
+    "rate_card": "₹2,000–₹5,000",
+    "past_brand_categories": [
+      "fitness apps"
+    ],
+    "interests": [
+      "fitness",
+      "wellness"
+    ],
+    "posting_frequency": "daily posts"
+  },
+  {
+    "creator_id": "c26",
+    "name": "Isabella Rossi",
+    "primary_niche": "beauty",
+    "secondary_niches": [
+      "fitness",
+      "wellness"
+    ],
+    "bio": "Rome-based creator combining beauty and fitness. I create content about skincare routines before and after workouts, healthy glow tips, and wellness habits. My audience is young women interested in holistic beauty and fitness.",
+    "location": "Rome, Italy",
+    "languages": [
+      "Italian",
+      "English"
+    ],
+    "platforms": [
+      "instagram",
+      "youtube"
+    ],
+    "followers": 165000,
+    "engagement_rate": 0.043,
+    "average_views": 290000,
+    "audience_age_range": "20-30",
+    "audience_gender_distribution": {
+      "female": 0.83,
+      "male": 0.17
+    },
+    "audience_locations": [
+      "Italy",
+      "Spain",
+      "France"
+    ],
+    "content_types": [
+      "beauty",
+      "fitness",
+      "wellness"
+    ],
+    "content_style": "glowing and aspirational",
+    "rate_card": "₹10,000–₹30,000",
+    "past_brand_categories": [
+      "beauty brands",
+      "skincare",
+      "sportswear"
+    ],
+    "interests": [
+      "beauty",
+      "fitness"
+    ],
+    "posting_frequency": "5 posts/week"
+  },
+  {
+    "creator_id": "c27",
+    "name": "Omar Hassan",
+    "primary_niche": "fitness",
+    "secondary_niches": [
+      "food",
+      "nutrition"
+    ],
+    "bio": "Dubai-based fitness and nutrition coach creating content in Arabic and English. I help men in the Middle East build healthy lifestyles through balanced diets and consistent training. Strong regional presence across the GCC.",
+    "location": "Dubai, UAE",
+    "languages": [
+      "Arabic",
+      "English"
+    ],
+    "platforms": [
+      "instagram",
+      "youtube"
+    ],
+    "followers": 240000,
+    "engagement_rate": 0.049,
+    "average_views": 420000,
+    "audience_age_range": "22-35",
+    "audience_gender_distribution": {
+      "male": 0.72,
+      "female": 0.28
+    },
+    "audience_locations": [
+      "UAE",
+      "Saudi Arabia",
+      "Qatar"
+    ],
+    "content_types": [
+      "fitness",
+      "nutrition",
+      "health"
+    ],
+    "content_style": "motivational and disciplined",
+    "rate_card": "₹15,000–₹40,000",
+    "past_brand_categories": [
+      "fitness brands",
+      "health supplements",
+      "sports drinks"
+    ],
+    "interests": [
+      "fitness",
+      "nutrition"
+    ],
+    "posting_frequency": "5 posts/week"
+  },
+  {
+    "creator_id": "c28",
+    "name": "Chloe Martin",
+    "primary_niche": "travel",
+    "secondary_niches": [
+      "lifestyle",
+      "photography"
+    ],
+    "bio": "Amsterdam-based travel and lifestyle creator. I create stunning photography content and share travel guides for solo female travelers. My audience is primarily millennial women who love adventure and cultural experiences.",
+    "location": "Amsterdam, Netherlands",
+    "languages": [
+      "Dutch",
+      "English"
+    ],
+    "platforms": [
+      "instagram",
+      "youtube"
+    ],
+    "followers": 185000,
+    "engagement_rate": 0.047,
+    "average_views": 330000,
+    "audience_age_range": "22-32",
+    "audience_gender_distribution": {
+      "female": 0.75,
+      "male": 0.25
+    },
+    "audience_locations": [
+      "Netherlands",
+      "Germany",
+      "France"
+    ],
+    "content_types": [
+      "travel",
+      "photography",
+      "lifestyle"
+    ],
+    "content_style": "wanderlust and aesthetic",
+    "rate_card": "₹12,000–₹35,000",
+    "past_brand_categories": [
+      "travel brands",
+      "camera equipment",
+      "lifestyle"
+    ],
+    "interests": [
+      "travel",
+      "photography"
+    ],
+    "posting_frequency": "4 posts/week"
+  },
+  {
+    "creator_id": "c29",
+    "name": "Leo Zhang",
+    "primary_niche": "tech",
+    "secondary_niches": [
+      "gaming",
+      "finance"
+    ],
+    "bio": "Singapore-based tech and finance creator. I cover personal finance apps, crypto, investing, and tech gadgets for young professionals. My content is data-driven and practical, appealing to the financially conscious Gen Z and millennial crowd.",
+    "location": "Singapore",
+    "languages": [
+      "English",
+      "Mandarin"
+    ],
+    "platforms": [
+      "youtube",
+      "tiktok"
+    ],
+    "followers": 380000,
+    "engagement_rate": 0.037,
+    "average_views": 620000,
+    "audience_age_range": "22-34",
+    "audience_gender_distribution": {
+      "male": 0.62,
+      "female": 0.38
+    },
+    "audience_locations": [
+      "Singapore",
+      "Malaysia",
+      "Hong Kong"
+    ],
+    "content_types": [
+      "tech",
+      "finance",
+      "investing"
+    ],
+    "content_style": "smart and analytical",
+    "rate_card": "₹15,000–₹40,000",
+    "past_brand_categories": [
+      "fintech",
+      "tech brands",
+      "investing apps"
+    ],
+    "interests": [
+      "tech",
+      "finance"
+    ],
+    "posting_frequency": "4 posts/week"
+  },
+  {
+    "creator_id": "c30",
+    "name": "Nora Johansson",
+    "primary_niche": "parenting",
+    "secondary_niches": [
+      "lifestyle",
+      "wellness"
+    ],
+    "bio": "Stockholm-based parent and wellness creator. I share gentle parenting tips, family wellness routines, and mindful living content. My audience is primarily parents aged 25-40 seeking balanced approaches to family life.",
+    "location": "Stockholm, Sweden",
+    "languages": [
+      "Swedish",
+      "English"
+    ],
+    "platforms": [
+      "instagram",
+      "youtube"
+    ],
+    "followers": 130000,
+    "engagement_rate": 0.052,
+    "average_views": 220000,
+    "audience_age_range": "25-40",
+    "audience_gender_distribution": {
+      "female": 0.88,
+      "male": 0.12
+    },
+    "audience_locations": [
+      "Sweden",
+      "Finland",
+      "Norway"
+    ],
+    "content_types": [
+      "parenting",
+      "wellness",
+      "lifestyle"
+    ],
+    "content_style": "warm and gentle",
+    "rate_card": "₹10,000–₹25,000",
+    "past_brand_categories": [
+      "family brands",
+      "wellness products",
+      "baby care"
+    ],
+    "interests": [
+      "parenting",
+      "wellness"
+    ],
+    "posting_frequency": "4 posts/week"
+  },
+  {
+    "creator_id": "c31",
+    "name": "Aarav Mehta",
+    "primary_niche": "fitness",
+    "secondary_niches": [
+      "tech",
+      "gaming"
+    ],
+    "bio": "Bangalore-based tech fitness creator blending gaming culture with fitness. I create esports fitness tips, gaming chair reviews, and content for gamers who want to stay healthy. A unique niche at the intersection of gaming and physical wellness.",
+    "location": "Bangalore, India",
+    "languages": [
+      "Hindi",
+      "English"
+    ],
+    "platforms": [
+      "youtube",
+      "tiktok"
+    ],
+    "followers": 155000,
+    "engagement_rate": 0.046,
+    "average_views": 260000,
+    "audience_age_range": "18-26",
+    "audience_gender_distribution": {
+      "male": 0.78,
+      "female": 0.22
+    },
+    "audience_locations": [
+      "India",
+      "Singapore"
+    ],
+    "content_types": [
+      "fitness",
+      "gaming",
+      "tech"
+    ],
+    "content_style": "energetic and nerdy",
+    "rate_card": "₹10,000–₹25,000",
+    "past_brand_categories": [
+      "gaming brands",
+      "fitness apps",
+      "ergonomic gear"
+    ],
+    "interests": [
+      "fitness",
+      "gaming"
+    ],
+    "posting_frequency": "5 posts/week"
+  },
+  {
+    "creator_id": "c32",
+    "name": "Sofia Reyes",
+    "primary_niche": "beauty",
+    "secondary_niches": [
+      "fashion",
+      "lifestyle"
+    ],
+    "bio": "Mexico City-based beauty and fashion creator creating content in Spanish and English. I cover makeup tutorials, skincare routines, and Latin fashion. My audience is primarily Latin American women interested in beauty and self-expression.",
+    "location": "Mexico City, Mexico",
+    "languages": [
+      "Spanish",
+      "English"
+    ],
+    "platforms": [
+      "instagram",
+      "youtube"
+    ],
+    "followers": 210000,
+    "engagement_rate": 0.05,
+    "average_views": 380000,
+    "audience_age_range": "18-30",
+    "audience_gender_distribution": {
+      "female": 0.86,
+      "male": 0.14
+    },
+    "audience_locations": [
+      "Mexico",
+      "Colombia",
+      "Argentina"
+    ],
+    "content_types": [
+      "beauty",
+      "fashion",
+      "lifestyle"
+    ],
+    "content_style": "colorful and expressive",
+    "rate_card": "₹12,000–₹30,000",
+    "past_brand_categories": [
+      "beauty brands",
+      "fashion",
+      "cosmetics"
+    ],
+    "interests": [
+      "beauty",
+      "fashion"
+    ],
+    "posting_frequency": "5 posts/week"
+  },
+  {
+    "creator_id": "c33",
+    "name": "Kai Nakamura",
+    "primary_niche": "gaming",
+    "secondary_niches": [
+      "tech"
+    ],
+    "bio": "Osaka-based gaming and tech content creator with a strong esports following. I cover competitive gaming, hardware reviews, and streaming setups. My audience is primarily young male gamers interested in the latest tech and gaming trends.",
+    "location": "Osaka, Japan",
+    "languages": [
+      "Japanese",
+      "English"
+    ],
+    "platforms": [
+      "youtube",
+      "tiktok"
+    ],
+    "followers": 540000,
+    "engagement_rate": 0.058,
+    "average_views": 980000,
+    "audience_age_range": "18-24",
+    "audience_gender_distribution": {
+      "male": 0.78,
+      "female": 0.22
+    },
+    "audience_locations": [
+      "Japan",
+      "South Korea",
+      "Taiwan"
+    ],
+    "content_types": [
+      "gaming",
+      "tech",
+      "esports"
+    ],
+    "content_style": "intense and entertaining",
+    "rate_card": "₹20,000–₹50,000",
+    "past_brand_categories": [
+      "gaming brands",
+      "tech gadgets",
+      "energy drinks"
+    ],
+    "interests": [
+      "gaming",
+      "tech"
+    ],
+    "posting_frequency": "daily streams"
+  },
+  {
+    "creator_id": "c34",
+    "name": "Lena Weber",
+    "primary_niche": "fitness",
+    "secondary_niches": [
+      "wellness",
+      "yoga"
+    ],
+    "bio": "Munich-based yoga and wellness instructor. I create gentle yoga flows, meditation guides, and holistic wellness content. My audience is primarily women aged 25-45 seeking mindfulness and work-life balance.",
+    "location": "Munich, Germany",
+    "languages": [
+      "German",
+      "English"
+    ],
+    "platforms": [
+      "youtube",
+      "instagram"
+    ],
+    "followers": 140000,
+    "engagement_rate": 0.053,
+    "average_views": 240000,
+    "audience_age_range": "25-45",
+    "audience_gender_distribution": {
+      "female": 0.87,
+      "male": 0.13
+    },
+    "audience_locations": [
+      "Germany",
+      "Austria",
+      "Switzerland"
+    ],
+    "content_types": [
+      "yoga",
+      "wellness",
+      "meditation"
+    ],
+    "content_style": "serene and mindful",
+    "rate_card": "₹10,000–₹25,000",
+    "past_brand_categories": [
+      "wellness brands",
+      "yoga gear",
+      "meditation apps"
+    ],
+    "interests": [
+      "yoga",
+      "wellness"
+    ],
+    "posting_frequency": "4 posts/week"
+  },
+  {
+    "creator_id": "c35",
+    "name": "Priya Nair",
+    "primary_niche": "fitness",
+    "secondary_niches": [
+      "nutrition",
+      "food"
+    ],
+    "bio": "Chennai-based fitness and nutrition creator creating authentic South Indian healthy recipes and workout routines. I help my audience combine traditional food wisdom with modern fitness principles. Strong regional connection with Tamil Nadu audience.",
+    "location": "Chennai, India",
+    "languages": [
+      "Tamil",
+      "English"
+    ],
+    "platforms": [
+      "youtube",
+      "instagram"
+    ],
+    "followers": 135000,
+    "engagement_rate": 0.048,
+    "average_views": 230000,
+    "audience_age_range": "22-35",
+    "audience_gender_distribution": {
+      "female": 0.74,
+      "male": 0.26
+    },
+    "audience_locations": [
+      "India",
+      "Sri Lanka",
+      "Singapore"
+    ],
+    "content_types": [
+      "fitness",
+      "nutrition",
+      "food"
+    ],
+    "content_style": "traditional and practical",
+    "rate_card": "₹8,000–₹20,000",
+    "past_brand_categories": [
+      "health food",
+      "nutrition brands",
+      "fitness equipment"
+    ],
+    "interests": [
+      "cooking",
+      "fitness",
+      "nutrition"
+    ],
+    "posting_frequency": "5 posts/week"
+  },
+  {
+    "creator_id": "c36",
+    "name": "Luca Bianchi",
+    "primary_niche": "fashion",
+    "secondary_niches": [
+      "travel",
+      "photography"
+    ],
+    "bio": "Milan-based fashion and travel photographer. I create content combining Italian fashion with global travel destinations. My aesthetic is editorial and refined, appealing to the luxury fashion and travel market.",
+    "location": "Milan, Italy",
+    "languages": [
+      "Italian",
+      "English"
+    ],
+    "platforms": [
+      "instagram",
+      "youtube"
+    ],
+    "followers": 290000,
+    "engagement_rate": 0.036,
+    "average_views": 510000,
+    "audience_age_range": "25-35",
+    "audience_gender_distribution": {
+      "male": 0.48,
+      "female": 0.52
+    },
+    "audience_locations": [
+      "Italy",
+      "France",
+      "US"
+    ],
+    "content_types": [
+      "fashion",
+      "travel",
+      "photography"
+    ],
+    "content_style": "editorial and sophisticated",
+    "rate_card": "₹15,000–₹45,000",
+    "past_brand_categories": [
+      "fashion brands",
+      "travel companies",
+      "camera brands"
+    ],
+    "interests": [
+      "fashion",
+      "travel"
+    ],
+    "posting_frequency": "4 posts/week"
+  },
+  {
+    "creator_id": "c37",
+    "name": "Amira Okafor",
+    "primary_niche": "fitness",
+    "secondary_niches": [
+      "lifestyle",
+      "beauty"
+    ],
+    "bio": "Lagos-based fitness and lifestyle creator representing African fitness culture. I create workout routines, healthy hair care for active women, and body positivity content. My audience is primarily African women aged 18-30 interested in fitness and self-care.",
+    "location": "Lagos, Nigeria",
+    "languages": [
+      "English",
+      "Yoruba"
+    ],
+    "platforms": [
+      "instagram",
+      "youtube"
+    ],
+    "followers": 170000,
+    "engagement_rate": 0.055,
+    "average_views": 310000,
+    "audience_age_range": "18-30",
+    "audience_gender_distribution": {
+      "female": 0.88,
+      "male": 0.12
+    },
+    "audience_locations": [
+      "Nigeria",
+      "Ghana",
+      "South Africa"
+    ],
+    "content_types": [
+      "fitness",
+      "beauty",
+      "lifestyle"
+    ],
+    "content_style": "bold and body-positive",
+    "rate_card": "₹8,000–₹20,000",
+    "past_brand_categories": [
+      "fitness brands",
+      "beauty products",
+      "athleisure"
+    ],
+    "interests": [
+      "fitness",
+      "beauty"
+    ],
+    "posting_frequency": "5 posts/week"
+  },
+  {
+    "creator_id": "c38",
+    "name": "Tom Wilson",
+    "primary_niche": "tech",
+    "secondary_niches": [
+      "fitness",
+      "gaming"
+    ],
+    "bio": "Sydney-based tech creator focusing on fitness wearables and gaming peripherals. I review smartwatches, fitness trackers, and gaming mice. My audience is tech-savvy men aged 20-35 who love gadgets and fitness tech.",
+    "location": "Sydney, Australia",
+    "languages": [
+      "English"
+    ],
+    "platforms": [
+      "youtube",
+      "tiktok"
+    ],
+    "followers": 215000,
+    "engagement_rate": 0.042,
+    "average_views": 370000,
+    "audience_age_range": "22-35",
+    "audience_gender_distribution": {
+      "male": 0.72,
+      "female": 0.28
+    },
+    "audience_locations": [
+      "Australia",
+      "New Zealand",
+      "Singapore"
+    ],
+    "content_types": [
+      "tech",
+      "fitness",
+      "gaming"
+    ],
+    "content_style": "geeky and practical",
+    "rate_card": "₹15,000–₹35,000",
+    "past_brand_categories": [
+      "tech brands",
+      "wearables",
+      "gaming peripherals"
+    ],
+    "interests": [
+      "tech",
+      "fitness"
+    ],
+    "posting_frequency": "4 posts/week"
+  },
+  {
+    "creator_id": "c39",
+    "name": "Zara Khan",
+    "primary_niche": "beauty",
+    "secondary_niches": [
+      "skincare",
+      "lifestyle"
+    ],
+    "bio": "Dubai-based beauty and skincare creator covering Middle Eastern beauty trends and halal cosmetics. I create skincare routines, makeup tutorials, and product reviews for women across the MENA region. Strong presence in the Gulf beauty community.",
+    "location": "Dubai, UAE",
+    "languages": [
+      "English",
+      "Arabic"
+    ],
+    "platforms": [
+      "instagram",
+      "youtube"
+    ],
+    "followers": 265000,
+    "engagement_rate": 0.047,
+    "average_views": 470000,
+    "audience_age_range": "20-30",
+    "audience_gender_distribution": {
+      "female": 0.84,
+      "male": 0.16
+    },
+    "audience_locations": [
+      "UAE",
+      "Saudi Arabia",
+      "Egypt"
+    ],
+    "content_types": [
+      "beauty",
+      "skincare",
+      "halal cosmetics"
+    ],
+    "content_style": "luxury and accessible",
+    "rate_card": "₹15,000–₹40,000",
+    "past_brand_categories": [
+      "beauty brands",
+      "skincare",
+      "cosmetics"
+    ],
+    "interests": [
+      "beauty",
+      "skincare"
+    ],
+    "posting_frequency": "5 posts/week"
+  },
+  {
+    "creator_id": "c40",
+    "name": "Ravi Patel",
+    "primary_niche": "food",
+    "secondary_niches": [
+      "fitness",
+      "nutrition"
+    ],
+    "bio": "Ahmedabad-based food and fitness creator creating healthy Indian recipes and protein-rich meal plans. I make nutrition fun and accessible through traditional Gujarati dishes modified for modern fitness goals. Strong regional Indian following.",
+    "location": "Ahmedabad, India",
+    "languages": [
+      "Gujarati",
+      "English"
+    ],
+    "platforms": [
+      "youtube",
+      "instagram"
+    ],
+    "followers": 98000,
+    "engagement_rate": 0.049,
+    "average_views": 175000,
+    "audience_age_range": "22-35",
+    "audience_gender_distribution": {
+      "male": 0.55,
+      "female": 0.45
+    },
+    "audience_locations": [
+      "India"
+    ],
+    "content_types": [
+      "healthy food",
+      "nutrition",
+      "fitness"
+    ],
+    "content_style": "traditional and health-conscious",
+    "rate_card": "₹6,000–₹15,000",
+    "past_brand_categories": [
+      "health food brands",
+      "nutrition supplements",
+      "cooking appliances"
+    ],
+    "interests": [
+      "cooking",
+      "fitness"
+    ],
+    "posting_frequency": "5 posts/week"
+  }
+]

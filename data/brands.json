@@ -1,0 +1,584 @@
+[
+  {
+    "brand_id": "b01",
+    "brand_name": "FitNova",
+    "industry": "Fitness & Wellness",
+    "product": "Home workout equipment and resistance bands",
+    "campaign_title": "Move Anywhere Campaign",
+    "campaign_goal": "Drive awareness and sales of affordable home fitness equipment among young Indian women",
+    "campaign_description": "FitNova launches a new line of compact home workout equipment designed for small apartments. The campaign targets young Indian women who want to stay fit without going to the gym. Looking for creators who can demonstrate products in real home settings and inspire their audience to start their fitness journey.",
+    "target_audience": "Young Indian women aged 18-30 interested in fitness and wellness",
+    "target_age_range": "18-30",
+    "target_gender": "female",
+    "target_locations": [
+      "India",
+      "UAE",
+      "Singapore"
+    ],
+    "required_creator_niches": [
+      "fitness"
+    ],
+    "preferred_creator_niches": [
+      "fitness",
+      "nutrition",
+      "wellness",
+      "yoga"
+    ],
+    "creator_size_preference": "mid-tier",
+    "minimum_followers": 50000,
+    "maximum_followers": 500000,
+    "budget": 300000,
+    "currency": "INR",
+    "content_types": [
+      "workout",
+      "nutrition",
+      "healthy lifestyle"
+    ],
+    "platforms": [
+      "instagram",
+      "youtube"
+    ],
+    "tone": "energetic and motivational",
+    "mandatory_requirements": [
+      "must be based in India or South Asia",
+      "must post in English or Hindi",
+      "must have fitness content"
+    ],
+    "preferred_traits": [
+      "authentic",
+      "motivational",
+      "relatable",
+      "female-led"
+    ],
+    "excluded_traits": [
+      "luxury-focused",
+      "male-dominated audience",
+      "non-English content"
+    ]
+  },
+  {
+    "brand_id": "b02",
+    "brand_name": "GlowEssence",
+    "industry": "Beauty & Skincare",
+    "product": "K-beauty skincare serum line",
+    "campaign_title": "Glass Skin Challenge",
+    "campaign_goal": "Generate user-generated content and drive trial of new K-beauty serum among young Asian women",
+    "campaign_description": "GlowEssence is launching a K-beauty serum line and wants to create buzz through creator partnerships. The campaign focuses on the 'glass skin' trend popular among young Asian women. Creators should demonstrate the product in realistic routines and show genuine results over time.",
+    "target_audience": "Young Asian women aged 18-24 interested in skincare and K-beauty",
+    "target_age_range": "18-24",
+    "target_gender": "female",
+    "target_locations": [
+      "South Korea",
+      "Japan",
+      "Singapore"
+    ],
+    "required_creator_niches": [
+      "beauty",
+      "skincare"
+    ],
+    "preferred_creator_niches": [
+      "beauty",
+      "skincare",
+      "k-beauty",
+      "lifestyle"
+    ],
+    "creator_size_preference": "mid to macro",
+    "minimum_followers": 100000,
+    "maximum_followers": 800000,
+    "budget": 600000,
+    "currency": "KRW",
+    "content_types": [
+      "skincare",
+      "beauty",
+      "makeup"
+    ],
+    "platforms": [
+      "instagram",
+      "youtube",
+      "tiktok"
+    ],
+    "tone": "gorgeous and detail-oriented",
+    "mandatory_requirements": [
+      "must be based in East Asia",
+      "must have skincare content",
+      "must create video content"
+    ],
+    "preferred_traits": [
+      "detail-oriented",
+      "authentic reviews",
+      "skincare knowledgeable",
+      "young female audience"
+    ],
+    "excluded_traits": [
+      "men's grooming focus",
+      "luxury-only",
+      "anti-aging focus"
+    ]
+  },
+  {
+    "brand_id": "b03",
+    "brand_name": "GameVault",
+    "industry": "Gaming & Tech",
+    "product": "New gaming headset and peripherals",
+    "campaign_title": "Level Up Audio",
+    "campaign_goal": "Drive product awareness and pre-orders for new gaming headset among competitive gamers",
+    "campaign_description": "GameVault is launching a new gaming headset designed for competitive esports players. The campaign targets young male gamers who prioritize audio quality and comfort during long gaming sessions. Creators should create gameplay content featuring the product authentically.",
+    "target_audience": "Young male gamers aged 18-24 interested in esports and gaming hardware",
+    "target_age_range": "18-24",
+    "target_gender": "male",
+    "target_locations": [
+      "Japan",
+      "US",
+      "UK"
+    ],
+    "required_creator_niches": [
+      "gaming"
+    ],
+    "preferred_creator_niches": [
+      "gaming",
+      "tech",
+      "esports"
+    ],
+    "creator_size_preference": "mid to macro",
+    "minimum_followers": 150000,
+    "maximum_followers": 1000000,
+    "budget": 800000,
+    "currency": "JPY",
+    "content_types": [
+      "gaming",
+      "tech reviews",
+      "esports"
+    ],
+    "platforms": [
+      "youtube",
+      "tiktok"
+    ],
+    "tone": "high-energy and funny",
+    "mandatory_requirements": [
+      "must have gaming content",
+      "must be comfortable on camera",
+      "must have male-skewed audience"
+    ],
+    "preferred_traits": [
+      "high-energy",
+      "knowledgeable about hardware",
+      "esports community presence",
+      "entertaining"
+    ],
+    "excluded_traits": [
+      "family-friendly only",
+      "female-skewed audience",
+      "non-gaming content"
+    ]
+  },
+  {
+    "brand_id": "b04",
+    "brand_name": "AthleVibe",
+    "industry": "Fashion & Sportswear",
+    "product": "Sustainable activewear line",
+    "campaign_title": "Wear Your Values",
+    "campaign_goal": "Promote sustainable activewear among young Indian women with a focus on ethical fashion",
+    "campaign_description": "AthleVibe is launching a sustainable activewear line made from recycled materials. The campaign targets young Indian women who care about fashion and sustainability. Creators should showcase how the activewear fits into everyday life and workout routines.",
+    "target_audience": "Young Indian women aged 18-28 interested in fashion, fitness, and sustainability",
+    "target_age_range": "18-28",
+    "target_gender": "female",
+    "target_locations": [
+      "India",
+      "UAE",
+      "Singapore"
+    ],
+    "required_creator_niches": [
+      "fashion",
+      "fitness"
+    ],
+    "preferred_creator_niches": [
+      "fashion",
+      "fitness",
+      "sustainability",
+      "athleisure"
+    ],
+    "creator_size_preference": "mid-tier",
+    "minimum_followers": 80000,
+    "maximum_followers": 400000,
+    "budget": 250000,
+    "currency": "INR",
+    "content_types": [
+      "fashion",
+      "fitness",
+      "lifestyle"
+    ],
+    "platforms": [
+      "instagram"
+    ],
+    "tone": "bold and street-style",
+    "mandatory_requirements": [
+      "must have fashion AND fitness content",
+      "must be based in India",
+      "must create instagram content"
+    ],
+    "preferred_traits": [
+      "stylish",
+      "active lifestyle",
+      "sustainability conscious",
+      "female audience"
+    ],
+    "excluded_traits": [
+      "luxury-focused",
+      "only fitness content",
+      "only fashion content"
+    ]
+  },
+  {
+    "brand_id": "b05",
+    "brand_name": "MoneyWise",
+    "industry": "Fintech",
+    "product": "Budgeting app for young professionals",
+    "campaign_title": "Smart Money Moves",
+    "campaign_goal": "Drive app downloads among young professionals who need help managing finances",
+    "campaign_description": "MoneyWise is a new budgeting app designed for young professionals. The campaign targets tech-savvy 22-35 year olds who want to take control of their finances. Creators should create content showing real use cases of the app in everyday life.",
+    "target_audience": "Young professionals aged 22-35 interested in fintech and personal finance",
+    "target_age_range": "22-35",
+    "target_gender": "all",
+    "target_locations": [
+      "US",
+      "Singapore",
+      "UK"
+    ],
+    "required_creator_niches": [
+      "tech",
+      "finance"
+    ],
+    "preferred_creator_niches": [
+      "tech",
+      "finance",
+      "lifestyle",
+      "productivity"
+    ],
+    "creator_size_preference": "mid-tier",
+    "minimum_followers": 100000,
+    "maximum_followers": 500000,
+    "budget": 400000,
+    "currency": "USD",
+    "content_types": [
+      "tech",
+      "finance",
+      "productivity"
+    ],
+    "platforms": [
+      "youtube",
+      "tiktok"
+    ],
+    "tone": "analytical and clear",
+    "mandatory_requirements": [
+      "must have tech or finance content",
+      "must be English-speaking",
+      "must cover apps/products"
+    ],
+    "preferred_traits": [
+      "analytical",
+      "tech-savvy",
+      "educational",
+      "professional audience"
+    ],
+    "excluded_traits": [
+      "gaming only",
+      "very young audience",
+      "non-digital content"
+    ]
+  },
+  {
+    "brand_id": "b06",
+    "brand_name": "PurePlate",
+    "industry": "Food & Health",
+    "product": "Organic protein supplements",
+    "campaign_title": "Fuel Your Body",
+    "campaign_goal": "Drive trial of organic protein supplements among health-conscious Indians",
+    "campaign_description": "PurePlate launches organic protein supplements made from traditional Indian ingredients. The campaign targets health-conscious Indians who want clean nutrition. Creators should demonstrate recipes and protein-packed meals using the product.",
+    "target_audience": "Health-conscious Indians aged 22-35 interested in nutrition and fitness",
+    "target_age_range": "22-35",
+    "target_gender": "all",
+    "target_locations": [
+      "India",
+      "Singapore",
+      "UAE"
+    ],
+    "required_creator_niches": [
+      "fitness",
+      "food",
+      "nutrition"
+    ],
+    "preferred_creator_niches": [
+      "fitness",
+      "food",
+      "nutrition",
+      "cooking"
+    ],
+    "creator_size_preference": "mid-tier",
+    "minimum_followers": 80000,
+    "maximum_followers": 400000,
+    "budget": 200000,
+    "currency": "INR",
+    "content_types": [
+      "cooking",
+      "nutrition",
+      "fitness"
+    ],
+    "platforms": [
+      "youtube",
+      "instagram"
+    ],
+    "tone": "traditional and health-conscious",
+    "mandatory_requirements": [
+      "must create cooking or recipe content",
+      "must be based in India",
+      "must cover food and nutrition"
+    ],
+    "preferred_traits": [
+      "health-focused",
+      "cooking skills",
+      "authentic",
+      "nutrition knowledgeable"
+    ],
+    "excluded_traits": [
+      "junk food focus",
+      "non-food content",
+      "non-Indian geography"
+    ]
+  },
+  {
+    "brand_id": "b07",
+    "brand_name": "Elysian Travel",
+    "industry": "Travel & Luxury",
+    "product": "Luxury boutique hotel experiences in Europe",
+    "campaign_title": "Hidden Europe",
+    "campaign_goal": "Promote luxury boutique hotel experiences among high-income European travelers",
+    "campaign_description": "Elysian Travel partners with boutique hotels across Europe for an exclusive campaign. The target audience is high-income travelers aged 30-50 who value unique, premium experiences. Creators should create visually stunning content showcasing the hotels and experiences.",
+    "target_audience": "High-income European travelers aged 30-50 seeking luxury and unique experiences",
+    "target_age_range": "30-50",
+    "target_gender": "all",
+    "target_locations": [
+      "France",
+      "Italy",
+      "Switzerland",
+      "Germany"
+    ],
+    "required_creator_niches": [
+      "travel",
+      "luxury"
+    ],
+    "preferred_creator_niches": [
+      "travel",
+      "luxury",
+      "photography",
+      "fashion"
+    ],
+    "creator_size_preference": "macro",
+    "minimum_followers": 300000,
+    "maximum_followers": 2000000,
+    "budget": 1000000,
+    "currency": "EUR",
+    "content_types": [
+      "travel",
+      "luxury",
+      "photography"
+    ],
+    "platforms": [
+      "instagram",
+      "youtube"
+    ],
+    "tone": "premium and sophisticated",
+    "mandatory_requirements": [
+      "must have travel content",
+      "must be based in Europe",
+      "must have luxury brand experience"
+    ],
+    "preferred_traits": [
+      "sophisticated",
+      "high-quality visuals",
+      "luxury positioning",
+      "affluent audience"
+    ],
+    "excluded_traits": [
+      "budget travel",
+      "young audience",
+      "non-European geography"
+    ]
+  },
+  {
+    "brand_id": "b08",
+    "brand_name": "TinyNest",
+    "industry": "Parenting & Family",
+    "product": "Eco-friendly baby products",
+    "campaign_title": "Green Start",
+    "campaign_goal": "Raise awareness for eco-friendly baby products among millennial parents",
+    "campaign_description": "TinyNest launches a line of eco-friendly baby products including biodegradable diapers and organic baby clothes. The campaign targets millennial parents who are environmentally conscious and want safe products for their babies.",
+    "target_audience": "Environmentally conscious millennial parents aged 25-40",
+    "target_age_range": "25-40",
+    "target_gender": "female",
+    "target_locations": [
+      "UK",
+      "Sweden",
+      "Norway",
+      "Denmark"
+    ],
+    "required_creator_niches": [
+      "parenting",
+      "lifestyle"
+    ],
+    "preferred_creator_niches": [
+      "parenting",
+      "wellness",
+      "lifestyle",
+      "sustainability"
+    ],
+    "creator_size_preference": "mid-tier",
+    "minimum_followers": 60000,
+    "maximum_followers": 350000,
+    "budget": 250000,
+    "currency": "SEK",
+    "content_types": [
+      "parenting",
+      "wellness",
+      "lifestyle"
+    ],
+    "platforms": [
+      "instagram",
+      "youtube"
+    ],
+    "tone": "warm and gentle",
+    "mandatory_requirements": [
+      "must have parenting content",
+      "must be based in Scandinavia or UK",
+      "must be female"
+    ],
+    "preferred_traits": [
+      "warm",
+      "authentic",
+      "eco-conscious",
+      "parenting community"
+    ],
+    "excluded_traits": [
+      "gaming content",
+      "luxury focused",
+      "male-only audience"
+    ]
+  },
+  {
+    "brand_id": "b09",
+    "brand_name": "NovaTech",
+    "industry": "Consumer Tech",
+    "product": "Wireless noise-cancelling earbuds",
+    "campaign_title": "Sound Freedom",
+    "campaign_goal": "Drive pre-orders for new wireless earbuds among young tech professionals",
+    "campaign_description": "NovaTech launches premium wireless earbuds with industry-leading noise cancellation. The campaign targets tech-savvy young professionals who need high-quality audio for work and entertainment. Creators should create unboxing and review content.",
+    "target_audience": "Tech-savvy young professionals aged 22-35 interested in consumer electronics",
+    "target_age_range": "22-35",
+    "target_gender": "all",
+    "target_locations": [
+      "US",
+      "Canada",
+      "Australia",
+      "UK"
+    ],
+    "required_creator_niches": [
+      "tech"
+    ],
+    "preferred_creator_niches": [
+      "tech",
+      "gaming",
+      "fitness"
+    ],
+    "creator_size_preference": "mid to macro",
+    "minimum_followers": 150000,
+    "maximum_followers": 1000000,
+    "budget": 700000,
+    "currency": "USD",
+    "content_types": [
+      "tech",
+      "product reviews",
+      "unboxing"
+    ],
+    "platforms": [
+      "youtube",
+      "tiktok"
+    ],
+    "tone": "analytical and clear",
+    "mandatory_requirements": [
+      "must have tech review content",
+      "must create video content",
+      "must be English-speaking"
+    ],
+    "preferred_traits": [
+      "analytical",
+      "product-focused",
+      "tech-savvy audience",
+      "professional"
+    ],
+    "excluded_traits": [
+      "beauty-only",
+      "parenting focus",
+      "non-English content"
+    ]
+  },
+  {
+    "brand_id": "b10",
+    "brand_name": "VitalityCo",
+    "industry": "Health & Wellness",
+    "product": "Vitamin gummies for young women",
+    "campaign_title": "Glow from Within",
+    "campaign_goal": "Drive brand awareness and sales of vitamin gummies among young women",
+    "campaign_description": "VitalityCo launches delicious vitamin gummies formulated for young women's health needs. The campaign targets health-conscious women aged 18-30 who want a tasty way to stay healthy. Creators should create fun, engaging content showing the product in daily routines.",
+    "target_audience": "Health-conscious women aged 18-30 interested in wellness and supplements",
+    "target_age_range": "18-30",
+    "target_gender": "female",
+    "target_locations": [
+      "US",
+      "UK",
+      "Australia",
+      "Canada"
+    ],
+    "required_creator_niches": [
+      "fitness",
+      "wellness",
+      "beauty"
+    ],
+    "preferred_creator_niches": [
+      "fitness",
+      "beauty",
+      "wellness",
+      "lifestyle"
+    ],
+    "creator_size_preference": "mid-tier",
+    "minimum_followers": 50000,
+    "maximum_followers": 500000,
+    "budget": 350000,
+    "currency": "USD",
+    "content_types": [
+      "wellness",
+      "fitness",
+      "beauty",
+      "nutrition"
+    ],
+    "platforms": [
+      "instagram",
+      "youtube"
+    ],
+    "tone": "fun and energetic",
+    "mandatory_requirements": [
+      "must have wellness or fitness content",
+      "must have female audience",
+      "must create engaging video"
+    ],
+    "preferred_traits": [
+      "fun",
+      "relatable",
+      "health-focused",
+      "young female audience"
+    ],
+    "excluded_traits": [
+      "luxury-focused",
+      "male audience",
+      "serious/medical tone"
+    ]
+  }
+]
