@@ -4,7 +4,7 @@
     "num_brands": 10,
     "num_creators": 40,
     "schema_version": "1.0",
-    "annotation_guide": "ANNOTATION_GUIDE.md"
+    "annotation_guide": "reports/ANNOTATION_GUIDE.md"
   },
   "labels": [
     {

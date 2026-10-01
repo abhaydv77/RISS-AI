@@ -14,9 +14,12 @@ from typing import Any, Mapping
 # Units of local currency per USD. Fixed deliberately so training and serving
 # use identical conversions; update only as an explicit model-version change.
 FX_PER_USD = {"USD": 1.0, "INR": 83.0, "KRW": 1300.0, "JPY": 150.0,
-              "EUR": 0.92, "SEK": 10.5}
+              "EUR": 0.92, "SEK": 10.5, "GBP": 0.79, "AUD": 1.52,
+              "BRL": 5.0, "SGD": 1.35, "NZD": 1.65, "AED": 3.67,
+              "CAD": 1.36, "CNY": 7.2, "ILS": 3.7}
 _SYMBOL_CURRENCY = {"₹": "INR", "₩": "KRW", "¥": "JPY", "$": "USD",
-                    "€": "EUR", "kr": "SEK"}
+                    "€": "EUR", "£": "GBP", "A$": "AUD", "R$": "BRL",
+                    "S$": "SGD", "NZ$": "NZD", "C$": "CAD", "kr": "SEK"}
 _COUNTRY_ALIASES = {
     "us": "united states", "usa": "united states", "united states of america": "united states",
     "uk": "united kingdom", "south korea": "south korea", "korea": "south korea",
@@ -62,7 +65,7 @@ def parse_rate_card(value: Any, currency: str | None = None) -> tuple[float, flo
     if not numbers:
         return None
     cur = (currency or "INR").upper()
-    for symbol, detected in _SYMBOL_CURRENCY.items():
+    for symbol, detected in sorted(_SYMBOL_CURRENCY.items(), key=lambda item: len(item[0]), reverse=True):
         if symbol in text:
             cur = detected
             break

@@ -580,5 +580,1818 @@
       "male audience",
       "serious/medical tone"
     ]
+  },
+  {
+    "brand_id": "b11",
+    "brand_name": "Fitness India 11",
+    "industry": "Fitness & Wellness",
+    "product": "Fitness products and services",
+    "campaign_title": "Fitness Creator Campaign",
+    "campaign_goal": "Build awareness among India audiences interested in fitness.",
+    "campaign_description": "A campaign for fitness creators in India.",
+    "target_audience": "Female audiences in India interested in fitness",
+    "target_age_range": "18-40",
+    "target_gender": "female",
+    "target_locations": [
+      "India"
+    ],
+    "required_creator_niches": [
+      "fitness"
+    ],
+    "preferred_creator_niches": [
+      "fitness",
+      "yoga",
+      "nutrition",
+      "wellness",
+      "sports"
+    ],
+    "creator_size_preference": "mid-tier to macro",
+    "minimum_followers": 50000,
+    "maximum_followers": 1000000,
+    "budget": 500000,
+    "currency": "INR",
+    "content_types": [
+      "fitness",
+      "review",
+      "lifestyle"
+    ],
+    "platforms": [
+      "instagram",
+      "youtube",
+      "tiktok"
+    ],
+    "tone": "informative and engaging",
+    "mandatory_requirements": [],
+    "preferred_traits": [
+      "authentic",
+      "engaging"
+    ],
+    "excluded_traits": []
+  },
+  {
+    "brand_id": "b12",
+    "brand_name": "Yoga US 12",
+    "industry": "Fitness & Wellness",
+    "product": "Yoga products and services",
+    "campaign_title": "Yoga Creator Campaign",
+    "campaign_goal": "Build awareness among US audiences interested in yoga.",
+    "campaign_description": "A campaign for yoga creators in US.",
+    "target_audience": "Female audiences in US interested in yoga",
+    "target_age_range": "18-40",
+    "target_gender": "female",
+    "target_locations": [
+      "US"
+    ],
+    "required_creator_niches": [
+      "yoga"
+    ],
+    "preferred_creator_niches": [
+      "fitness",
+      "yoga",
+      "nutrition",
+      "wellness",
+      "sports"
+    ],
+    "creator_size_preference": "mid-tier to macro",
+    "minimum_followers": 50000,
+    "maximum_followers": 1000000,
+    "budget": 12000,
+    "currency": "USD",
+    "content_types": [
+      "yoga",
+      "review",
+      "lifestyle"
+    ],
+    "platforms": [
+      "instagram",
+      "youtube",
+      "tiktok"
+    ],
+    "tone": "informative and engaging",
+    "mandatory_requirements": [],
+    "preferred_traits": [
+      "authentic",
+      "engaging"
+    ],
+    "excluded_traits": []
+  },
+  {
+    "brand_id": "b13",
+    "brand_name": "Nutrition UK 13",
+    "industry": "Fitness & Wellness",
+    "product": "Nutrition products and services",
+    "campaign_title": "Nutrition Creator Campaign",
+    "campaign_goal": "Build awareness among UK audiences interested in nutrition.",
+    "campaign_description": "A campaign for nutrition creators in UK.",
+    "target_audience": "All audiences in UK interested in nutrition",
+    "target_age_range": "18-40",
+    "target_gender": "all",
+    "target_locations": [
+      "UK"
+    ],
+    "required_creator_niches": [
+      "nutrition"
+    ],
+    "preferred_creator_niches": [
+      "fitness",
+      "yoga",
+      "nutrition",
+      "wellness",
+      "sports"
+    ],
+    "creator_size_preference": "mid-tier to macro",
+    "minimum_followers": 50000,
+    "maximum_followers": 1000000,
+    "budget": 10000,
+    "currency": "GBP",
+    "content_types": [
+      "nutrition",
+      "review",
+      "lifestyle"
+    ],
+    "platforms": [
+      "instagram",
+      "youtube",
+      "tiktok"
+    ],
+    "tone": "informative and engaging",
+    "mandatory_requirements": [],
+    "preferred_traits": [
+      "authentic",
+      "engaging"
+    ],
+    "excluded_traits": []
+  },
+  {
+    "brand_id": "b14",
+    "brand_name": "Wellness Australia 14",
+    "industry": "Fitness & Wellness",
+    "product": "Wellness products and services",
+    "campaign_title": "Wellness Creator Campaign",
+    "campaign_goal": "Build awareness among Australia audiences interested in wellness.",
+    "campaign_description": "A campaign for wellness creators in Australia.",
+    "target_audience": "All audiences in Australia interested in wellness",
+    "target_age_range": "18-40",
+    "target_gender": "all",
+    "target_locations": [
+      "Australia"
+    ],
+    "required_creator_niches": [
+      "wellness"
+    ],
+    "preferred_creator_niches": [
+      "fitness",
+      "yoga",
+      "nutrition",
+      "wellness",
+      "sports"
+    ],
+    "creator_size_preference": "mid-tier to macro",
+    "minimum_followers": 50000,
+    "maximum_followers": 1000000,
+    "budget": 16000,
+    "currency": "AUD",
+    "content_types": [
+      "wellness",
+      "review",
+      "lifestyle"
+    ],
+    "platforms": [
+      "instagram",
+      "youtube",
+      "tiktok"
+    ],
+    "tone": "informative and engaging",
+    "mandatory_requirements": [],
+    "preferred_traits": [
+      "authentic",
+      "engaging"
+    ],
+    "excluded_traits": []
+  },
+  {
+    "brand_id": "b15",
+    "brand_name": "Sports Brazil 15",
+    "industry": "Fitness & Wellness",
+    "product": "Sports products and services",
+    "campaign_title": "Sports Creator Campaign",
+    "campaign_goal": "Build awareness among Brazil audiences interested in sports.",
+    "campaign_description": "A campaign for sports creators in Brazil.",
+    "target_audience": "Male audiences in Brazil interested in sports",
+    "target_age_range": "18-40",
+    "target_gender": "male",
+    "target_locations": [
+      "Brazil"
+    ],
+    "required_creator_niches": [
+      "sports"
+    ],
+    "preferred_creator_niches": [
+      "fitness",
+      "yoga",
+      "nutrition",
+      "wellness",
+      "sports"
+    ],
+    "creator_size_preference": "mid-tier to macro",
+    "minimum_followers": 50000,
+    "maximum_followers": 1000000,
+    "budget": 60000,
+    "currency": "BRL",
+    "content_types": [
+      "sports",
+      "review",
+      "lifestyle"
+    ],
+    "platforms": [
+      "instagram",
+      "youtube",
+      "tiktok"
+    ],
+    "tone": "informative and engaging",
+    "mandatory_requirements": [],
+    "preferred_traits": [
+      "authentic",
+      "engaging"
+    ],
+    "excluded_traits": []
+  },
+  {
+    "brand_id": "b16",
+    "brand_name": "Beauty US 16",
+    "industry": "Beauty & Skincare",
+    "product": "Beauty products and services",
+    "campaign_title": "Beauty Creator Campaign",
+    "campaign_goal": "Build awareness among US audiences interested in beauty.",
+    "campaign_description": "A campaign for beauty creators in US.",
+    "target_audience": "Female audiences in US interested in beauty",
+    "target_age_range": "18-40",
+    "target_gender": "female",
+    "target_locations": [
+      "US"
+    ],
+    "required_creator_niches": [
+      "beauty"
+    ],
+    "preferred_creator_niches": [
+      "beauty",
+      "skincare",
+      "haircare",
+      "cosmetics"
+    ],
+    "creator_size_preference": "mid-tier to macro",
+    "minimum_followers": 50000,
+    "maximum_followers": 1000000,
+    "budget": 12000,
+    "currency": "USD",
+    "content_types": [
+      "beauty",
+      "review",
+      "lifestyle"
+    ],
+    "platforms": [
+      "instagram",
+      "youtube",
+      "tiktok"
+    ],
+    "tone": "informative and engaging",
+    "mandatory_requirements": [],
+    "preferred_traits": [
+      "authentic",
+      "engaging"
+    ],
+    "excluded_traits": []
+  },
+  {
+    "brand_id": "b17",
+    "brand_name": "Skincare UK 17",
+    "industry": "Beauty & Skincare",
+    "product": "Skincare products and services",
+    "campaign_title": "Skincare Creator Campaign",
+    "campaign_goal": "Build awareness among UK audiences interested in skincare.",
+    "campaign_description": "A campaign for skincare creators in UK.",
+    "target_audience": "Female audiences in UK interested in skincare",
+    "target_age_range": "18-40",
+    "target_gender": "female",
+    "target_locations": [
+      "UK"
+    ],
+    "required_creator_niches": [
+      "skincare"
+    ],
+    "preferred_creator_niches": [
+      "beauty",
+      "skincare",
+      "haircare",
+      "cosmetics"
+    ],
+    "creator_size_preference": "mid-tier to macro",
+    "minimum_followers": 50000,
+    "maximum_followers": 1000000,
+    "budget": 10000,
+    "currency": "GBP",
+    "content_types": [
+      "skincare",
+      "review",
+      "lifestyle"
+    ],
+    "platforms": [
+      "instagram",
+      "youtube",
+      "tiktok"
+    ],
+    "tone": "informative and engaging",
+    "mandatory_requirements": [],
+    "preferred_traits": [
+      "authentic",
+      "engaging"
+    ],
+    "excluded_traits": []
+  },
+  {
+    "brand_id": "b18",
+    "brand_name": "Haircare France 18",
+    "industry": "Beauty & Skincare",
+    "product": "Haircare products and services",
+    "campaign_title": "Haircare Creator Campaign",
+    "campaign_goal": "Build awareness among France audiences interested in haircare.",
+    "campaign_description": "A campaign for haircare creators in France.",
+    "target_audience": "Female audiences in France interested in haircare",
+    "target_age_range": "18-40",
+    "target_gender": "female",
+    "target_locations": [
+      "France"
+    ],
+    "required_creator_niches": [
+      "haircare"
+    ],
+    "preferred_creator_niches": [
+      "beauty",
+      "skincare",
+      "haircare",
+      "cosmetics"
+    ],
+    "creator_size_preference": "mid-tier to macro",
+    "minimum_followers": 50000,
+    "maximum_followers": 1000000,
+    "budget": 11000,
+    "currency": "EUR",
+    "content_types": [
+      "haircare",
+      "review",
+      "lifestyle"
+    ],
+    "platforms": [
+      "instagram",
+      "youtube",
+      "tiktok"
+    ],
+    "tone": "informative and engaging",
+    "mandatory_requirements": [],
+    "preferred_traits": [
+      "authentic",
+      "engaging"
+    ],
+    "excluded_traits": []
+  },
+  {
+    "brand_id": "b19",
+    "brand_name": "Cosmetics Japan 19",
+    "industry": "Beauty & Skincare",
+    "product": "Cosmetics products and services",
+    "campaign_title": "Cosmetics Creator Campaign",
+    "campaign_goal": "Build awareness among Japan audiences interested in cosmetics.",
+    "campaign_description": "A campaign for cosmetics creators in Japan.",
+    "target_audience": "All audiences in Japan interested in cosmetics",
+    "target_age_range": "18-40",
+    "target_gender": "all",
+    "target_locations": [
+      "Japan"
+    ],
+    "required_creator_niches": [
+      "cosmetics"
+    ],
+    "preferred_creator_niches": [
+      "beauty",
+      "skincare",
+      "haircare",
+      "cosmetics"
+    ],
+    "creator_size_preference": "mid-tier to macro",
+    "minimum_followers": 50000,
+    "maximum_followers": 1000000,
+    "budget": 1500000,
+    "currency": "JPY",
+    "content_types": [
+      "cosmetics",
+      "review",
+      "lifestyle"
+    ],
+    "platforms": [
+      "instagram",
+      "youtube",
+      "tiktok"
+    ],
+    "tone": "informative and engaging",
+    "mandatory_requirements": [],
+    "preferred_traits": [
+      "authentic",
+      "engaging"
+    ],
+    "excluded_traits": []
+  },
+  {
+    "brand_id": "b20",
+    "brand_name": "Gaming US 20",
+    "industry": "Gaming & Tech",
+    "product": "Gaming products and services",
+    "campaign_title": "Gaming Creator Campaign",
+    "campaign_goal": "Build awareness among US audiences interested in gaming.",
+    "campaign_description": "A campaign for gaming creators in US.",
+    "target_audience": "Male audiences in US interested in gaming",
+    "target_age_range": "18-40",
+    "target_gender": "male",
+    "target_locations": [
+      "US"
+    ],
+    "required_creator_niches": [
+      "gaming"
+    ],
+    "preferred_creator_niches": [
+      "gaming",
+      "esports",
+      "tech",
+      "streaming"
+    ],
+    "creator_size_preference": "mid-tier to macro",
+    "minimum_followers": 50000,
+    "maximum_followers": 1000000,
+    "budget": 12000,
+    "currency": "USD",
+    "content_types": [
+      "gaming",
+      "review",
+      "lifestyle"
+    ],
+    "platforms": [
+      "youtube",
+      "tiktok"
+    ],
+    "tone": "informative and engaging",
+    "mandatory_requirements": [],
+    "preferred_traits": [
+      "authentic",
+      "engaging"
+    ],
+    "excluded_traits": []
+  },
+  {
+    "brand_id": "b21",
+    "brand_name": "Esports South Korea 21",
+    "industry": "Gaming & Tech",
+    "product": "Esports products and services",
+    "campaign_title": "Esports Creator Campaign",
+    "campaign_goal": "Build awareness among South Korea audiences interested in esports.",
+    "campaign_description": "A campaign for esports creators in South Korea.",
+    "target_audience": "Male audiences in South Korea interested in esports",
+    "target_age_range": "18-40",
+    "target_gender": "male",
+    "target_locations": [
+      "South Korea"
+    ],
+    "required_creator_niches": [
+      "esports"
+    ],
+    "preferred_creator_niches": [
+      "gaming",
+      "esports",
+      "tech",
+      "streaming"
+    ],
+    "creator_size_preference": "mid-tier to macro",
+    "minimum_followers": 50000,
+    "maximum_followers": 1000000,
+    "budget": 15000000,
+    "currency": "KRW",
+    "content_types": [
+      "esports",
+      "review",
+      "lifestyle"
+    ],
+    "platforms": [
+      "youtube",
+      "tiktok"
+    ],
+    "tone": "informative and engaging",
+    "mandatory_requirements": [],
+    "preferred_traits": [
+      "authentic",
+      "engaging"
+    ],
+    "excluded_traits": []
+  },
+  {
+    "brand_id": "b22",
+    "brand_name": "Tech Germany 22",
+    "industry": "Gaming & Tech",
+    "product": "Tech products and services",
+    "campaign_title": "Tech Creator Campaign",
+    "campaign_goal": "Build awareness among Germany audiences interested in tech.",
+    "campaign_description": "A campaign for tech creators in Germany.",
+    "target_audience": "All audiences in Germany interested in tech",
+    "target_age_range": "18-40",
+    "target_gender": "all",
+    "target_locations": [
+      "Germany"
+    ],
+    "required_creator_niches": [
+      "tech"
+    ],
+    "preferred_creator_niches": [
+      "gaming",
+      "esports",
+      "tech",
+      "streaming"
+    ],
+    "creator_size_preference": "mid-tier to macro",
+    "minimum_followers": 50000,
+    "maximum_followers": 1000000,
+    "budget": 11000,
+    "currency": "EUR",
+    "content_types": [
+      "tech",
+      "review",
+      "lifestyle"
+    ],
+    "platforms": [
+      "youtube",
+      "tiktok"
+    ],
+    "tone": "informative and engaging",
+    "mandatory_requirements": [],
+    "preferred_traits": [
+      "authentic",
+      "engaging"
+    ],
+    "excluded_traits": []
+  },
+  {
+    "brand_id": "b23",
+    "brand_name": "Fashion UK 23",
+    "industry": "Fashion & Apparel",
+    "product": "Fashion products and services",
+    "campaign_title": "Fashion Creator Campaign",
+    "campaign_goal": "Build awareness among UK audiences interested in fashion.",
+    "campaign_description": "A campaign for fashion creators in UK.",
+    "target_audience": "Female audiences in UK interested in fashion",
+    "target_age_range": "18-40",
+    "target_gender": "female",
+    "target_locations": [
+      "UK"
+    ],
+    "required_creator_niches": [
+      "fashion"
+    ],
+    "preferred_creator_niches": [
+      "fashion",
+      "streetwear",
+      "luxury",
+      "sustainable"
+    ],
+    "creator_size_preference": "mid-tier to macro",
+    "minimum_followers": 50000,
+    "maximum_followers": 1000000,
+    "budget": 10000,
+    "currency": "GBP",
+    "content_types": [
+      "fashion",
+      "review",
+      "lifestyle"
+    ],
+    "platforms": [
+      "instagram",
+      "youtube",
+      "tiktok"
+    ],
+    "tone": "informative and engaging",
+    "mandatory_requirements": [],
+    "preferred_traits": [
+      "authentic",
+      "engaging"
+    ],
+    "excluded_traits": []
+  },
+  {
+    "brand_id": "b24",
+    "brand_name": "Streetwear US 24",
+    "industry": "Fashion & Apparel",
+    "product": "Streetwear products and services",
+    "campaign_title": "Streetwear Creator Campaign",
+    "campaign_goal": "Build awareness among US audiences interested in streetwear.",
+    "campaign_description": "A campaign for streetwear creators in US.",
+    "target_audience": "Female audiences in US interested in streetwear",
+    "target_age_range": "18-40",
+    "target_gender": "female",
+    "target_locations": [
+      "US"
+    ],
+    "required_creator_niches": [
+      "streetwear"
+    ],
+    "preferred_creator_niches": [
+      "fashion",
+      "streetwear",
+      "luxury",
+      "sustainable"
+    ],
+    "creator_size_preference": "mid-tier to macro",
+    "minimum_followers": 50000,
+    "maximum_followers": 1000000,
+    "budget": 12000,
+    "currency": "USD",
+    "content_types": [
+      "streetwear",
+      "review",
+      "lifestyle"
+    ],
+    "platforms": [
+      "instagram",
+      "youtube",
+      "tiktok"
+    ],
+    "tone": "informative and engaging",
+    "mandatory_requirements": [],
+    "preferred_traits": [
+      "authentic",
+      "engaging"
+    ],
+    "excluded_traits": []
+  },
+  {
+    "brand_id": "b25",
+    "brand_name": "Luxury Italy 25",
+    "industry": "Fashion & Apparel",
+    "product": "Luxury products and services",
+    "campaign_title": "Luxury Creator Campaign",
+    "campaign_goal": "Build awareness among Italy audiences interested in luxury.",
+    "campaign_description": "A campaign for luxury creators in Italy.",
+    "target_audience": "Male audiences in Italy interested in luxury",
+    "target_age_range": "18-40",
+    "target_gender": "male",
+    "target_locations": [
+      "Italy"
+    ],
+    "required_creator_niches": [
+      "luxury"
+    ],
+    "preferred_creator_niches": [
+      "fashion",
+      "streetwear",
+      "luxury",
+      "sustainable"
+    ],
+    "creator_size_preference": "mid-tier to macro",
+    "minimum_followers": 50000,
+    "maximum_followers": 1000000,
+    "budget": 11000,
+    "currency": "EUR",
+    "content_types": [
+      "luxury",
+      "review",
+      "lifestyle"
+    ],
+    "platforms": [
+      "instagram",
+      "youtube",
+      "tiktok"
+    ],
+    "tone": "informative and engaging",
+    "mandatory_requirements": [],
+    "preferred_traits": [
+      "authentic",
+      "engaging"
+    ],
+    "excluded_traits": []
+  },
+  {
+    "brand_id": "b26",
+    "brand_name": "Sustainable India 26",
+    "industry": "Fashion & Apparel",
+    "product": "Sustainable products and services",
+    "campaign_title": "Sustainable Creator Campaign",
+    "campaign_goal": "Build awareness among India audiences interested in sustainable.",
+    "campaign_description": "A campaign for sustainable creators in India.",
+    "target_audience": "All audiences in India interested in sustainable",
+    "target_age_range": "18-40",
+    "target_gender": "all",
+    "target_locations": [
+      "India"
+    ],
+    "required_creator_niches": [
+      "sustainable"
+    ],
+    "preferred_creator_niches": [
+      "fashion",
+      "streetwear",
+      "luxury",
+      "sustainable"
+    ],
+    "creator_size_preference": "mid-tier to macro",
+    "minimum_followers": 50000,
+    "maximum_followers": 1000000,
+    "budget": 500000,
+    "currency": "INR",
+    "content_types": [
+      "sustainable",
+      "review",
+      "lifestyle"
+    ],
+    "platforms": [
+      "instagram",
+      "youtube",
+      "tiktok"
+    ],
+    "tone": "informative and engaging",
+    "mandatory_requirements": [],
+    "preferred_traits": [
+      "authentic",
+      "engaging"
+    ],
+    "excluded_traits": []
+  },
+  {
+    "brand_id": "b27",
+    "brand_name": "Finance US 27",
+    "industry": "Fintech",
+    "product": "Finance products and services",
+    "campaign_title": "Finance Creator Campaign",
+    "campaign_goal": "Build awareness among US audiences interested in finance.",
+    "campaign_description": "A campaign for finance creators in US.",
+    "target_audience": "All audiences in US interested in finance",
+    "target_age_range": "18-40",
+    "target_gender": "all",
+    "target_locations": [
+      "US"
+    ],
+    "required_creator_niches": [
+      "finance"
+    ],
+    "preferred_creator_niches": [
+      "finance",
+      "tech",
+      "investing",
+      "banking"
+    ],
+    "creator_size_preference": "mid-tier to macro",
+    "minimum_followers": 50000,
+    "maximum_followers": 1000000,
+    "budget": 12000,
+    "currency": "USD",
+    "content_types": [
+      "finance",
+      "review",
+      "lifestyle"
+    ],
+    "platforms": [
+      "youtube",
+      "tiktok",
+      "twitter"
+    ],
+    "tone": "informative and engaging",
+    "mandatory_requirements": [],
+    "preferred_traits": [
+      "authentic",
+      "engaging"
+    ],
+    "excluded_traits": []
+  },
+  {
+    "brand_id": "b28",
+    "brand_name": "Tech UK 28",
+    "industry": "Fintech",
+    "product": "Tech products and services",
+    "campaign_title": "Tech Creator Campaign",
+    "campaign_goal": "Build awareness among UK audiences interested in tech.",
+    "campaign_description": "A campaign for tech creators in UK.",
+    "target_audience": "All audiences in UK interested in tech",
+    "target_age_range": "18-40",
+    "target_gender": "all",
+    "target_locations": [
+      "UK"
+    ],
+    "required_creator_niches": [
+      "tech"
+    ],
+    "preferred_creator_niches": [
+      "finance",
+      "tech",
+      "investing",
+      "banking"
+    ],
+    "creator_size_preference": "mid-tier to macro",
+    "minimum_followers": 50000,
+    "maximum_followers": 1000000,
+    "budget": 10000,
+    "currency": "GBP",
+    "content_types": [
+      "tech",
+      "review",
+      "lifestyle"
+    ],
+    "platforms": [
+      "youtube",
+      "tiktok",
+      "twitter"
+    ],
+    "tone": "informative and engaging",
+    "mandatory_requirements": [],
+    "preferred_traits": [
+      "authentic",
+      "engaging"
+    ],
+    "excluded_traits": []
+  },
+  {
+    "brand_id": "b29",
+    "brand_name": "Investing Singapore 29",
+    "industry": "Fintech",
+    "product": "Investing products and services",
+    "campaign_title": "Investing Creator Campaign",
+    "campaign_goal": "Build awareness among Singapore audiences interested in investing.",
+    "campaign_description": "A campaign for investing creators in Singapore.",
+    "target_audience": "Male audiences in Singapore interested in investing",
+    "target_age_range": "18-40",
+    "target_gender": "male",
+    "target_locations": [
+      "Singapore"
+    ],
+    "required_creator_niches": [
+      "investing"
+    ],
+    "preferred_creator_niches": [
+      "finance",
+      "tech",
+      "investing",
+      "banking"
+    ],
+    "creator_size_preference": "mid-tier to macro",
+    "minimum_followers": 50000,
+    "maximum_followers": 1000000,
+    "budget": 15000,
+    "currency": "SGD",
+    "content_types": [
+      "investing",
+      "review",
+      "lifestyle"
+    ],
+    "platforms": [
+      "youtube",
+      "tiktok",
+      "twitter"
+    ],
+    "tone": "informative and engaging",
+    "mandatory_requirements": [],
+    "preferred_traits": [
+      "authentic",
+      "engaging"
+    ],
+    "excluded_traits": []
+  },
+  {
+    "brand_id": "b30",
+    "brand_name": "Food US 30",
+    "industry": "Food & Health",
+    "product": "Food products and services",
+    "campaign_title": "Food Creator Campaign",
+    "campaign_goal": "Build awareness among US audiences interested in food.",
+    "campaign_description": "A campaign for food creators in US.",
+    "target_audience": "All audiences in US interested in food",
+    "target_age_range": "18-40",
+    "target_gender": "all",
+    "target_locations": [
+      "US"
+    ],
+    "required_creator_niches": [
+      "food"
+    ],
+    "preferred_creator_niches": [
+      "food",
+      "nutrition",
+      "cooking",
+      "health"
+    ],
+    "creator_size_preference": "mid-tier to macro",
+    "minimum_followers": 50000,
+    "maximum_followers": 1000000,
+    "budget": 12000,
+    "currency": "USD",
+    "content_types": [
+      "food",
+      "review",
+      "lifestyle"
+    ],
+    "platforms": [
+      "instagram",
+      "youtube"
+    ],
+    "tone": "informative and engaging",
+    "mandatory_requirements": [],
+    "preferred_traits": [
+      "authentic",
+      "engaging"
+    ],
+    "excluded_traits": []
+  },
+  {
+    "brand_id": "b31",
+    "brand_name": "Nutrition Australia 31",
+    "industry": "Food & Health",
+    "product": "Nutrition products and services",
+    "campaign_title": "Nutrition Creator Campaign",
+    "campaign_goal": "Build awareness among Australia audiences interested in nutrition.",
+    "campaign_description": "A campaign for nutrition creators in Australia.",
+    "target_audience": "All audiences in Australia interested in nutrition",
+    "target_age_range": "18-40",
+    "target_gender": "all",
+    "target_locations": [
+      "Australia"
+    ],
+    "required_creator_niches": [
+      "nutrition"
+    ],
+    "preferred_creator_niches": [
+      "food",
+      "nutrition",
+      "cooking",
+      "health"
+    ],
+    "creator_size_preference": "mid-tier to macro",
+    "minimum_followers": 50000,
+    "maximum_followers": 1000000,
+    "budget": 16000,
+    "currency": "AUD",
+    "content_types": [
+      "nutrition",
+      "review",
+      "lifestyle"
+    ],
+    "platforms": [
+      "instagram",
+      "youtube"
+    ],
+    "tone": "informative and engaging",
+    "mandatory_requirements": [],
+    "preferred_traits": [
+      "authentic",
+      "engaging"
+    ],
+    "excluded_traits": []
+  },
+  {
+    "brand_id": "b32",
+    "brand_name": "Cooking Japan 32",
+    "industry": "Food & Health",
+    "product": "Cooking products and services",
+    "campaign_title": "Cooking Creator Campaign",
+    "campaign_goal": "Build awareness among Japan audiences interested in cooking.",
+    "campaign_description": "A campaign for cooking creators in Japan.",
+    "target_audience": "Female audiences in Japan interested in cooking",
+    "target_age_range": "18-40",
+    "target_gender": "female",
+    "target_locations": [
+      "Japan"
+    ],
+    "required_creator_niches": [
+      "cooking"
+    ],
+    "preferred_creator_niches": [
+      "food",
+      "nutrition",
+      "cooking",
+      "health"
+    ],
+    "creator_size_preference": "mid-tier to macro",
+    "minimum_followers": 50000,
+    "maximum_followers": 1000000,
+    "budget": 1500000,
+    "currency": "JPY",
+    "content_types": [
+      "cooking",
+      "review",
+      "lifestyle"
+    ],
+    "platforms": [
+      "instagram",
+      "youtube"
+    ],
+    "tone": "informative and engaging",
+    "mandatory_requirements": [],
+    "preferred_traits": [
+      "authentic",
+      "engaging"
+    ],
+    "excluded_traits": []
+  },
+  {
+    "brand_id": "b33",
+    "brand_name": "Travel New Zealand 33",
+    "industry": "Travel & Tourism",
+    "product": "Travel products and services",
+    "campaign_title": "Travel Creator Campaign",
+    "campaign_goal": "Build awareness among New Zealand audiences interested in travel.",
+    "campaign_description": "A campaign for travel creators in New Zealand.",
+    "target_audience": "All audiences in New Zealand interested in travel",
+    "target_age_range": "18-40",
+    "target_gender": "all",
+    "target_locations": [
+      "New Zealand"
+    ],
+    "required_creator_niches": [
+      "travel"
+    ],
+    "preferred_creator_niches": [
+      "travel",
+      "adventure",
+      "luxury",
+      "photography"
+    ],
+    "creator_size_preference": "mid-tier to macro",
+    "minimum_followers": 50000,
+    "maximum_followers": 1000000,
+    "budget": 14000,
+    "currency": "NZD",
+    "content_types": [
+      "travel",
+      "review",
+      "lifestyle"
+    ],
+    "platforms": [
+      "instagram",
+      "youtube",
+      "tiktok"
+    ],
+    "tone": "informative and engaging",
+    "mandatory_requirements": [],
+    "preferred_traits": [
+      "authentic",
+      "engaging"
+    ],
+    "excluded_traits": []
+  },
+  {
+    "brand_id": "b34",
+    "brand_name": "Adventure India 34",
+    "industry": "Travel & Tourism",
+    "product": "Adventure products and services",
+    "campaign_title": "Adventure Creator Campaign",
+    "campaign_goal": "Build awareness among India audiences interested in adventure.",
+    "campaign_description": "A campaign for adventure creators in India.",
+    "target_audience": "All audiences in India interested in adventure",
+    "target_age_range": "18-40",
+    "target_gender": "all",
+    "target_locations": [
+      "India"
+    ],
+    "required_creator_niches": [
+      "adventure"
+    ],
+    "preferred_creator_niches": [
+      "travel",
+      "adventure",
+      "luxury",
+      "photography"
+    ],
+    "creator_size_preference": "mid-tier to macro",
+    "minimum_followers": 50000,
+    "maximum_followers": 1000000,
+    "budget": 500000,
+    "currency": "INR",
+    "content_types": [
+      "adventure",
+      "review",
+      "lifestyle"
+    ],
+    "platforms": [
+      "instagram",
+      "youtube",
+      "tiktok"
+    ],
+    "tone": "informative and engaging",
+    "mandatory_requirements": [],
+    "preferred_traits": [
+      "authentic",
+      "engaging"
+    ],
+    "excluded_traits": []
+  },
+  {
+    "brand_id": "b35",
+    "brand_name": "Luxury UAE 35",
+    "industry": "Travel & Tourism",
+    "product": "Luxury products and services",
+    "campaign_title": "Luxury Creator Campaign",
+    "campaign_goal": "Build awareness among UAE audiences interested in luxury.",
+    "campaign_description": "A campaign for luxury creators in UAE.",
+    "target_audience": "Female audiences in UAE interested in luxury",
+    "target_age_range": "18-40",
+    "target_gender": "female",
+    "target_locations": [
+      "UAE"
+    ],
+    "required_creator_niches": [
+      "luxury"
+    ],
+    "preferred_creator_niches": [
+      "travel",
+      "adventure",
+      "luxury",
+      "photography"
+    ],
+    "creator_size_preference": "mid-tier to macro",
+    "minimum_followers": 50000,
+    "maximum_followers": 1000000,
+    "budget": 45000,
+    "currency": "AED",
+    "content_types": [
+      "luxury",
+      "review",
+      "lifestyle"
+    ],
+    "platforms": [
+      "instagram",
+      "youtube",
+      "tiktok"
+    ],
+    "tone": "informative and engaging",
+    "mandatory_requirements": [],
+    "preferred_traits": [
+      "authentic",
+      "engaging"
+    ],
+    "excluded_traits": []
+  },
+  {
+    "brand_id": "b36",
+    "brand_name": "Parenting US 36",
+    "industry": "Parenting & Family",
+    "product": "Parenting products and services",
+    "campaign_title": "Parenting Creator Campaign",
+    "campaign_goal": "Build awareness among US audiences interested in parenting.",
+    "campaign_description": "A campaign for parenting creators in US.",
+    "target_audience": "Female audiences in US interested in parenting",
+    "target_age_range": "18-40",
+    "target_gender": "female",
+    "target_locations": [
+      "US"
+    ],
+    "required_creator_niches": [
+      "parenting"
+    ],
+    "preferred_creator_niches": [
+      "parenting",
+      "family",
+      "education",
+      "wellness"
+    ],
+    "creator_size_preference": "mid-tier to macro",
+    "minimum_followers": 50000,
+    "maximum_followers": 1000000,
+    "budget": 12000,
+    "currency": "USD",
+    "content_types": [
+      "parenting",
+      "review",
+      "lifestyle"
+    ],
+    "platforms": [
+      "instagram",
+      "youtube"
+    ],
+    "tone": "informative and engaging",
+    "mandatory_requirements": [],
+    "preferred_traits": [
+      "authentic",
+      "engaging"
+    ],
+    "excluded_traits": []
+  },
+  {
+    "brand_id": "b37",
+    "brand_name": "Family Canada 37",
+    "industry": "Parenting & Family",
+    "product": "Family products and services",
+    "campaign_title": "Family Creator Campaign",
+    "campaign_goal": "Build awareness among Canada audiences interested in family.",
+    "campaign_description": "A campaign for family creators in Canada.",
+    "target_audience": "All audiences in Canada interested in family",
+    "target_age_range": "18-40",
+    "target_gender": "all",
+    "target_locations": [
+      "Canada"
+    ],
+    "required_creator_niches": [
+      "family"
+    ],
+    "preferred_creator_niches": [
+      "parenting",
+      "family",
+      "education",
+      "wellness"
+    ],
+    "creator_size_preference": "mid-tier to macro",
+    "minimum_followers": 50000,
+    "maximum_followers": 1000000,
+    "budget": 15000,
+    "currency": "CAD",
+    "content_types": [
+      "family",
+      "review",
+      "lifestyle"
+    ],
+    "platforms": [
+      "instagram",
+      "youtube"
+    ],
+    "tone": "informative and engaging",
+    "mandatory_requirements": [],
+    "preferred_traits": [
+      "authentic",
+      "engaging"
+    ],
+    "excluded_traits": []
+  },
+  {
+    "brand_id": "b38",
+    "brand_name": "Tech US 38",
+    "industry": "Consumer Tech",
+    "product": "Tech products and services",
+    "campaign_title": "Tech Creator Campaign",
+    "campaign_goal": "Build awareness among US audiences interested in tech.",
+    "campaign_description": "A campaign for tech creators in US.",
+    "target_audience": "All audiences in US interested in tech",
+    "target_age_range": "18-40",
+    "target_gender": "all",
+    "target_locations": [
+      "US"
+    ],
+    "required_creator_niches": [
+      "tech"
+    ],
+    "preferred_creator_niches": [
+      "tech",
+      "smart home",
+      "audio",
+      "mobile"
+    ],
+    "creator_size_preference": "mid-tier to macro",
+    "minimum_followers": 50000,
+    "maximum_followers": 1000000,
+    "budget": 12000,
+    "currency": "USD",
+    "content_types": [
+      "tech",
+      "review",
+      "lifestyle"
+    ],
+    "platforms": [
+      "youtube",
+      "tiktok"
+    ],
+    "tone": "informative and engaging",
+    "mandatory_requirements": [],
+    "preferred_traits": [
+      "authentic",
+      "engaging"
+    ],
+    "excluded_traits": []
+  },
+  {
+    "brand_id": "b39",
+    "brand_name": "Smart Home Germany 39",
+    "industry": "Consumer Tech",
+    "product": "Smart Home products and services",
+    "campaign_title": "Smart Home Creator Campaign",
+    "campaign_goal": "Build awareness among Germany audiences interested in smart home.",
+    "campaign_description": "A campaign for smart home creators in Germany.",
+    "target_audience": "All audiences in Germany interested in smart home",
+    "target_age_range": "18-40",
+    "target_gender": "all",
+    "target_locations": [
+      "Germany"
+    ],
+    "required_creator_niches": [
+      "smart home"
+    ],
+    "preferred_creator_niches": [
+      "tech",
+      "smart home",
+      "audio",
+      "mobile"
+    ],
+    "creator_size_preference": "mid-tier to macro",
+    "minimum_followers": 50000,
+    "maximum_followers": 1000000,
+    "budget": 11000,
+    "currency": "EUR",
+    "content_types": [
+      "smart home",
+      "review",
+      "lifestyle"
+    ],
+    "platforms": [
+      "youtube",
+      "tiktok"
+    ],
+    "tone": "informative and engaging",
+    "mandatory_requirements": [],
+    "preferred_traits": [
+      "authentic",
+      "engaging"
+    ],
+    "excluded_traits": []
+  },
+  {
+    "brand_id": "b40",
+    "brand_name": "Audio China 40",
+    "industry": "Consumer Tech",
+    "product": "Audio products and services",
+    "campaign_title": "Audio Creator Campaign",
+    "campaign_goal": "Build awareness among China audiences interested in audio.",
+    "campaign_description": "A campaign for audio creators in China.",
+    "target_audience": "Male audiences in China interested in audio",
+    "target_age_range": "18-40",
+    "target_gender": "male",
+    "target_locations": [
+      "China"
+    ],
+    "required_creator_niches": [
+      "audio"
+    ],
+    "preferred_creator_niches": [
+      "tech",
+      "smart home",
+      "audio",
+      "mobile"
+    ],
+    "creator_size_preference": "mid-tier to macro",
+    "minimum_followers": 50000,
+    "maximum_followers": 1000000,
+    "budget": 80000,
+    "currency": "CNY",
+    "content_types": [
+      "audio",
+      "review",
+      "lifestyle"
+    ],
+    "platforms": [
+      "youtube",
+      "tiktok"
+    ],
+    "tone": "informative and engaging",
+    "mandatory_requirements": [],
+    "preferred_traits": [
+      "authentic",
+      "engaging"
+    ],
+    "excluded_traits": []
+  },
+  {
+    "brand_id": "b41",
+    "brand_name": "Education India 41",
+    "industry": "EdTech",
+    "product": "Education products and services",
+    "campaign_title": "Education Creator Campaign",
+    "campaign_goal": "Build awareness among India audiences interested in education.",
+    "campaign_description": "A campaign for education creators in India.",
+    "target_audience": "All audiences in India interested in education",
+    "target_age_range": "18-40",
+    "target_gender": "all",
+    "target_locations": [
+      "India"
+    ],
+    "required_creator_niches": [
+      "education"
+    ],
+    "preferred_creator_niches": [
+      "education",
+      "tech",
+      "e-learning"
+    ],
+    "creator_size_preference": "mid-tier to macro",
+    "minimum_followers": 50000,
+    "maximum_followers": 1000000,
+    "budget": 500000,
+    "currency": "INR",
+    "content_types": [
+      "education",
+      "review",
+      "lifestyle"
+    ],
+    "platforms": [
+      "youtube",
+      "instagram"
+    ],
+    "tone": "informative and engaging",
+    "mandatory_requirements": [],
+    "preferred_traits": [
+      "authentic",
+      "engaging"
+    ],
+    "excluded_traits": []
+  },
+  {
+    "brand_id": "b42",
+    "brand_name": "Tech US 42",
+    "industry": "EdTech",
+    "product": "Tech products and services",
+    "campaign_title": "Tech Creator Campaign",
+    "campaign_goal": "Build awareness among US audiences interested in tech.",
+    "campaign_description": "A campaign for tech creators in US.",
+    "target_audience": "All audiences in US interested in tech",
+    "target_age_range": "18-40",
+    "target_gender": "all",
+    "target_locations": [
+      "US"
+    ],
+    "required_creator_niches": [
+      "tech"
+    ],
+    "preferred_creator_niches": [
+      "education",
+      "tech",
+      "e-learning"
+    ],
+    "creator_size_preference": "mid-tier to macro",
+    "minimum_followers": 50000,
+    "maximum_followers": 1000000,
+    "budget": 12000,
+    "currency": "USD",
+    "content_types": [
+      "tech",
+      "review",
+      "lifestyle"
+    ],
+    "platforms": [
+      "youtube",
+      "instagram"
+    ],
+    "tone": "informative and engaging",
+    "mandatory_requirements": [],
+    "preferred_traits": [
+      "authentic",
+      "engaging"
+    ],
+    "excluded_traits": []
+  },
+  {
+    "brand_id": "b43",
+    "brand_name": "Sustainability Sweden 43",
+    "industry": "Sustainability/Eco",
+    "product": "Sustainability products and services",
+    "campaign_title": "Sustainability Creator Campaign",
+    "campaign_goal": "Build awareness among Sweden audiences interested in sustainability.",
+    "campaign_description": "A campaign for sustainability creators in Sweden.",
+    "target_audience": "All audiences in Sweden interested in sustainability",
+    "target_age_range": "18-40",
+    "target_gender": "all",
+    "target_locations": [
+      "Sweden"
+    ],
+    "required_creator_niches": [
+      "sustainability"
+    ],
+    "preferred_creator_niches": [
+      "sustainability",
+      "eco-friendly",
+      "lifestyle"
+    ],
+    "creator_size_preference": "mid-tier to macro",
+    "minimum_followers": 50000,
+    "maximum_followers": 1000000,
+    "budget": 120000,
+    "currency": "SEK",
+    "content_types": [
+      "sustainability",
+      "review",
+      "lifestyle"
+    ],
+    "platforms": [
+      "instagram",
+      "youtube"
+    ],
+    "tone": "informative and engaging",
+    "mandatory_requirements": [],
+    "preferred_traits": [
+      "authentic",
+      "engaging"
+    ],
+    "excluded_traits": []
+  },
+  {
+    "brand_id": "b44",
+    "brand_name": "Eco-Friendly Netherlands 44",
+    "industry": "Sustainability/Eco",
+    "product": "Eco-Friendly products and services",
+    "campaign_title": "Eco-Friendly Creator Campaign",
+    "campaign_goal": "Build awareness among Netherlands audiences interested in eco-friendly.",
+    "campaign_description": "A campaign for eco-friendly creators in Netherlands.",
+    "target_audience": "All audiences in Netherlands interested in eco-friendly",
+    "target_age_range": "18-40",
+    "target_gender": "all",
+    "target_locations": [
+      "Netherlands"
+    ],
+    "required_creator_niches": [
+      "eco-friendly"
+    ],
+    "preferred_creator_niches": [
+      "sustainability",
+      "eco-friendly",
+      "lifestyle"
+    ],
+    "creator_size_preference": "mid-tier to macro",
+    "minimum_followers": 50000,
+    "maximum_followers": 1000000,
+    "budget": 11000,
+    "currency": "EUR",
+    "content_types": [
+      "eco-friendly",
+      "review",
+      "lifestyle"
+    ],
+    "platforms": [
+      "instagram",
+      "youtube"
+    ],
+    "tone": "informative and engaging",
+    "mandatory_requirements": [],
+    "preferred_traits": [
+      "authentic",
+      "engaging"
+    ],
+    "excluded_traits": []
+  },
+  {
+    "brand_id": "b45",
+    "brand_name": "Pets US 45",
+    "industry": "Pet Care",
+    "product": "Pets products and services",
+    "campaign_title": "Pets Creator Campaign",
+    "campaign_goal": "Build awareness among US audiences interested in pets.",
+    "campaign_description": "A campaign for pets creators in US.",
+    "target_audience": "All audiences in US interested in pets",
+    "target_age_range": "18-40",
+    "target_gender": "all",
+    "target_locations": [
+      "US"
+    ],
+    "required_creator_niches": [
+      "pets"
+    ],
+    "preferred_creator_niches": [
+      "pets",
+      "animals",
+      "lifestyle"
+    ],
+    "creator_size_preference": "mid-tier to macro",
+    "minimum_followers": 50000,
+    "maximum_followers": 1000000,
+    "budget": 12000,
+    "currency": "USD",
+    "content_types": [
+      "pets",
+      "review",
+      "lifestyle"
+    ],
+    "platforms": [
+      "instagram",
+      "tiktok"
+    ],
+    "tone": "informative and engaging",
+    "mandatory_requirements": [],
+    "preferred_traits": [
+      "authentic",
+      "engaging"
+    ],
+    "excluded_traits": []
+  },
+  {
+    "brand_id": "b46",
+    "brand_name": "Home Decor Netherlands 46",
+    "industry": "Home Decor",
+    "product": "Home Decor products and services",
+    "campaign_title": "Home Decor Creator Campaign",
+    "campaign_goal": "Build awareness among Netherlands audiences interested in home decor.",
+    "campaign_description": "A campaign for home decor creators in Netherlands.",
+    "target_audience": "Female audiences in Netherlands interested in home decor",
+    "target_age_range": "18-40",
+    "target_gender": "female",
+    "target_locations": [
+      "Netherlands"
+    ],
+    "required_creator_niches": [
+      "home decor"
+    ],
+    "preferred_creator_niches": [
+      "home decor",
+      "interior design",
+      "lifestyle"
+    ],
+    "creator_size_preference": "mid-tier to macro",
+    "minimum_followers": 50000,
+    "maximum_followers": 1000000,
+    "budget": 11000,
+    "currency": "EUR",
+    "content_types": [
+      "home decor",
+      "review",
+      "lifestyle"
+    ],
+    "platforms": [
+      "instagram"
+    ],
+    "tone": "informative and engaging",
+    "mandatory_requirements": [],
+    "preferred_traits": [
+      "authentic",
+      "engaging"
+    ],
+    "excluded_traits": []
+  },
+  {
+    "brand_id": "b47",
+    "brand_name": "Automotive Germany 47",
+    "industry": "Automotive",
+    "product": "Automotive products and services",
+    "campaign_title": "Automotive Creator Campaign",
+    "campaign_goal": "Build awareness among Germany audiences interested in automotive.",
+    "campaign_description": "A campaign for automotive creators in Germany.",
+    "target_audience": "Male audiences in Germany interested in automotive",
+    "target_age_range": "18-40",
+    "target_gender": "male",
+    "target_locations": [
+      "Germany"
+    ],
+    "required_creator_niches": [
+      "automotive"
+    ],
+    "preferred_creator_niches": [
+      "automotive",
+      "tech",
+      "reviews"
+    ],
+    "creator_size_preference": "mid-tier to macro",
+    "minimum_followers": 50000,
+    "maximum_followers": 1000000,
+    "budget": 11000,
+    "currency": "EUR",
+    "content_types": [
+      "automotive",
+      "review",
+      "lifestyle"
+    ],
+    "platforms": [
+      "youtube"
+    ],
+    "tone": "informative and engaging",
+    "mandatory_requirements": [],
+    "preferred_traits": [
+      "authentic",
+      "engaging"
+    ],
+    "excluded_traits": []
+  },
+  {
+    "brand_id": "b48",
+    "brand_name": "B2B US 48",
+    "industry": "B2B SaaS",
+    "product": "B2B products and services",
+    "campaign_title": "B2B Creator Campaign",
+    "campaign_goal": "Build awareness among US audiences interested in B2B.",
+    "campaign_description": "A campaign for B2B creators in US.",
+    "target_audience": "All audiences in US interested in B2B",
+    "target_age_range": "18-40",
+    "target_gender": "all",
+    "target_locations": [
+      "US"
+    ],
+    "required_creator_niches": [
+      "B2B"
+    ],
+    "preferred_creator_niches": [
+      "B2B",
+      "SaaS",
+      "tech",
+      "productivity"
+    ],
+    "creator_size_preference": "mid-tier to macro",
+    "minimum_followers": 50000,
+    "maximum_followers": 1000000,
+    "budget": 12000,
+    "currency": "USD",
+    "content_types": [
+      "B2B",
+      "review",
+      "lifestyle"
+    ],
+    "platforms": [
+      "linkedin",
+      "twitter"
+    ],
+    "tone": "informative and engaging",
+    "mandatory_requirements": [],
+    "preferred_traits": [
+      "authentic",
+      "engaging"
+    ],
+    "excluded_traits": []
+  },
+  {
+    "brand_id": "b49",
+    "brand_name": "Creator Tools US 49",
+    "industry": "Creator Economy",
+    "product": "Creator Tools products and services",
+    "campaign_title": "Creator Tools Creator Campaign",
+    "campaign_goal": "Build awareness among US audiences interested in creator tools.",
+    "campaign_description": "A campaign for creator tools creators in US.",
+    "target_audience": "All audiences in US interested in creator tools",
+    "target_age_range": "18-40",
+    "target_gender": "all",
+    "target_locations": [
+      "US"
+    ],
+    "required_creator_niches": [
+      "creator tools"
+    ],
+    "preferred_creator_niches": [
+      "creator tools",
+      "social media",
+      "tech"
+    ],
+    "creator_size_preference": "mid-tier to macro",
+    "minimum_followers": 50000,
+    "maximum_followers": 1000000,
+    "budget": 12000,
+    "currency": "USD",
+    "content_types": [
+      "creator tools",
+      "review",
+      "lifestyle"
+    ],
+    "platforms": [
+      "youtube",
+      "tiktok"
+    ],
+    "tone": "informative and engaging",
+    "mandatory_requirements": [],
+    "preferred_traits": [
+      "authentic",
+      "engaging"
+    ],
+    "excluded_traits": []
+  },
+  {
+    "brand_id": "b50",
+    "brand_name": "Health Tech Israel 50",
+    "industry": "Health Tech",
+    "product": "Health Tech products and services",
+    "campaign_title": "Health Tech Creator Campaign",
+    "campaign_goal": "Build awareness among Israel audiences interested in health tech.",
+    "campaign_description": "A campaign for health tech creators in Israel.",
+    "target_audience": "All audiences in Israel interested in health tech",
+    "target_age_range": "18-40",
+    "target_gender": "all",
+    "target_locations": [
+      "Israel"
+    ],
+    "required_creator_niches": [
+      "health tech"
+    ],
+    "preferred_creator_niches": [
+      "health tech",
+      "wellness",
+      "medical"
+    ],
+    "creator_size_preference": "mid-tier to macro",
+    "minimum_followers": 50000,
+    "maximum_followers": 1000000,
+    "budget": 40000,
+    "currency": "ILS",
+    "content_types": [
+      "health tech",
+      "review",
+      "lifestyle"
+    ],
+    "platforms": [
+      "youtube",
+      "instagram"
+    ],
+    "tone": "informative and engaging",
+    "mandatory_requirements": [],
+    "preferred_traits": [
+      "authentic",
+      "engaging"
+    ],
+    "excluded_traits": []
   }
 ]
