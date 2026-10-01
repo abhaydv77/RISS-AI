@@ -16,7 +16,7 @@ Outputs:
 - `artifacts/annotations_v1.jsonl`: one validated annotation per completed pair
 - `artifacts/annotation_failures_v1.jsonl`: exhausted pair failures; failures are not checkpointed as completed and remain pending
 
-The workflow uses `ANNOTATION_MODEL` (default `gpt-4o-mini`), `OPENAI_API_KEY`, and optional `OPENAI_BASE_URL` (default OpenAI API URL). It uses Python's standard library and adds no provider dependency.
+The current implementation is Groq-only. It reads `GROQ_API_KEY` and `GROQ_MODEL` from `.env` without displaying key values; exported environment variables take precedence. The configured model is `llama-3.3-70b-versatile`. `GROQ_BASE_URL` may override the API endpoint. The client uses Groq's OpenAI-compatible chat completion endpoint, requires no provider package, and validates every response before checkpointing. Groq lists `llama-3.3-70b-versatile` as an Enterprise model, so this configured model may require an eligible account and may incur charges. See [Groq model availability](https://console.groq.com/docs/models) and [Groq rate limits](https://console.groq.com/docs/rate-limits).
 
 ## Schema and reliability
 
@@ -32,7 +32,7 @@ Dry run loads and validates all inputs, reports labeled and pending counts, buil
 python -m annotation.annotator --dry-run
 ```
 
-To explicitly annotate at most three pending pairs through the production path, set `OPENAI_API_KEY` and run:
+To explicitly annotate at most three pending pairs through the production path, configure one provider key in `.env` or the process environment and run:
 
 ```bash
 python -m annotation.annotator --limit 3
@@ -44,10 +44,12 @@ The full job requires an explicit invocation:
 python -m annotation.annotator
 ```
 
-It has not been run. `data/labels.json` is never written by this workflow, and no merge is performed.
+The full job has not been run. `data/labels.json` is never written by this workflow, and no merge is performed.
 
 ## Verification
 
-- Production-data dry run: 2,000 selected, 400 already labeled, 1,600 pending, 3 prompts constructed, 0 LLM calls.
-- `python -m unittest discover -s tests -v`: **49 passed, 0 failed**. The workflow tests use a fake client and make no network calls.
-
+- Production-data dry run before live requests: 2,000 selected, 400 already labeled, 1,600 pending, 3 prompts constructed, 0 LLM calls.
+- `python -m unittest discover -s tests -q`: **50 passed, 0 failed**. The workflow tests use a fake client and make no network calls.
+- Requested `--limit 3` live run: Groq returned HTTP 403 (error 1010) for the three attempted pairs. Retrying those pending pairs with Gemini yielded one validated checkpoint (`b01/c041`) and two failures. Gemini returned HTTP 503 during high demand and then HTTP 429 after the configured free-tier request quota was reached. Those two pairs remain pending; their failures are logged. No further live requests were made.
+- Follow-up dry run: 2,000 selected, 400 already labeled, 1,599 pending, 3 sample prompts, 0 LLM calls. `data/labels.json` still contains 400 records.
+- After switching the implementation to Groq-only and the configured model, `python -m annotation.annotator --limit 3` attempted `b01/c042`, `b01/c043`, and `b01/c044`. Sandbox DNS failed; the network-enabled retry returned HTTP 403 (error 1010) on all three. No new annotations were checkpointed; all three remain pending and failures are recorded.

@@ -16,8 +16,8 @@
       "fitness": 391,
       "beauty": 271,
       "tech": 239,
-      "gaming": 191,
       "food": 191,
+      "gaming": 191,
       "fashion": 162,
       "parenting": 103,
       "luxury": 82,
@@ -58,8 +58,8 @@
       "Mexico": 10,
       "Nigeria": 10,
       "China": 9,
-      "Norway": 8,
       "Finland": 8,
+      "Norway": 8,
       "Vietnam": 7,
       "Philippines": 7
     },
@@ -87,8 +87,8 @@
       "Home Decor": 40,
       "B2B SaaS": 37,
       "Automotive": 36,
-      "Creator Economy": 31,
       "Pet Care": 31,
+      "Creator Economy": 31,
       "Health Tech": 30
     },
     "brand_target_gender_counts": {
@@ -118,19 +118,19 @@
       "partial": 75
     },
     "platform_overlap": {
-      "partial": 1009,
       "none": 477,
+      "partial": 1009,
       "full": 114
     },
     "follower_range_fit": {
+      "near": 156,
       "in-range": 894,
-      "outside": 550,
-      "near": 156
+      "outside": 550
     },
     "budget_fit": {
-      "uncertain": 272,
       "fit": 1060,
-      "mismatch": 268
+      "mismatch": 268,
+      "uncertain": 272
     }
   },
   "existing_labeled_distribution": {
@@ -141,33 +141,33 @@
       "fitness": 130,
       "beauty": 60,
       "tech": 50,
+      "gaming": 40,
       "fashion": 40,
       "food": 40,
-      "gaming": 40,
       "parenting": 20,
-      "luxury": 10,
-      "travel": 10
+      "travel": 10,
+      "luxury": 10
     },
     "creator_country_counts": {
       "India": 90,
       "USA": 70,
+      "Sweden": 20,
+      "UK": 20,
       "Australia": 20,
       "Italy": 20,
-      "UAE": 20,
-      "Sweden": 20,
       "Germany": 20,
-      "UK": 20,
+      "UAE": 20,
       "Japan": 20,
-      "South Korea": 10,
-      "France": 10,
-      "Mexico": 10,
       "Denmark": 10,
-      "Canada": 10,
-      "Nigeria": 10,
+      "France": 10,
       "Spain": 10,
-      "Singapore": 10,
+      "Mexico": 10,
+      "South Korea": 10,
       "Ireland": 10,
-      "Netherlands": 10
+      "Canada": 10,
+      "Netherlands": 10,
+      "Singapore": 10,
+      "Nigeria": 10
     },
     "creator_size_counts": {
       "mid-tier": 340,
@@ -183,8 +183,8 @@
       "fitness": 261,
       "beauty": 211,
       "tech": 189,
-      "gaming": 151,
       "food": 151,
+      "gaming": 151,
       "fashion": 122,
       "parenting": 83,
       "education": 81,
@@ -210,19 +210,19 @@
       "Italy": 59,
       "South Korea": 54,
       "USA": 46,
-      "Spain": 36,
       "Netherlands": 36,
+      "Spain": 36,
       "Brazil": 30,
       "Sweden": 29,
       "UAE": 27,
       "Singapore": 20,
       "Israel": 16,
       "Thailand": 15,
-      "New Zealand": 14,
       "Indonesia": 14,
+      "New Zealand": 14,
       "China": 9,
-      "Norway": 8,
       "Finland": 8,
+      "Norway": 8,
       "Ireland": 8,
       "Denmark": 8,
       "Vietnam": 7,

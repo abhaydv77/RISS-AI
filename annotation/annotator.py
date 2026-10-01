@@ -13,7 +13,7 @@ from .validator import AnnotationValidationError, parse_and_validate
 
 ROOT = Path(__file__).resolve().parents[1]
 MAX_RETRIES = 2  # two retries after the initial attempt; at most three calls
-DEFAULT_MODEL = "gpt-4o-mini"
+DEFAULT_MODEL = "llama-3.3-70b-versatile"
 ANNOTATION_PATH = ROOT / "data" / "annotation_pairs_v1.json"
 LABELS_PATH = ROOT / "data" / "labels.json"
 BRANDS_PATH = ROOT / "data" / "brands.json"
@@ -30,11 +30,24 @@ class LLMConfigurationError(RuntimeError):
     pass
 
 
-class OpenAICompatibleClient:
-    """Minimal stdlib-only client for the OpenAI Chat Completions API."""
-    def __init__(self, api_key, model, base_url="https://api.openai.com/v1", timeout=90):
+def _request_json(request, timeout, api_key):
+    try:
+        with urllib.request.urlopen(request, timeout=timeout) as response:
+            return json.loads(response.read().decode("utf-8"))
+    except urllib.error.HTTPError as exc:
+        detail = exc.read(1500).decode("utf-8", errors="replace")
+        if api_key:
+            detail = detail.replace(api_key, "[REDACTED]")
+        raise RuntimeError(f"LLM HTTP {exc.code}: {detail}") from exc
+    except urllib.error.URLError as exc:
+        raise RuntimeError(f"LLM connection failed: {exc.reason}") from exc
+
+
+class GroqClient:
+    """Small Groq Chat Completions client using only Python's standard library."""
+    def __init__(self, api_key, model, base_url="https://api.groq.com/openai/v1", timeout=90):
         if not api_key:
-            raise LLMConfigurationError("OPENAI_API_KEY is required for real annotation")
+            raise LLMConfigurationError("GROQ_API_KEY is required for real annotation")
         if not model.strip():
             raise LLMConfigurationError("ANNOTATION_MODEL must not be empty")
         self.api_key, self.model = api_key, model
@@ -50,31 +63,52 @@ class OpenAICompatibleClient:
             f"{self.base_url}/chat/completions", data=body, method="POST",
             headers={"Authorization": f"Bearer {self.api_key}", "Content-Type": "application/json"},
         )
-        try:
-            with urllib.request.urlopen(request, timeout=self.timeout) as response:
-                payload = json.loads(response.read().decode("utf-8"))
-        except urllib.error.HTTPError as exc:
-            detail = exc.read(1500).decode("utf-8", errors="replace")
-            raise RuntimeError(f"LLM HTTP {exc.code}: {detail}") from exc
-        except urllib.error.URLError as exc:
-            raise RuntimeError(f"LLM connection failed: {exc.reason}") from exc
+        payload = _request_json(request, self.timeout, self.api_key)
         try:
             return payload["choices"][0]["message"]["content"]
         except (KeyError, IndexError, TypeError) as exc:
             raise RuntimeError("LLM response missing choices[0].message.content") from exc
 
 
+def _load_env_file(path):
+    """Load simple KEY=VALUE dotenv entries without overriding process env."""
+    try:
+        lines = Path(path).read_text(encoding="utf-8").splitlines()
+    except FileNotFoundError:
+        return
+    for line in lines:
+        entry = line.strip()
+        if not entry or entry.startswith("#"):
+            continue
+        if entry.startswith("export "):
+            entry = entry[7:].lstrip()
+        if "=" not in entry:
+            continue
+        key, value = entry.split("=", 1)
+        key = key.strip()
+        value = value.strip()
+        if len(value) >= 2 and value[0] == value[-1] and value[0] in ("'", '"'):
+            value = value[1:-1]
+        if key in {"GROQ_API_KEY", "GROQ_MODEL", "GROQ_BASE_URL"}:
+            os.environ.setdefault(key, value)
+
+
 def load_config(require_api_key):
-    model = os.environ.get("ANNOTATION_MODEL", DEFAULT_MODEL).strip()
-    base_url = os.environ.get("OPENAI_BASE_URL", "https://api.openai.com/v1").strip()
-    api_key = os.environ.get("OPENAI_API_KEY", "")
+    _load_env_file(ROOT / ".env")
+    model = os.environ.get("GROQ_MODEL", DEFAULT_MODEL).strip()
+    api_key = os.environ.get("GROQ_API_KEY", "")
+    base_url = os.environ.get("GROQ_BASE_URL", "https://api.groq.com/openai/v1").strip()
     if not model:
-        raise LLMConfigurationError("ANNOTATION_MODEL must not be empty")
+        raise LLMConfigurationError("GROQ_MODEL must not be empty")
     if not base_url.startswith(("https://", "http://")):
-        raise LLMConfigurationError("OPENAI_BASE_URL must be an HTTP(S) URL")
+        raise LLMConfigurationError("GROQ_BASE_URL must be an HTTP(S) URL")
     if require_api_key and not api_key:
-        raise LLMConfigurationError("OPENAI_API_KEY is required for real annotation")
-    return {"model": model, "base_url": base_url, "api_key": api_key}
+        raise LLMConfigurationError("GROQ_API_KEY is required for real annotation")
+    return {"model":model,"base_url":base_url,"api_key":api_key}
+
+
+def create_provider_client(config):
+    return GroqClient(config["api_key"], config["model"], config["base_url"])
 
 
 def annotate_pair(brand, creator, client, retry_count=MAX_RETRIES):
@@ -189,7 +223,6 @@ def run_job(client, *, limit=None, dry_run=False, sample_size=3,
         print(f"Total selected pairs: {len(selected)}")
         print(f"Already labeled: {len(labeled_selected)}")
         print(f"Pending: {len(pending)}")
-        print(f"Configuration valid: model={os.environ.get('ANNOTATION_MODEL', DEFAULT_MODEL).strip()}")
         print(f"Dry-run sample: {len(sample)} pairs")
         print("LLM calls: 0")
         return {"selected":len(selected),"labeled":len(labeled_selected),"pending":len(pending),"sample":len(sample),"calls":0}
@@ -238,8 +271,9 @@ def main(argv=None):
         config = load_config(require_api_key=not args.dry_run)
         if args.dry_run:
             client = None
+            print(f"Configuration valid: provider=groq, model={config['model']}")
         else:
-            client = OpenAICompatibleClient(config["api_key"], config["model"], config["base_url"])
+            client = create_provider_client(config)
         run_job(
             client, limit=args.limit, dry_run=args.dry_run, sample_size=args.sample_size,
             annotation_path=ANNOTATION_PATH, labels_path=LABELS_PATH,

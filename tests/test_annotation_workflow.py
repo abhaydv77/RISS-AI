@@ -7,7 +7,7 @@ from pathlib import Path
 from unittest.mock import patch
 
 import annotation.annotator as annotator_module
-from annotation.annotator import annotate_pair, run_job
+from annotation.annotator import annotate_pair, load_config, run_job
 from annotation.checkpoint import append_jsonl
 from annotation.schema import DIMENSIONS
 from annotation.validator import AnnotationValidationError, parse_and_validate
@@ -165,8 +165,8 @@ class AnnotationWorkflowTests(unittest.TestCase):
 
     def test_cli_limit_three_uses_production_path_and_processes_at_most_three(self):
         client=FakeClient([])
-        with patch.dict("os.environ",{"OPENAI_API_KEY":"test-key"}), \
-             patch.object(annotator_module,"OpenAICompatibleClient",return_value=client), \
+        with patch.dict("os.environ",{"GROQ_API_KEY":"test-key","GROQ_MODEL":"llama-3.3-70b-versatile"}), \
+             patch.object(annotator_module,"create_provider_client",return_value=client), \
              patch.object(annotator_module,"ANNOTATION_PATH",self.paths["annotation_path"]), \
              patch.object(annotator_module,"LABELS_PATH",self.paths["labels_path"]), \
              patch.object(annotator_module,"BRANDS_PATH",self.paths["brands_path"]), \
@@ -176,6 +176,12 @@ class AnnotationWorkflowTests(unittest.TestCase):
              contextlib.redirect_stdout(io.StringIO()):
             code=annotator_module.main(["--limit","3"])
         self.assertEqual(code,0); self.assertEqual(client.calls,3)
+
+    def test_groq_configuration_uses_env_key_and_selected_model(self):
+        with patch.dict("os.environ",{"GROQ_API_KEY":"groq-test","GROQ_MODEL":"llama-3.3-70b-versatile"},clear=True):
+            config=load_config(require_api_key=True)
+        self.assertEqual(config["model"],"llama-3.3-70b-versatile")
+        self.assertEqual(config["api_key"],"groq-test")
 
 
 if __name__ == "__main__":
