@@ -1,0 +1,255 @@
+{
+  "phase": "2.4",
+  "description": "Stratified selection of ~2,000 pairs for ground-truth annotation",
+  "counts": {
+    "total_pair_universe": 10000,
+    "existing_labeled_pairs": 400,
+    "unlabeled_candidates": 9600,
+    "selected_existing_pairs": 400,
+    "selected_new_pairs": 1600,
+    "final_selected_pairs": 2000
+  },
+  "coverage": {
+    "brands_represented": 50,
+    "creators_represented": 200,
+    "creator_niche_counts": {
+      "fitness": 391,
+      "beauty": 271,
+      "tech": 239,
+      "gaming": 191,
+      "food": 191,
+      "fashion": 162,
+      "parenting": 103,
+      "luxury": 82,
+      "education": 81,
+      "travel": 69,
+      "sustainability": 66,
+      "pets": 36,
+      "home decor": 32,
+      "automotive": 25,
+      "B2B/SaaS": 24,
+      "creator economy": 23,
+      "health tech": 14
+    },
+    "creator_country_counts": {
+      "US": 362,
+      "UK": 242,
+      "India": 208,
+      "Australia": 119,
+      "Germany": 119,
+      "USA": 116,
+      "Japan": 109,
+      "France": 93,
+      "Canada": 87,
+      "Italy": 79,
+      "South Korea": 64,
+      "Sweden": 49,
+      "UAE": 47,
+      "Spain": 46,
+      "Netherlands": 46,
+      "Singapore": 30,
+      "Brazil": 30,
+      "Ireland": 18,
+      "Denmark": 18,
+      "Israel": 16,
+      "Thailand": 15,
+      "Indonesia": 14,
+      "New Zealand": 14,
+      "Mexico": 10,
+      "Nigeria": 10,
+      "China": 9,
+      "Norway": 8,
+      "Finland": 8,
+      "Vietnam": 7,
+      "Philippines": 7
+    },
+    "creator_size_counts": {
+      "mid-tier": 1206,
+      "micro": 396,
+      "macro": 390,
+      "mega": 8
+    },
+    "brand_industry_counts": {
+      "Fitness & Wellness": 268,
+      "Beauty & Skincare": 228,
+      "Gaming & Tech": 193,
+      "Fintech": 159,
+      "Food & Health": 149,
+      "Consumer Tech": 147,
+      "Fashion & Apparel": 126,
+      "Parenting & Family": 117,
+      "Fashion & Sportswear": 100,
+      "Travel & Tourism": 90,
+      "EdTech": 72,
+      "Sustainability/Eco": 63,
+      "Health & Wellness": 42,
+      "Travel & Luxury": 41,
+      "Home Decor": 40,
+      "B2B SaaS": 37,
+      "Automotive": 36,
+      "Creator Economy": 31,
+      "Pet Care": 31,
+      "Health Tech": 30
+    },
+    "brand_target_gender_counts": {
+      "all": 921,
+      "female": 761,
+      "male": 318
+    },
+    "platform_counts": {
+      "youtube": 975,
+      "instagram": 903,
+      "tiktok": 455,
+      "twitter": 67,
+      "blog": 54,
+      "twitch": 26,
+      "linkedin": 16
+    }
+  },
+  "interaction_coverage": {
+    "niche_overlap": {
+      "weak": 1079,
+      "strong": 152,
+      "partial": 369
+    },
+    "geography_overlap": {
+      "weak": 1247,
+      "strong": 278,
+      "partial": 75
+    },
+    "platform_overlap": {
+      "partial": 1009,
+      "none": 477,
+      "full": 114
+    },
+    "follower_range_fit": {
+      "in-range": 894,
+      "outside": 550,
+      "near": 156
+    },
+    "budget_fit": {
+      "uncertain": 272,
+      "fit": 1060,
+      "mismatch": 268
+    }
+  },
+  "existing_labeled_distribution": {
+    "count": 400,
+    "brands_represented": 10,
+    "creators_represented": 40,
+    "creator_niche_counts": {
+      "fitness": 130,
+      "beauty": 60,
+      "tech": 50,
+      "fashion": 40,
+      "food": 40,
+      "gaming": 40,
+      "parenting": 20,
+      "luxury": 10,
+      "travel": 10
+    },
+    "creator_country_counts": {
+      "India": 90,
+      "USA": 70,
+      "Australia": 20,
+      "Italy": 20,
+      "UAE": 20,
+      "Sweden": 20,
+      "Germany": 20,
+      "UK": 20,
+      "Japan": 20,
+      "South Korea": 10,
+      "France": 10,
+      "Mexico": 10,
+      "Denmark": 10,
+      "Canada": 10,
+      "Nigeria": 10,
+      "Spain": 10,
+      "Singapore": 10,
+      "Ireland": 10,
+      "Netherlands": 10
+    },
+    "creator_size_counts": {
+      "mid-tier": 340,
+      "macro": 40,
+      "micro": 20
+    }
+  },
+  "new_unlabeled_distribution": {
+    "count": 1600,
+    "brands_represented": 50,
+    "creators_represented": 187,
+    "creator_niche_counts": {
+      "fitness": 261,
+      "beauty": 211,
+      "tech": 189,
+      "gaming": 151,
+      "food": 151,
+      "fashion": 122,
+      "parenting": 83,
+      "education": 81,
+      "luxury": 72,
+      "sustainability": 66,
+      "travel": 59,
+      "pets": 36,
+      "home decor": 32,
+      "automotive": 25,
+      "B2B/SaaS": 24,
+      "creator economy": 23,
+      "health tech": 14
+    },
+    "creator_country_counts": {
+      "US": 362,
+      "UK": 222,
+      "India": 118,
+      "Australia": 99,
+      "Germany": 99,
+      "Japan": 89,
+      "France": 83,
+      "Canada": 77,
+      "Italy": 59,
+      "South Korea": 54,
+      "USA": 46,
+      "Spain": 36,
+      "Netherlands": 36,
+      "Brazil": 30,
+      "Sweden": 29,
+      "UAE": 27,
+      "Singapore": 20,
+      "Israel": 16,
+      "Thailand": 15,
+      "New Zealand": 14,
+      "Indonesia": 14,
+      "China": 9,
+      "Norway": 8,
+      "Finland": 8,
+      "Ireland": 8,
+      "Denmark": 8,
+      "Vietnam": 7,
+      "Philippines": 7
+    },
+    "creator_size_counts": {
+      "mid-tier": 866,
+      "micro": 376,
+      "macro": 350,
+      "mega": 8
+    }
+  },
+  "reproducibility": {
+    "selection_method": "deterministic_stratified_coverage",
+    "seed": null,
+    "config": {
+      "target_total": 2000,
+      "existing_labeled": 400,
+      "new_unlabeled": 1600,
+      "min_creator_pairs": 5,
+      "min_brand_pairs": 30
+    },
+    "source_datasets": [
+      "data/brands.json",
+      "data/creators.json",
+      "data/pairs_v0.json",
+      "data/labels.json"
+    ]
+  }
+}
