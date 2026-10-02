@@ -1,0 +1,14 @@
+from sentence_transformers import CrossEncoder
+
+model = CrossEncoder("cross-encoder/ms-marco-MiniLM-L6-v2")
+
+query = "Which planet is known as the Red Planet?"
+passages = [
+	"Venus is often called Earth's twin because of its similar size and proximity.",
+	"Mars, known for its reddish appearance, is often referred to as the Red Planet.",
+	"Jupiter, the largest planet in our solar system, has a prominent red spot.",
+	"Saturn, famous for its rings, is sometimes mistaken for the Red Planet."
+]
+
+scores = model.predict([(query, passage) for passage in passages])
+print(scores)
