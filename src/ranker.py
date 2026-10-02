@@ -1,7 +1,11 @@
 from sentence_transformers import CrossEncoder
 
-from src.model import score_pairs
-from src.preprocessing import make_pairs
+try:
+    from src.model import score_pairs
+    from src.preprocessing import make_pairs
+except ImportError:
+    from model import score_pairs
+    from preprocessing import make_pairs
 
 
 def rank_brand(
