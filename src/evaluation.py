@@ -5,9 +5,14 @@ from typing import Any
 
 from sentence_transformers import CrossEncoder
 
-from src.model import load_model
-from src.preprocessing import load_brands, load_creators
-from src.ranker import rank_brand
+try:
+    from src.model import load_model
+    from src.preprocessing import load_brands, load_creators
+    from src.ranker import rank_brand
+except ImportError:
+    from model import load_model
+    from preprocessing import load_brands, load_creators
+    from ranker import rank_brand
 
 DATA_DIR = Path(__file__).resolve().parent.parent / "data"
 REPORTS_DIR = Path(__file__).resolve().parent.parent / "reports"
