@@ -1,0 +1,33 @@
+{
+  "seed": 42,
+  "split": {
+    "train": {
+      "brand_ids": [
+        "b03",
+        "b04",
+        "b06",
+        "b07",
+        "b08",
+        "b09"
+      ],
+      "num_brands": 6,
+      "num_pairs": 240
+    },
+    "val": {
+      "brand_ids": [
+        "b05",
+        "b10"
+      ],
+      "num_brands": 2,
+      "num_pairs": 80
+    },
+    "test": {
+      "brand_ids": [
+        "b01",
+        "b02"
+      ],
+      "num_brands": 2,
+      "num_pairs": 80
+    }
+  }
+}
