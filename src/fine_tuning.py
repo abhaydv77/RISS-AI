@@ -8,14 +8,24 @@ import torch
 from sentence_transformers import CrossEncoder
 from sentence_transformers.cross_encoder import CrossEncoder as CE
 
-from src.data_split import (
-    build_training_examples,
-    create_split_manifest,
-    labels_for_split,
-    load_labels,
-    save_split_manifest,
-)
-from src.preprocessing import load_brands, load_creators
+try:
+    from src.data_split import (
+        build_training_examples,
+        create_split_manifest,
+        labels_for_split,
+        load_labels,
+        save_split_manifest,
+    )
+    from src.preprocessing import load_brands, load_creators
+except ImportError:
+    from data_split import (
+        build_training_examples,
+        create_split_manifest,
+        labels_for_split,
+        load_labels,
+        save_split_manifest,
+    )
+    from preprocessing import load_brands, load_creators
 
 DATA_DIR = Path(__file__).resolve().parent.parent / "data"
 REPORTS_DIR = Path(__file__).resolve().parent.parent / "reports"
@@ -80,7 +90,8 @@ def train(
 
     model = CrossEncoder(cfg["model_name"], max_length=cfg["max_seq_length"])
 
-    train_dataset = model.model.tokenizer(
+    tokenizer = model.tokenizer
+    train_dataset = tokenizer(
         [e["query"] for e in train_examples],
         [e["passage"] for e in train_examples],
         padding=True,

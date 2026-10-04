@@ -81,7 +81,10 @@ def build_training_examples(
     brands: dict[str, dict[str, Any]],
     creators: dict[str, dict[str, Any]],
 ) -> list[dict[str, Any]]:
-    from src.preprocessing import brand_to_query, creator_to_passage
+    try:
+        from src.preprocessing import brand_to_query, creator_to_passage
+    except ImportError:
+        from preprocessing import brand_to_query, creator_to_passage
 
     examples: list[dict[str, Any]] = []
     for item in labels:
@@ -102,7 +105,10 @@ def build_training_examples(
 
 
 def main() -> None:
-    from src.preprocessing import load_brands, load_creators
+    try:
+        from src.preprocessing import load_brands, load_creators
+    except ImportError:
+        from preprocessing import load_brands, load_creators
 
     labels = load_labels()
     brands_list = load_brands()
