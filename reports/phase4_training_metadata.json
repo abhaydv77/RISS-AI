@@ -1,0 +1,49 @@
+{
+  "model_name": "cross-encoder/ms-marco-MiniLM-L6-v2",
+  "seed": 42,
+  "batch_size": 16,
+  "epochs": 3,
+  "learning_rate": 2e-05,
+  "max_seq_length": 512,
+  "warmup_ratio": 0.1,
+  "weight_decay": 0.01,
+  "device": "cuda",
+  "timestamp": "2026-10-04T13:07:58.108647+00:00",
+  "split": {
+    "seed": 42,
+    "split": {
+      "train": {
+        "brand_ids": [
+          "b03",
+          "b04",
+          "b06",
+          "b07",
+          "b08",
+          "b09"
+        ],
+        "num_brands": 6,
+        "num_pairs": 240
+      },
+      "val": {
+        "brand_ids": [
+          "b05",
+          "b10"
+        ],
+        "num_brands": 2,
+        "num_pairs": 80
+      },
+      "test": {
+        "brand_ids": [
+          "b01",
+          "b02"
+        ],
+        "num_brands": 2,
+        "num_pairs": 80
+      }
+    }
+  },
+  "num_train_examples": 240,
+  "num_val_examples": 80,
+  "num_test_examples": 80,
+  "artifact_path": "/content/RISS-AI/artifacts/fine_tuned_2026-10-04T13-07-58.108647+00-00"
+}
